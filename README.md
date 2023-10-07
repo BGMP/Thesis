@@ -1,3 +1,3 @@
 Thesis
 ---
-My thesis, built with TeX.
+My thesis, written in TeX.
