@@ -1,0 +1,80 @@
+\chapter{Estudio del Problema}
+
+\section{Re-Volt America}
+Re-Volt America comienza como...
+
+\section{Contexto del Problema}
+En el año 2017 nace la comunidad de Re-Volt Tournament,  un grupo de jugadores del videojuego Re-Volt de todas partes del mundo. Re-Volt es un juego de carreras de autos a control remoto publicado en el año 1999. El juego experimenta con la idea de colocar dichos autos en escenarios de distintos tipos como supermercados o museos para que compitan entre ellos, y así simular cómo sería una carrera de este estilo en la realidad.
+
+La comunidad de este juego se ha mantenido activa y al día después de más de 20 años de su fecha de publicación. Hace más o menos 10 años, se lanzó al público una reescritura de este juego llamada Re-Volt: OpenGL, la cual revolucionó el juego llevándolo a plataformas modernas, y extendiendo soporte para que la comunidad pudiera crear autos, pistas y otros modos de juego personalizados como adición al contenido original del juego. Además de lo anterior, Re-Volt: OpenGL también implementó el soporte para partidas multijugador, y fue esto lo que llevó a que se organizaran sesiones de juego casi a diario para que los jugadores pudieran competir unos con otros.
+
+Re-Volt Tournament, que años más tarde pasaría a llamarse Re-Volt America, concentra principalmente a todos los jugadores de Re-Volt del continente americano hasta hoy en día.
+Históricamente, Re-Volt America se ha dedicado a mantener un registro de todas las sesiones de carreras online organizadas por su administración a diario, llevando cuenta de las distintas temporadas que se han celebrado a lo largo de los años. Todos los jugadores que deseen jugar en las sesiones online organizadas por Re-Volt America vendrían a ser quienes consumen el producto que ofrece como comunidad, el cual sería estar indexado en un sistema que verdaderamente lleva la cuenta de resultados persistentes por sesión jugada, cosa que en el juego por si sólo no se da.
+
+Re-Volt America cuenta con un sistema interno para organizar sus sesiones de carreras online, el cual consiste en dividir dichas sesiones en rankings, y estos rankings por temporadas: En un año se celebran dos temporadas. Cada temporada está compuesta de 6 rankings, y cada ranking de 28 sesiones online en total.
+
+Este proyecto se enmarca directamente en este ámbito competitivo que busca generar Re-Volt America para sus usuarios, para poder lograr una mejora sustancial y un cambio revolucionario en la manera en que se llevan estos registros históricos de resultados y como es manejada y procesada la información que se obtiene de dichas sesiones online.
+
+\section{Definiciones, Siglas y Abreviaciones}
+A continuación, se definirán algunos conceptos relevantes en el contexto del videojuego Re-Volt y la comunidad de Re-Volt America:
+
+•	Re-Volt: El videojuego Re-Volt, 1999 (https://en.wikipedia.org/wiki/Re-Volt).
+
+•	RV: Re-Volt.
+
+•	RVGL: Re-Volt OpenGL. La reescritura del juego original que es usada por todos los jugadores hoy en día. (https://rvgl.org).
+
+•	Re-Volt I/O: Comunidad Europea de Re-Volt.
+
+•	RVA: Re-Volt America.
+
+•	RTT: Re-Volt Tournament.
+
+•	Sesión: Evento de carreras online del videojuego Re-Volt, en donde dos o más personas compiten en una o más carreras multijugador.
+
+•	Session Log: Archivo separado por comas que contiene un registro crudo de los resultados de las carreras jugadas en una sesión de RVGL.
+
+\section{Problemática Actual}
+Desde hace aproximadamente 5 años, Re-Volt America ha mantenido los registros históricos de las sesiones celebradas a diario de manera interna y, a partir de estos registros, se ha mantenido publicando los resultados por sesión y rankings acumulados para todos los jugadores de la comunidad. Además de esto, RVA también se ha encargado hasta la fecha de recoger otro tipo de estadísticas e información de sus jugadores como pueden ser el país, total de puntos acumulados por temporada, carreras corridas, porcentaje por participación y puntajes totales dentro del sistema de puntuación de RVA.
+
+En RVGL, cada carrera consiste en que los jugadores corren en una pista, y al final cada uno termina en una posición dependiendo de quien llega primero a la meta, como en cualquier juego de carreras tradicional. Cada sesión organizada por RVA consiste en 20 carreras que se juegan en 20 pistas diferentes, por lo que en una sesión se producen 20 sets de resultados de carreras. RVGL permite a los jugadores obtener un registro escrito de los resultados de cada carrera jugada en multijugador, escribiendo dichos registros a un archivo separado por comas conocido como “Session Log” por la comunidad. Este es el archivo que utilizan los organizadores de RVA para calcular los resultados oficiales para su eventual publicación.
+El sistema interno de RVA asigna un puntaje por posición final de cada jugador en una carrera de la siguiente forma:
+
+Ilustración 3: Puntajes por posición en RVA.
+Dichos puntajes, al final de cada sesión, son sumados para obtener un total, normalizados y sometidos a diferentes procesos como la división por posición promedio, multiplicación por porcentaje de participación, entre otras operaciones que ayudan a determinar los resultados finales en el formato de RVA. Dichos resultados cuales terminan viéndose como se muestra en la ilustración 4.
+
+Ilustración 4: Tabla de resultados de RVA.
+Todo este proceso de cálculo de resultados es llevado a cabo actualmente de manera semiautomática por los organizadores y administradores de RVA. Este proceso consiste en los siguientes pasos:
+1.	Llevar a cabo la sesión multijugador y obtener el Session Log con los resultados crudos de cada carrera.
+2.	Pasar dicho Session Log por un programa de escritorio que ayuda a calcular los resultados en el formato de RVA.
+3.	Con dicho programa de escritorio, exportar los resultados en un formato separado por comas (archivo CSV).
+4.	Tomar los resultados exportados y copiarlos manualmente a un documento maestro en Microsoft Excel, en donde los resultados son indexados junto con el resto.
+5.	Agregar cierta información de manera manual, como la fecha de la sesión, número de sesión y corregir nombres de jugadores inválidos.
+6.	Publicar una fotografía de los resultados traspasados al documento maestro, y otra foto del ranking total de la temporada que también se mantiene actualizado dentro del mismo documento.
+A raíz de este largo y tedioso proceso de cálculo y manejo de resultados es que se ha dado origen a este proyecto, como una oportunidad de mejorar dicho proceso, y poder ofrecer así una mejor experiencia de usuario tanto a los jugadores de RVA, como a los organizadores de la comunidad que dedican su tiempo y pasión por este juego a mantener estos registros históricos al día para todos.
+
+\subsection{Diagrama de la Situación en la Actualidad}
+Diagrama en UML
+
+\section{Propuesta de solución}
+Debe explicar en términos generales cómo las TIC pueden resolver o mejorar la(s) problemática identificada y quienes serán los usuarios principales, que tecnología se utilizaría para dar soporte a la propuesta.
+
+\section{Soluciones similares disponibles}
+Se presentan soluciones similares...
+
+\subsection{Aplicación para Cálculo de Puntos de Re-Volt I/O}
+Existe un trabajo similar hace varios años, el cual fue desarrollado por la comunidad europea de RVGL: Re-Volt I/O. Este trabajo es también una aplicación web que permite a los jugadores importar los resultados de las sesiones multijugador y poder visualizarlos dentro de la misma página; sin embargo, dicho proyecto no cuenta con ningún tipo de interconexión entre resultados, lo que quiere decir que cada sesión de carreras publicada en dicho sitio es independiente de otras, por lo cual este proyecto no cuenta con perfiles de usuario, y por ende no permite visualizar estadísticas de ningún tipo, tampoco relacionar tablas de resultados entre sí, y en general fue hecho para ser algo simple y rápido que sirviera para calcular y renderizar resultados de manera oportuna, y no con una visión de persistencia en mente. A continuación, en la ilustración 4 puede apreciarse la tabla de resultados generada por la aplicación web de Re-Volt: I/O.
+
+\subsection{Aplicación para Cálculo de Puntos de RVA}
+RVA cuenta con una aplicación de escritorio...
+
+\section{Justificación del Problema}
+El videojuego de carreras Re-Volt, creado en 1999, cuya caracterización se representa en la ilustración 1, tiene como premisa ser un juego de carreras de autos a control remoto, los cuales compiten en entornos cotidianos como supermercados, barcos, sitios de construcción, museos, entre otros.
+Unos años después de su lanzamiento original, la empresa creadora del juego “Acclaim Studios” quebró, y la base de código del juego fue liberada al público. A partir de esta base el juego fue reescrito completamente y portado a la librería de OpenGL, creándose así Re-Volt: OpenGL o RVGL de manera abreviada.
+
+Re-Volt America, o RVA para abreviar, reúne a los jugadores y creadores de contenido de RVGL de todas partes de América, quienes mantienen vivo el juego organizando eventos como sesiones y torneos multijugador.
+
+Actualmente no existe ninguna plataforma que permita a los usuarios registrarse y visualizar resultados y estadísticas de las sesiones multijugador organizadas por la comunidad. Lo anterior significa que cuando se juegan partidas online no es posible obtener de manera automática rankings, estadísticas por vehículo y menos por usuario, ya que no hay forma de vincular de manera definitiva a los jugadores a través de un perfil dentro del juego. Tal como puede verse en la ilustración 2. Es por ello por lo que un usuario de nuestra comunidad no puede saber cuántas carreras o sesiones ha ganado con cierto auto, o en cierta pista, cómo se compara al resto, qué porcentaje de carreras ha perdido, etc.
+
+
+
