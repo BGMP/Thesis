@@ -1,0 +1,40 @@
+\chapter{Requerimientos del Software}
+
+\section{Límites}
+La aplicación no permitirá relacionar automáticamente cualquier nombre de jugador con su perfil dentro de la misma. Esto quiere decir que la aplicación estará limitada a relacionar el nombre que sea subido mediante el Session Log con un perfil que exista previamente en la plataforma.
+La aplicación no permitirá el uso de su API de por parte de terceros, lo que quiere decir que la API de RVA estará limitada a la misma aplicación.
+
+\section{Objetivo General del Software}
+El sistema manejará información del proceso de cálculo de resultados de carreras para que la comunidad centralice los rankings y estadísticas por usuario dentro del mismo, es decir, reducirá el trabajo manual requerido actualmente para este procesamiento de resultados, y así hará más eficiente todo el proceso que conlleva mantener los rankings actualizados.
+
+
+\subsection{Objetivos Específicos del Software}
+•	El sistema permite que los administradores de la comunidad puedan subir los archivos de resultados generados por RVGL y, de esta forma, los resultados son generados automáticamente dentro de la aplicación. Esto elimina el tiempo de los organizadores de calcular los resultados manualmente.
+
+•	El sistema permite que los usuarios puedan ver sus estadísticas en tiempo real, lo que elimina la necesidad de llevar la cuenta de manera manual por cada uno de ellos.
+
+•	El sistema permite enlazar los nombres de usuario utilizados en las sesiones multijugador de RVGL a perfiles dentro de la aplicación, lo cual hace posible la recopilación y atribución de métricas individuales por jugador, y agiliza la visualización de resultados.
+
+•	El sistema permite llevar un registro histórico de manera automática según se suben y se procesan los archivos de resultados en la aplicación, lo cual elimina completamente la necesidad de la comunidad de mantener toda esta información actualizada de manera manual.
+
+
+\section{Requerimientos Funcionales del Software}
+
+\begin{center}
+	\begin{tabular}{ | l | p{15cm} |}
+		\hline
+		\multicolumn{2}{|c|}{Módulo de Registros de Autos de Re-Volt America} \\
+		\hline
+		\multicolumn{1}{|c|}{Id} & \multicolumn{1}{|c|}{Descripción} \\
+		\hline
+		RF\_01 & La plataforma contará con un módulo de creación de autos. Los autos deben contar con todos los parámetros obligatorios. Sólo los administradores pueden crear autos. \\ \hline
+
+		RF\_02 & La plataforma contará con un módulo de visualización de autos. El listado estará separado por temporadas y por clases de autos. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
+
+		RF\_03 & La plataforma contará con un módulo de edición de un auto, los cuales deben contar con todos los parámetros obligatorios para ser modificados. Este módulo estará disponible sólo para los administradores. \\ \hline
+		
+		RF\_04 & La plataforma contará con un módulo de eliminación de un auto. La eliminación no tendrá efectos secundarios a nivel de la base de datos, ya que la aplicación estará preparada para manejar excepciones cuando las entradas de corredores estén asociadas a un auto que no exista. Este módulo sólo estará disponible para administradores. \\ \hline
+		
+		RF\_05 & La plataforma contará con un módulo de visualización de un solo auto. En esta vista se podrán ver todos los parámetros del auto. Este módulo estará disponible sólo para los administradores. \\ \hline
+	\end{tabular}
+\end{center}
