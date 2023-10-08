@@ -2,7 +2,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage{geometry}
+\usepackage[bottom=0.5cm, right=1.5cm, left=1.5cm, top=1.5cm]{geometry}
 \usepackage{graphicx}
 \graphicspath{{img/}}
 
@@ -30,10 +30,13 @@
 \begin{titlepage}
 
 \title{
-	{\includegraphics[width=2cm, height=3cm]{img/logo.png}}\\
-	{\caption{\small Universidad del Bío-Bío}\\
-	{\small Facultad de Ciencias Empresariales}\\
-	{\small Depto. de Sistemas de Información}}\\
+	\begin{figure}
+		\centering
+			\includegraphics[width=2cm, height=3cm]{img/logo.png}\\
+			{Universidad del Bío-Bío\\
+			Facultad de Ciencias Empresariales\\
+			Depto. de Sistemas de Información}
+	\end{figure}
 	{\vspace*{3\baselineskip}}
 	{Desarrollo de una aplicación web para la comunidad de Re-Volt America}\\
 	{\large Proyecto de título para optar al título de Ingeniero de Ejecución en Computación e Informática}
