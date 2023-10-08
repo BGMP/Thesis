@@ -120,3 +120,36 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 		RF\_25 & La plataforma contará con un módulo de visualización de una sola sesión. En esta vista se podrán ver todos los parámetros de la sesión. Este módulo estará disponible sólo para los administradores. \\ \hline
 	\end{tabular}
 \end{center}
+
+\section{Interfaces Internas de Salida}
+
+\begin{center}
+	\begin{tabular}{ | l | p{5.5cm} | p{8cm} |}
+		\hline
+		{\textbf{Identificador}} & 	{\textbf{Nombre}} & {\textbf{Detalle de Datos}} \\ \hline
+		{\textbf{IN\_01}} & Car & name, speed, accel, weight, multiplier, folder\_name, category, stock, season\_id \\ \hline
+		{\textbf{IN\_02}} & Track &  name, short\_name, difficulty, lenght, folder\_name, stock, season\_id \\ \hline
+		{\textbf{IN\_03}} & Season & name, start\_date, end\_date, current \\ \hline
+		{\textbf{IN\_04}} & Ranking & number, season\_id \\ \hline
+		{\textbf{IN\_05}} & User & username, encrypted\_password, reset\_password\_token, reset\_password\_sent\_at, remember\_created\_at, sign\_in\_count, current\_sign\_in\_at, last\_sign\_in\_at, current\_sign\_in\_ip, last\_sign\_in\_ip, confirmation\_token, confirmation\_token, confirmed\_at, confirmation\_sent\_at, unconfirmed\_email, failed\_attempts, unlock\_token, locked\_at, admin, mod, organizar, locale, profile, stats \\ \hline
+	\end{tabular}
+\end{center}
+
+\newpage
+
+\section{Interfaces Externas de Salida}
+
+\begin{center}
+	\begin{tabular}{ | l | p{3.5cm} | p{6cm} | p{4cm} |}
+		\hline
+		{\textbf{Identificador}} & 	{\textbf{Nombre}} & {\textbf{Detalle de Datos}} & {\textbf{Medio de Salida}} \\
+		\hline
+		{\textbf{OUT\_01}} & Sesión en Formato de RVA & races, number, host, version, physics, protocol, pickups, date, teams, category & Pantalla, Archivo XLS. \\ \hline
+		{\textbf{OUT\_02}} & Car & name, speed, accel, weight, multiplier, folder\_name, category, stock, season\_id & Pantalla \\ \hline
+		{\textbf{OUT\_03}} & Track & name, short\_name, difficulty, lenght, folder\_name, stock, season\_id & Pantalla \\ \hline
+		{\textbf{OUT\_04}} & Season & name, start\_date, end\_date, current & Pantalla \\ \hline
+		{\textbf{OUT\_05}} & Ranking & number, season\_id & Pantalla \\ \hline
+		{\textbf{OUT\_06}} & Ranking & username, admin, mod, organizer, locale, profile, stats & Pantalla \\ \hline
+	\end{tabular}
+\end{center}
+
