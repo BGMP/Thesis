@@ -1,0 +1,58 @@
+\chapter{Análisis Funcional}
+
+\section{Actores}
+Los actores que interactúan con el sistema se detallan a continuación.
+
+\section{Diagrama de Casos de Uso}
+...
+
+\section{Modelo de Datos}
+Diagrama con Modelo de datos no relacional:
+
+\section{Esquema de la Base de Datos}
+A continuación, se describen los datos de la base de datos mediante archivos de definición de modelos de Ruby con mongoid:
+
+\section{Diseño de Interfaz (Mockups)}
+
+\section{Diseño de Arquitectura}
+El proyecto en su estado actual hace uso de un servidor propio, el cual contiene los servicios web, de bases de datos y caché, todo en una sola máquina. Independientemente de donde se termine alojando, la aplicación web estará disponible en la siguiente dirección web, bajo el dominio “rva.lat”:
+
+•	https://rva.lat/
+
+Además de esto, la planificación contempla dos servicios externos, que actualmente son proveídos por GitHub pages, los cuales sirven como repositorios de almacenamiento de datos masivos. Dichos repositorios se encargan actualmente de servir información y assets como las imágenes de las pistas y autos que la web ofrece a los usuarios:
+
+•	https://tracks.rva.lat/
+
+•	https://cars.rva.lat/
+
+A continuación, se muestra un diagrama que ilustra todo el proceso de interacción entre servicios y usuarios:
+
+% IMAGEN
+
+Tal como se muestra en la ilustración, la arquitectura que da soporte a la aplicación web de RVA se concentra en un servidor, con dos almacenes de datos. Podemos ver que los usuarios en la práctica juegan la sesión, el host de la sesión sube el Session Log a la web, y los usuarios pueden visitar la misma web para revisar los resultados
+
+\section{Estructura del código}
+El proyecto, al ser una aplicación hecha en el framework de Ruby on Rails, sigue patrón de MVC (Model View Controller), o modelo, vista, controlador. El árbol de directorio se ve de la siguiente manera:
+
+% IMAGEN
+
+Todas las bases de datos dentro de MongoDB están prefijadas utilizando el término “rv”. Por ejemplo, la base de datos que almacena las colecciones de autos se llama “rv\_cars”, la de los usuarios “rv\_users”, etc.
+
+\subsection{Backend}
+
+%TABLA
+
+\subsection{Frontend}
+
+%TABLA
+
+\section{Estado del Proyecto}
+El proyecto actualmente se encuentra en pleno desarrollo. Se ha realizado principalmente la ingeniería detrás de diseñar meticulosamente el sistema de base de datos e integración de los modelos, así como el estudio de su factibilidad, usabilidad y confiabilidad en el largo plazo.
+Además de lo anterior, se ha programado e implementado completamente la lógica operativa interna de Re-Volt America dentro del sistema, por lo que este puede recibir archivos Session Log, procesarlos y almacenarlos correctamente, mostrando al usuario una vista interpretada de los resultados de la sesión.
+•	Falta realizar mejoras puramente estéticas.
+•	Falta realizar un volcado de datos históricos al software desde los archivos de Re-Volt America de temporadas pasadas.
+•	Falta realizar pruebas de campo en donde primero los administradores prueben el software, y eventualmente se de acceso limitado a ciertos usuarios para que estos puedan probar la experiencia que ofrecerá la aplicación.
+•	Falta subir la aplicación completa a un servidor y sus servicios correspondientes configuraciones de red.
+•	Falta generar una guía completa para el usuario de tipo administrador, para que este sepa como operar la aplicación.
+
+
