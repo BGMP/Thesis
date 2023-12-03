@@ -1,15 +1,55 @@
 \chapter{Estudio del Problema}
 
+\section{Historia de Re-Volt}
+Re-Volt America, en su expresión más simple, es una comunidad de jugadores del videojuego Re-Volt, el cual fue lanzado originalmente en el año 1999 por Acclaim Studios en Londres. Re-Volt es un videojuego de carreras y simulador arcade de autos a control remoto, el cual explora una premisa en donde dichos autos compiten en carreras de radio control en ambientes como museos, supermercados, barcos, sitios de construcción, entre otros. Esto combinado con una mecánica de objetos que pueden ser recogidos por dichos autos para atacar a los competidores, obtener más velocidad, entre otras ventajas.
+
+El arte original de la caratula del juego puede ser apreciado en la figura FIGNUM.
+
+\includegraphics{img/re-volt.jpg}
+
+El primero de septiembre del año 2004, Acclaim Studios se declara en banca rota, y cesa permanentemente todo el desarrollo y mantenimiento que en algún momento proveyó a Re-Volt y a su comunidad. Este suceso, a lo largo de los años, dio lugar a muchas comunidades segmentadas del juego en el internet de ese entonces. Con el tiempo, nuevos sitios y proyectos comenzaron a surgir, tales como el portal web de Re-Volt Race, una página de Re-Volt que se dedicaba a organizar partidas online y mantener tablas de resultados para los jugadores, o Re-Volt: OpenGL (RVGL), una re-escritura moderna del Re-Volt original que todos conocían, ahora disponible para plataformas modernas y otros sistemas operativos además de Windows, como Linux, MacOS, e incluso una versión para dispositivos Android.
+
+Dentro de lo anteriormente enmarcado, aparece en el año 2015 la comunidad de Re-Volt I/O, cuyo logotipo se puede apreciar en la figura FIGNUM. Esta comunidad estaba formada por un grupo de jugadores de Re-Volt, principalmente europeos, quienes incursionaron por primera vez en intentar crear una plataforma estable para el videojuego y su comunidad de jugadores. Este sería un lugar en donde cualquiera que quisiera disfrutar del juego podría encontrar guías de ayuda, tutoriales, descargas y demás contenido para poder instalar y jugar Re-Volt en su computador o dispositivo móvil.
+
+\includegraphics{img/io.png}
+
+En sus inicios, Re-Volt I/O adoptó a RVGL como la distribución estándar de Re-Volt que ofrecería a sus jugadores, haciéndole ganar público y reconocimiento al proyecto publicando enlaces de descarga directos en su página web (re-volt.io), además de entregar soporte y mantener hilos de discusión relacionados con RVGL y sus actualizaciones en su foro oficial (forum.re-volt.io).
+
+En adición a lo anterior, RVGL no era tan sólo una versión modernizada del Re-Volt original, sino que también traía consigo el aspecto más importante que tiene Re-Volt en la actualidad, y el cual mantiene unida y activa a su comunidad en general: el modo multijugador u online. Dicho modo no sólo permitía a los jugadores correr carreras en línea, sino que, además, extendía soporte para que miembros de la comunidad pudiesen diseñar sus propios autos y pistas de manera personalizada, agrandando así, de manera casi infinita, el repertorio de contenido descargable para Re-Volt.
+
+Re-Volt I/O adoptó un sistema en donde su administración elige ciertos autos y pistas hechos por la comunidad cada ciertos meses. De esta forma, todos estos autos y pistas, elegidos a votación, terminan juntos en un paquete de contenido de extensión para RVGL, el cual Re-Volt I/O se encarga de distribuir para que sus usuarios lo descarguen y puedan jugar en línea. De manera habitual, tener este paquete de contenido es obligatorio para poder jugar en las sesiones multijugador organizadas por Re-Volt I/O, lo cual lo convertiría en un estándar para los jugadores que quisieran incorporarse a la comunidad en toda su extensión.
+
+Fue así como Re-Volt I/O, entre finales del 2015 y mediados del 2017, logró consolidarse y llegar a más jugadores que nunca, formando una comunidad activa de amantes del juego quienes, espontáneamente, se reunían a jugar en línea durante la semana utilizando un paquete de contenido adicional para RVGL, el cual todos debían descargar e instalar por separado para poder jugar. Eventualmente, estas partidas en línea adquirieron un horario definido con fechas y horas acordadas con antelación, para así facilitar la asistencia de los jugadores a los eventos de carreras.
+
+En la actualidad, Re-Volt I/O sigue siendo la comunidad de Re-Volt más grande en términos de jugadores y escala, pero en si todas las comunidades de Re-Volt están unidas y se ayudan unas con otras. Después de todo, se trata de un juego nicho, en donde todos intentan hacerlo accesible y fácil de entender para quienes deseen formar parte de su comunidad.
+
 \section{Re-Volt America}
-Re-Volt America comienza como...
+Si bien Re-Volt I/O fue, durante muchos años, la única comunidad grande de Re-Volt a nivel mundial, no fue mucho después de su gran auge que comenzarían a formarse los demás grupos que, a día de hoy, tienen gran relevancia en la escena multijugador de Re-Volt y que, además, cuentan con un numeroso público y gran actividad. Dentro de estas nuevas comunidades se encuentra Re-Volt America, la comunidad de Re-Volt que abarca a todos los jugadores del continente americano, especialmente de latinoamérica. El logotipo oficial de Re-Volt America, o RVA para abreviar, puede apreciarse en la figura FIGNUM.
+
+\includegraphics[width=10cm, height=10cm]{img/rva.png}
+
+La comunidad de Re-Volt America es concebida originalmente en el año 2017, bajo el nombre de Re-Volt Tournament. No fue hasta después de un par de años que esta sería renombrada a Re-Volt America, debido a la procedencia de sus jugadores, la cual era tanto de norte america como de sudamerica.
+
+En el presente año 2023, Re-Volt America cuenta con una gran cantidad de jugadores activos, y con un sistema de puntuación único en la escena de Re-Volt y sus comunidades en línea. Este complejo sistema de puntuación, y su funcionamiento sostenido durante los últimos 6 años, son la base del problema que busca solucionar este proyecto de título. Con el pasar del tiempo, este sistema se ha convertido en algo muy difícil de mantener para los administradores de la comunidad, tanto a nivel logístico como técnico.
+
+A continuación, se presentaría el contexto del problema en detalle.
 
 \section{Contexto del Problema}
-En el año 2017 nace la comunidad de Re-Volt Tournament,  un grupo de jugadores del videojuego Re-Volt de todas partes del mundo. Re-Volt es un juego de carreras de autos a control remoto publicado en el año 1999. El juego experimenta con la idea de colocar dichos autos en escenarios de distintos tipos como supermercados o museos para que compitan entre ellos, y así simular cómo sería una carrera de este estilo en la realidad.
+Como ya se mencionó anteriormente, Re-Volt es un videojuego de carreras el cual, gracias al surgimiento de RVGL y sus comunidades impulsoras, es jugado mayoritariamente en línea. Pero, ¿a qué nos referimos con ''jugar en línea''?. Para poder entender este concepto, tenemos que ir a lo que es una carrera en términos conceptuales, y las implicaciones que estas conllevan dentro de un contexto competitivo.
 
-La comunidad de este juego se ha mantenido activa y al día después de más de 20 años de su fecha de publicación. Hace más o menos 10 años, se lanzó al público una reescritura de este juego llamada Re-Volt: OpenGL, la cual revolucionó el juego llevándolo a plataformas modernas, y extendiendo soporte para que la comunidad pudiera crear autos, pistas y otros modos de juego personalizados como adición al contenido original del juego. Además de lo anterior, Re-Volt: OpenGL también implementó el soporte para partidas multijugador, y fue esto lo que llevó a que se organizaran sesiones de juego casi a diario para que los jugadores pudieran competir unos con otros.
+Para poder jugar en línea, cada jugador debe elegir un nombre de usuario, el cual puede incluso variar de partida en partida. Esto se hace una vez que ingresa al juego y avanza en el menú hasta llegar al selector de nombre de usuario en forma de neumático. El nombre que el jugador ingrese aquí será el nombre de usuario con el que se identificará a la hora de ser ingresado a los resultados de cada carrera en la que participe. El selector de nombre de usuario se puede apreciar a continuación en la figura FIGNUM.
 
-Re-Volt Tournament, que años más tarde pasaría a llamarse Re-Volt America, concentra principalmente a todos los jugadores de Re-Volt del continente americano hasta hoy en día.
-Históricamente, Re-Volt America se ha dedicado a mantener un registro de todas las sesiones de carreras online organizadas por su administración a diario, llevando cuenta de las distintas temporadas que se han celebrado a lo largo de los años. Todos los jugadores que deseen jugar en las sesiones online organizadas por Re-Volt America vendrían a ser quienes consumen el producto que ofrece como comunidad, el cual sería estar indexado en un sistema que verdaderamente lleva la cuenta de resultados persistentes por sesión jugada, cosa que en el juego por si sólo no se da.
+\includegraphics[width=15cm, height=8cm]{img/username.png}
+
+Las siguientes dos ilustraciones presentan las instancias clave dentro del juego. En la ilustración FIGNUM, se puede apreciar la perspectiva del jugador al momento de jugar Re-Volt. Luego, en la ilustración FIGNUM, se puede ver la tabla de resultados que se muestra por pantalla a medida que los corredores finalizan la carrera.
+
+\includegraphics[width=15cm, height=8cm]{img/gameplay.jpg}
+
+\includegraphics[width=15cm, height=8cm]{img/results.png}
+
+Normalmente, en las partidas en línea, suelen jugarse muchas carreras de manera consecutiva. A estas partidas multijugador se les conoce como ''sesiones''. Cada sesión de Re-Volt consiste en una serie de carreras en pistas determinadas, con cierta clase de autos. Estas determinaciones las realiza el anfitrión de la partida, quien las comunica públicamente de manera oportuna para que todos aquellos que deseen participar las tengan en consideración antes de conectarse a jugar.
+
+Históricamente, Re-Volt America se ha dedicado a organizar sesiones multijugador de Re-Volt para su público, así como también se ha preocupado de llevar la cuenta de los resultados de cada carrera que se ha jugado en ellas mediante un sistema de temporadas. Todos los jugadores que, en algún momento u otro, han participado en las sesiones online organizadas por Re-Volt America, han sido indexados en la base de datos de jugadores que mantiene la comunidad. De esta forma, sus victorias, puntos y otras estadísticas asociadas han sido preservadas a lo largo del tiempo.
 
 Re-Volt America cuenta con un sistema interno para organizar sus sesiones de carreras online, el cual consiste en dividir dichas sesiones en rankings, y estos rankings por temporadas: En un año se celebran dos temporadas. Cada temporada está compuesta de 6 rankings, y cada ranking de 28 sesiones online en total.
 
