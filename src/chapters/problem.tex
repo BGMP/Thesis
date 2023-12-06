@@ -1,16 +1,18 @@
 \chapter{Estudio del Problema}
 
 \section{Definiciones, Siglas y Abreviaciones}
-A continuación, se definirán algunos conceptos relevantes en el contexto del videojuego Re-Volt y la comunidad de Re-Volt America:
+A continuación, se definirán algunos conceptos relevantes en el contexto del videojuego Re-Volt y de la comunidad de Re-Volt America:
 
 \begin{itemize}
-	\item Re-Volt: El videojuego Re-Volt, 1999 (https://en.wikipedia.org/wiki/Re-Volt).
-	\item RV: Re-Volt.
-	\item RVGL: Re-Volt: OpenGL. La reescritura del juego original que es usada por todos los jugadores hoy en día. (https://rvgl.org).
-	\item Re-Volt I/O: Comunidad Europea de Re-Volt.
-	\item RVA: Re-Volt America.
-	\item Sesión: Evento de carreras online del videojuego Re-Volt, en donde dos o más personas compiten en dos o más carreras multijugador.
-	\item Session Log: Archivo separado por comas que contiene un registro crudo de los resultados de las carreras jugadas en una sesión de RVGL.
+	\item Re-Volt: El videojuego Re-Volt, publicado por Acclaim Studios en 1999.
+	\item RV: Abreviación para ''Re-Volt''.
+	\item Re-Volt: OpenGL: Reescritura moderna de Re-Volt, basada en OpenGL.
+	\item RVGL: Abreviación de ''Re-Volt: OpenGL''.
+	\item Re-Volt I/O: Comunidad europea de Re-Volt.
+	\item Re-Volt America: La comunidad americana de Re-Volt.
+	\item RVA: Abreviación para ''Re-Volt America''.
+	\item Sesión: Serie de carreras de RVGL en línea, en donde dos o más personas compiten en carreras multijugador.
+	\item Session Log: Archivo separado por comas, el cual contiene un registro crudo de los resultados de las carreras jugadas en una sesión de RVGL.
 \end{itemize}
 
 \section{Historia de Re-Volt}
@@ -73,7 +75,7 @@ De acuerdo a lo que se mencionó en los puntos anteriores, Re-Volt America ha ma
 
 En Re-Volt, cada carrera consiste en que los jugadores corren en una pista por una determinada cantidad de vueltas y, al finalizar, cada uno termina en una posición dependiendo de quien llega primero a la línea de meta, como en cualquier otro juego de carreras tradicional. Cada sesión organizada por RVA consiste en 20 carreras, las cuales se juegan en 20 pistas diferentes. Es por esto que, en una sesión, se producen 20 sets de resultados (1 por carrera).
 
-Para ayudar a llevar una cuenta fiable de todas las carreras jugadas, RVGL cuenta con una funcionalidad que permite a los jugadores obtener un registro escrito de los resultados de cada carrera. Este registro viene en forma de un  archivo separado por comas, el cual es conocido por la comunidad como ''Session Log''. Este es el archivo que utilizan los organizadores y administradores de RVA para calcular los resultados oficiales.
+Para ayudar a llevar una cuenta fiable de todas las carreras jugadas, RVGL cuenta con una funcionalidad que permite a los jugadores obtener un registro escrito de los resultados de cada carrera. Este registro viene en forma de un archivo separado por comas, el cual es conocido por la comunidad como ''Session Log''. Este es el archivo que utilizan los organizadores y administradores de RVA para calcular los resultados oficiales.
 
 En la ilustración FIGNUM, presentada a continuación, puede apreciarse un extracto del ''Session Log'' de una sesión cualquiera, el cual ha sido importado desde Microsoft Excel para una visualización más clara. Este extracto representa una sola carrera de todas las que se jugaron en la sesión. Entiéndase que, inmediatamente después de la última línea, vendría escrita la carrera siguiente, y así sucesivamente con todas las demás.
 
@@ -116,7 +118,9 @@ En la ilustración FIGNUM, presentada a continuación, puede apreciarse un extra
 	\end{tabular}
 \end{center}
 
-La tabla anterior es una especificación de los elementos relevantes del ''Session Log''.
+La tabla anterior es una especificación de los elementos relevantes del ''Session Log''. Algunos de dichos elementos son utilizados por RVA para calcular los resultados acumulados de las sesiones, y así obtener una tabla con posiciones finales para cada jugador.
+
+\subsection{Sistema de Puntos de Re-Volt America}
 
 El sistema interno de RVA asigna un puntaje por posición final de cada jugador en una carrera de la siguiente forma:
 
