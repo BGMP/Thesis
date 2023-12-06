@@ -71,9 +71,52 @@ Es así como Re-Volt America, desde el año 2017 hasta el presente, ha conseguid
 \section{Problemática Actual}
 De acuerdo a lo que se mencionó en los puntos anteriores, Re-Volt America ha mantenido los registros históricos de las sesiones celebradas a diario de manera interna hace aproximadamente 5 años. A partir de estos registros, se han publicado resultados por sesión y rankings acumulados. Además de esto, RVA también se ha encargado de recoger otro tipo de estadísticas e información de sus jugadores, como pueden ser su nacionalidad, total de puntos acumulados por temporada, carreras corridas, porcentaje por participación y puntajes totales dentro del sistema de puntuación.
 
-En RVGL, cada carrera consiste en que los jugadores corren en una pista y, al final, cada uno termina en una posición dependiendo de quien llega primero a la meta, como en cualquier juego de carreras tradicional. Cada sesión organizada por RVA consiste en 20 carreras que se juegan en 20 pistas diferentes, por lo que en una sesión se producen 20 sets de resultados de carreras.
+En Re-Volt, cada carrera consiste en que los jugadores corren en una pista por una determinada cantidad de vueltas y, al finalizar, cada uno termina en una posición dependiendo de quien llega primero a la línea de meta, como en cualquier otro juego de carreras tradicional. Cada sesión organizada por RVA consiste en 20 carreras, las cuales se juegan en 20 pistas diferentes. Es por esto que, en una sesión, se producen 20 sets de resultados (1 por carrera).
 
-Para poder llevar una cuenta fiable de todas las carreras jugadas, RVGL cuenta con una funcionalidad que permite obtener un registro escrito de los resultados de cada carrera. Este registro viene en forma de un  archivo separado por comas, el cual es conocido por la comunidad como ''Session Log''. Este es el archivo que utilizan los organizadores y administradores de RVA para calcular los resultados oficiales.
+Para ayudar a llevar una cuenta fiable de todas las carreras jugadas, RVGL cuenta con una funcionalidad que permite a los jugadores obtener un registro escrito de los resultados de cada carrera. Este registro viene en forma de un  archivo separado por comas, el cual es conocido por la comunidad como ''Session Log''. Este es el archivo que utilizan los organizadores y administradores de RVA para calcular los resultados oficiales.
+
+En la ilustración FIGNUM, presentada a continuación, puede apreciarse un extracto del ''Session Log'' de una sesión cualquiera, el cual ha sido importado desde Microsoft Excel para una visualización más clara. Este extracto representa una sola carrera de todas las que se jugaron en la sesión. Entiéndase que, inmediatamente después de la última línea, vendría escrita la carrera siguiente, y así sucesivamente con todas las demás.
+
+\includegraphics[width=16cm, height=14cm]{img/raw-results.png}
+
+\begin{center}
+	\begin{tabular}{ | l | p{15cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Elementos del Session Log}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
+		\hline
+		{\textbf{B1}} & Versión de RVGL en la que se jugó esta sesión. \\ \hline
+		
+		{\textbf{C1-D1}} & Protocolo de conexión de la sesión. \\ \hline
+		
+		{\textbf{B2}} & Fecha y hora de apertura de la sesión. \\ \hline
+		
+		{\textbf{C2}} & Nombres del jugador anfitrión de la sesión. \\ \hline
+		
+		{\textbf{D2}} & Tipo de colisiones entre autos de la sesión seleccionado por el anfitrión \\ \hline
+		
+		{\textbf{E2}} & Número de vueltas de la carrera en cuestión. \\ \hline
+		
+		{\textbf{B3}} & Nombre de la pista que se jugó en esta carrera. \\ \hline
+		
+		{\textbf{C3}} & Número de jugadores que comenzaron la carrera. Si un jugador se desconectó en mitad de la carrera, este número no se ve afectado. \\ \hline
+		
+		{\textbf{B5-B15}} & Nombres de los jugadores que participaron de la carrera, agregados de arriba hacia abajo por orden de llegada a la línea de meta. \\ \hline
+		
+		{\textbf{C5-C15}} & Nombres de los autos utilizados por cada jugador en esta carrera. \\ \hline
+		
+		{\textbf{D5-D15}} & Tiempo total de la carrera de cada jugador.\\ \hline
+		
+		{\textbf{E5-E15}} & Mejor vuelta de cada jugador.\\ \hline
+		
+		{\textbf{F5-F15}} & TRUE si el jugador finalizó la carrera. FALSE si el jugador se desconectó en mitad de la carrera.\\ \hline
+		
+		{\textbf{G5-G15}} & TRUE si los archivos locales del jugador no corresponden a los archivos del anfitrión. FALSE si estos coinciden. Por ejemplo, ''Cheating'' es TRUE si un jugador modificó localmente la velocidad de su auto.\\ \hline
+	\end{tabular}
+\end{center}
+
+La tabla anterior es una especificación de los elementos relevantes del ''Session Log''.
 
 El sistema interno de RVA asigna un puntaje por posición final de cada jugador en una carrera de la siguiente forma:
 
