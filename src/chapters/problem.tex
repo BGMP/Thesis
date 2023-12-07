@@ -277,17 +277,17 @@ Por otro lado, en caso de que la carrera cuente con 10 jugadores o más, el mape
 \end{center}
 
 
-Teniendo lo anterior en consideración, es posible definir una función que, al recibir una posición final de un jugador en una carrera determinada, retorne la cantidad de puntos correspondientes a dicha posición. Esta función vendría definida de la siguiente manera, en donde ''pos'' es la posición final del jugador en la carrera en cuestión, y ''n'' la cantidad de jugadores que participaron de la carrera.
+Teniendo lo anterior en consideración, es posible definir una función que, al recibir una posición final de un jugador en una carrera determinada, retorne la cantidad de puntos correspondientes a dicha posición. Esta función vendría definida de la siguiente manera, en donde ''\textit{pos}'' es la posición final del jugador en la carrera en cuestión, y ''\textit{n}'' la cantidad de jugadores que participaron de la carrera.
 
 \[
-f(pos)= 
+f(pos, n)= 
 \begin{cases}
-	f : A \to B,& \text{if } n < 10\\
-	f : C \to D, & \text{if } n \geq 10
+	g : A \to B,& \text{if } n < 10\\
+	g : C \to D, & \text{if } n \geq 10
 \end{cases}
 \]
 
-Al finalizar una sesión, todos los puntajes de cada jugador, obtenidos en cada carrera, son sumados, normalizados, y sometidos a diferentes procesos de ajuste propios del sistema de RVA. Dichos ajustes serán explicados en detalle en las secciones siguientes.
+Al finalizar una sesión, todos los puntajes de cada jugador, obtenidos en cada carrera, son sumados, normalizados, y sometidos a diferentes procesos de ajuste propios del sistema de RVA. Una vez ajustados, estos pasarán a ser los puntajes finales de la sesión.
 
 
 \subsubsection{Cálculo de Resultados}
@@ -310,31 +310,40 @@ Una vez procesados, los resultados son llevados a una tabla final, tal como se p
 	\end{tabular}
 \end{center}
 
-De acuerdo a la tabla anterior, los cálculos de PA y PO pueden ser representados por las siguientes fórmulas, respectivamente.
+De acuerdo con la tabla anterior, los cálculos de PA y PO pueden ser representados por las siguientes fórmulas, respectivamente.
 
 \[
 {PA} = \sum_{i=1}^{CC}x=x+f(pos) 
 \]
 
 \[
-{PO} = \frac{PA}{PP} \cdot MP \cdot 0.1
+{PO} = \left(\frac{PA}{PP} \cdot MP\right) \cdot 0.1
 \]
 
-
 \subsubsection{Multiplicadores por Auto}
-Como ya se mencionó anteriormente, al principio de cada temporada se agregan y se eliminan autos del pack de RVA. Asimismo, RVA introduce el concepto de multiplicadores para dichos autos por temporada.
-
-Los multiplicadores son un factor que se le asocia a cada auto del pack, y este es un reflejo de su potencial en el juego.
+Como ya se mencionó anteriormente, al principio de cada temporada, se agregan y se eliminan autos del pack de RVA. Asimismo, RVA introduce el concepto de multiplicadores para dichos autos por temporada.
 
 De acuerdo con el sistema de RVA, el puntaje obtenido por un jugador al finalizar una carrera es multiplicado por el multiplicador del auto que utiliza en dicha carrera. De esta forma, el puntaje obtenido por el jugador incrementa o disminuye dependiendo del multiplicador asociado a su auto.
 
-Los multiplicadores de cada auto son un reflejo de su potencial para desempeñarse bien en carreras en línea en comparación a los demás autos de su categoría. Por ejemplo, si un auto es increíblemente rápido, fácil de manejar y no tiene dificultad alguna, entonces este se le asocia con un multiplicador bajo, para así nivelar los puntos que, potencialmente, pueda obtener un jugador al utilizarlo. Por el contrario, si un auto es muy lento, difícil de manejar, y simplemente es peor que los demás autos de su clase, entonces se le asocia con un multiplicador alto, para así otorgar puntos extra a quien lo utilice.
+Los multiplicadores de cada auto son un reflejo de su potencial para desempeñarse en carreras en línea en comparación a los demás autos de su categoría. Por ejemplo, si un auto es increíblemente rápido, fácil de manejar y no tiene dificultad alguna, entonces este se le asocia con un multiplicador bajo, para así nivelar los puntos que, potencialmente, pueda obtener un jugador al utilizarlo. Por el contrario, si un auto es muy lento, difícil de manejar, y simplemente es peor que los demás autos de su categoría, entonces se le asocia con un multiplicador alto, para así otorgar puntos extra a quien lo utilice.
 
-La decisión de qué autos son buenos y qué autos son malos en relación a los demás de su categoría es tomada por la administración en base a pruebas de manejo para los autos, y la experiencia previa en temporadas anteriores. A partir de esta decisión, se le otorga un multiplicador a cada auto.
+La decisión de qué autos son buenos y qué autos son malos, en comparación con los demás de su categoría, es tomada por la administración de RVA en base a pruebas de manejo para los autos, y la experiencia previa en temporadas anteriores. A partir de esta decisión, se le otorga un multiplicador a cada auto.
 
-En la ilustración FIGNUM, puede apreciarse el efecto que tienen los distintos multiplicadores por auto sobre el puntaje obtenido por un jugador.
+Considerando los distintos multiplicadores que puede tener cada auto, la fórmula para el cálculo del PA es modificada ligeramente, en donde ''\textit{mul}'' es el multiplicador del auto asociado.
 
-\includegraphics[width=15cm, height=8cm]{img/multiplier.png}
+\[
+{PA} = \sum_{i=1}^{CC}x=x+f(pos) \cdot \textit{mul}
+\]
+
+Como se explicó anteriormente, existen varias categorías de autos en Re-Volt. Si bien las sesiones de RVA corresponden a una categoría a la vez, el sistema admite que jugadores elijan autos hasta 3 clases por debajo de la categoría de la sesión. Por ejemplo, si la sesión es publicada como de categoría ''Pro'', un jugador puede elegir un auto de categoría ''Semi-Pro''.
+
+De acuerdo con el sistema de RVA, por cada categoría de diferencia entre la sesión y el auto elegido por el jugador, a este se le otorga un bono de 0.25, el cual se adiciona al multiplicador de su auto. Si en el ejemplo anterior la sesión era ''Pro'' y el auto ''Semi-Pro'', entonces al multiplicador del auto se le suma directamente 0.25. Si la diferencia fuese de 2 categorías, entonces se le sumaría 0.5.
+
+Teniendo en cuenta lo anterior, la fórmula es modificada nuevamente. En este caso, la variable ''\textit{delta}'' representa el bono asignado al jugador en la carrera.
+
+\[
+{PA} = \sum_{i=1}^{CC}x=x+f(pos) \cdot \left(\textit{mul} + \textit{delta}\right)
+\]
 
 \section{Problemática Actual}
 De acuerdo con lo que se mencionó en los puntos anteriores, Re-Volt America ha mantenido los registros históricos de las sesiones celebradas a diario de manera interna hace aproximadamente 5 años. A partir de estos registros, se han publicado resultados por sesión y rankings acumulados. Además de esto, RVA también se ha encargado de recoger otro tipo de estadísticas e información de sus jugadores, como pueden ser su nacionalidad, total de puntos acumulados por temporada, carreras corridas, porcentaje por participación y puntajes totales dentro del sistema de puntuación.
