@@ -158,7 +158,7 @@ Cada año, en promedio, se inician dos temporadas, y cada una es nombrada en bas
 
 Es así como Re-Volt America, desde el año 2017, hasta el presente, ha conseguido consolidarse como la comunidad de Re-Volt predilecta para los jugadores tanto de norteamerica como América latina.
 
-\subsection{Paquete de Contenido de Re-Volt America}
+\subsubsection{Paquete de Contenido}
 Re-Volt America cuenta con un paquete de contenido extra para RVGL, el cual es construido por sus administradores y organizadores al principio de cada temporada.
 
 Este paquete consiste en una selección de autos y pistas para RVGL hechos por la comunidad, los cuales tienen el objetivo de extender el contenido original del juego, y así proveer a los usuarios con una experiencia más enriquecedora y variada al momento de jugar en línea.
@@ -177,9 +177,6 @@ Los lugares y sus puntajes correspondientes pueden apreciarse a continuación. L
 \includegraphics[width=15cm, height=8cm]{img/points-big.png}
 
 Al finalizar una sesión, todos los puntajes de cada jugador, obtenidos en cada carrera, son sumados, normalizados, y sometidos a diferentes procesos de ajuste propios del sistema de RVA. Dichos ajustes serán explicados en detalle en las secciones siguientes.
-
-\subsubsection{Multiplicadores por Auto}
-Por cada temporada de Re-Volt America, 
 
 \subsubsection{Cálculo de Resultados}
 Una vez procesados, los resultados son llevados a una tabla final, tal como se puede apreciar en la figura FIGNUM.
@@ -200,6 +197,21 @@ Una vez procesados, los resultados son llevados a una tabla final, tal como se p
 		{\textbf{Puntaje Oficial}} & PO & El puntaje acumulado del jugador, multiplicado por un factor normalizador de 0.1. \\ \hline
 	\end{tabular}
 \end{center}
+
+\subsubsection{Multiplicadores por Auto}
+Como ya se mencionó anteriormente, al principio de cada temporada se agregan y se eliminan autos del pack de RVA. Asimismo, RVA introduce el concepto de multiplicadores para dichos autos por temporada.
+
+Los multiplicadores son un factor que se le asocia a cada auto del pack, y este es un reflejo de su potencial en el juego.
+
+De acuerdo con el sistema de RVA, el puntaje obtenido por un usuario al finalizar una carrera es multiplicado por el multiplicador del auto con el que gana dicha carrera. De esta forma, el puntaje obtenido por el jugador incrementa o disminuye dependiendo del multiplicador asociado a su auto.
+
+Los multiplicadores de cada auto son un reflejo de su potencial para desempeñarse bien en carreras en línea en comparación a los demás autos de su categoría. Por ejemplo, si un auto es increíblemente rápido, fácil de manejar y no tiene dificultad alguna, entonces este se le asocia con un multiplicador bajo, para así nivelar los puntos que, potencialmente, pueda obtener un jugador al utilizarlo. Por el contrario, si un auto es muy lento, difícil de manejar, y simplemente es peor que los demás autos de su clase, entonces se le asocia con un multiplicador alto, para así otorgar puntos extra a quien lo utilice.
+
+La decisión de qué autos son buenos y qué autos son malos en relación a los demás de su categoría es tomada por la administración en base a pruebas de manejo para los autos, y la experiencia previa en temporadas anteriores. A partir de esta decisión, se le otorga un multiplicador a cada auto.
+
+En la ilustración FIGNUM, puede apreciarse el efecto que tienen los distintos multiplicadores por auto sobre el puntaje obtenido por un jugador.
+
+\includegraphics[width=15cm, height=8cm]{img/multiplier.png}
 
 \section{Problemática Actual}
 De acuerdo con lo que se mencionó en los puntos anteriores, Re-Volt America ha mantenido los registros históricos de las sesiones celebradas a diario de manera interna hace aproximadamente 5 años. A partir de estos registros, se han publicado resultados por sesión y rankings acumulados. Además de esto, RVA también se ha encargado de recoger otro tipo de estadísticas e información de sus jugadores, como pueden ser su nacionalidad, total de puntos acumulados por temporada, carreras corridas, porcentaje por participación y puntajes totales dentro del sistema de puntuación.
