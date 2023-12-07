@@ -106,7 +106,7 @@ En la ilustración FIGNUM, presentada a continuación, puede apreciarse un extra
 
 \includegraphics[width=16cm, height=14cm]{img/raw-results.png}
 
-La tabla TABLENUM es una especificación de los elementos relevantes de un Session Log. Algunos de dichos elementos son utilizados por RVA para calcular los resultados acumulados de las sesiones, para así obtener una tabla con posiciones finales para cada jugador al final de cada sesión.
+A continuación, la tabla TABLENUM es una especificación de los elementos relevantes de un Session Log. Algunos de dichos elementos son utilizados por RVA para calcular los resultados acumulados de las sesiones, para así obtener una tabla con posiciones finales para cada jugador al final de cada sesión.
 
 \begin{center}
 	\begin{tabular}{ | l | p{15cm} |}
@@ -313,10 +313,10 @@ Una vez procesados, los resultados son llevados a una tabla final, tal como se p
 \end{center}
 
 
-De acuerdo con la tabla anterior, los cálculos de PA, PP y MP pueden ser representados utilizando las siguientes fórmulas, respectivamente, en donde ''\textit{pos}'' es la posición del jugador en cada carrera, y ''\textit{r}'' la cantidad total de carreras de la sesión.
+De acuerdo con la tabla anterior, los cálculos de PA, PP y MP pueden ser representados utilizando las siguientes fórmulas, respectivamente, en donde ''\textit{pos}'' es la posición del jugador en cada carrera, y ''\textit{tot}'' la cantidad total de carreras de la sesión.
 
 \[
-{PA} = \sum_{i=1}^{CC}x=x+f(pos_i) 
+\mathlarger{{PA} = \sum_{i=1}^{CC}x=x+f(pos_i)} 
 \]
 
 \[
@@ -324,7 +324,7 @@ De acuerdo con la tabla anterior, los cálculos de PA, PP y MP pueden ser repres
 \]
 
 \[
-{MP} = \frac{CC}{r}
+{MP} = \frac{CC}{tot}
 \]
 
 A partir de estos parámetros, podemos calcular el puntaje oficial, o PO, obtenido por el jugador en la sesión en cuestión.
