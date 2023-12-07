@@ -170,13 +170,125 @@ Como se ha aludido a lo largo del estudio del problema, la comunidad de Re-Volt 
 
 El funcionamiento de dicho sistema de puntuación es el siguiente: dependiendo de la posición da cada jugador, al final de cada carrera, a estos se les asigna un puntaje. Cabe destacar que, dependiendo de si la cantidad total de jugadores en un carrera es de 10 o más, los puntajes son incrementados ligeramente de manera proporcional.
 
-Los lugares y sus puntajes correspondientes pueden apreciarse a continuación. La figura FIGNUM representa los puntajes asignados por posición en carreras con menos de 10 jugadores, mientras que los puntajes de la figura FIGNUM son asignados en carreras con 10 jugadores o más.
+Los lugares y sus puntajes correspondientes pueden apreciarse en las figuras de mapeo presentadas a continuación. En caso de que la carrera cuente con menos de 10 jugadores, el mapeo de puntos vendría definido de la siguiente manera:
+\begin{center}
+	\begin{tikzpicture}
+		% Elípses que contienen los elementos
+		\draw (0,0) ellipse (1cm and 5cm);
+		\draw (4,0) ellipse (1cm and 5cm);
+		
+		% Encabezados "Posición" y "Puntos".
+		\draw (0,5.5) node {A};
+		\draw (4,5.5) node {B};
+		
+		% Posición
+		\draw (0,4) node (s1) {1};
+		\draw (0,3) node (s2) {2};
+		\draw (0,2) node (s3) {3};
+		\draw (0,1) node (s4) {4};
+		\draw (0,0) node (s5) {5};
+		\draw (0,-1) node (s6) {6};
+		\draw (0,-2) node (s7) {7};
+		\draw (0,-3) node (s8) {8};
+		\draw (0,-4) node (s9) {9};
+		
+		% Puntos
+		\draw (4,4) node (d1) {15};
+		\draw (4,3) node (d2) {12};
+		\draw (4,2) node (d3) {10};
+		\draw (4,1) node (d4) {7};
+		\draw (4,0) node (d5) {5};
+		\draw (4,-1) node (d6) {4};
+		\draw (4,-2) node (d7) {2};
+		\draw (4,-3) node (d8) {1};
+		
+		% Líneas entre elementos.
+		\draw[-stealth] (s1) edge (d1);
+		\draw[-stealth] (s2) edge (d2);
+		\draw[-stealth] (s3) edge (d3);
+		\draw[-stealth] (s4) edge (d4);
+		\draw[-stealth] (s5) edge (d5);
+		\draw[-stealth] (s6) edge (d6);
+		\draw[-stealth] (s7) edge (d7);
+		\draw[-stealth] (s8) edge (d7);
+		\draw[-stealth] (s9) edge (d8);
+	\end{tikzpicture}
+\end{center}
 
-\includegraphics[width=15cm, height=8cm]{img/points.png}
+Por otro lado, en caso de que la carrera cuente con 10 jugadores o más, el mapeo de puntos sería el siguiente:
 
-\includegraphics[width=15cm, height=8cm]{img/points-big.png}
+\begin{center}
+	\begin{tikzpicture}
+		% Elípses que contienen los elementos
+		\draw (0,0) ellipse (1cm and 9cm);
+		\draw (4,0) ellipse (1cm and 5cm);
+		
+		% Encabezados "Posición" y "Puntos".
+		\draw (0,9.5) node {C};
+		\draw (4,5.5) node {D};
+		
+		% Posición
+		\draw (0,8) node (s1) {1};
+		\draw (0,7) node (s2) {2};
+		\draw (0,6) node (s3) {3};
+		\draw (0,5) node (s4) {4};
+		\draw (0,4) node (s5) {5};
+		\draw (0,3) node (s6) {6};
+		\draw (0,2) node (s7) {7};
+		\draw (0,1) node (s8) {8};
+		\draw (0,0) node (s9) {9};
+		\draw (0,-1) node (s10) {10};
+		\draw (0,-2) node (s11) {11};
+		\draw (0,-3) node (s12) {12};
+		\draw (0,-4) node (s13) {13};
+		\draw (0,-5) node (s14) {14};
+		\draw (0,-6) node (s15) {15};
+		\draw (0,-7) node (s16) {16};
+		
+		% Puntos
+		\draw (4,4) node (d1) {20};
+		\draw (4,3) node (d2) {16};
+		\draw (4,2) node (d3) {12};
+		\draw (4,1) node (d4) {10};
+		\draw (4,0) node (d5) {8};
+		\draw (4,-1) node (d6) {6};
+		\draw (4,-2) node (d7) {4};
+		\draw (4,-3) node (d8) {2};
+		\draw (4,-4) node (d9) {1};
+		
+		% Líneas entre elementos.
+		\draw[-stealth] (s1) edge (d1);
+		\draw[-stealth] (s2) edge (d2);
+		\draw[-stealth] (s3) edge (d3);
+		\draw[-stealth] (s4) edge (d4);
+		\draw[-stealth] (s5) edge (d5);
+		\draw[-stealth] (s6) edge (d5);
+		\draw[-stealth] (s7) edge (d6);
+		\draw[-stealth] (s8) edge (d7);
+		\draw[-stealth] (s9) edge (d8);
+		\draw[-stealth] (s10) edge (d8);
+		\draw[-stealth] (s11) edge (d9);
+		\draw[-stealth] (s12) edge (d9);
+		\draw[-stealth] (s13) edge (d9);
+		\draw[-stealth] (s14) edge (d9);
+		\draw[-stealth] (s15) edge (d9);
+		\draw[-stealth] (s16) edge (d9);
+	\end{tikzpicture}
+\end{center}
+
+
+Teniendo lo anterior en consideración, es posible definir una función que, al recibir una posición final de un jugador en una carrera determinada, retorne la cantidad de puntos correspondientes a dicha posición. Esta función vendría definida de la siguiente manera, en donde ''pos'' es la posición final del jugador en la carrera en cuestión, y ''n'' la cantidad de jugadores que participaron de la carrera.
+
+\[
+f(pos)= 
+\begin{cases}
+	f : A \to B,& \text{if } n < 10\\
+	f : C \to D, & \text{if } n \geq 10
+\end{cases}
+\]
 
 Al finalizar una sesión, todos los puntajes de cada jugador, obtenidos en cada carrera, son sumados, normalizados, y sometidos a diferentes procesos de ajuste propios del sistema de RVA. Dichos ajustes serán explicados en detalle en las secciones siguientes.
+
 
 \subsubsection{Cálculo de Resultados}
 Una vez procesados, los resultados son llevados a una tabla final, tal como se puede apreciar en la figura FIGNUM.
@@ -197,6 +309,17 @@ Una vez procesados, los resultados son llevados a una tabla final, tal como se p
 		{\textbf{Puntaje Oficial}} & PO & El puntaje acumulado del jugador, multiplicado por un factor normalizador de 0.1. \\ \hline
 	\end{tabular}
 \end{center}
+
+De acuerdo a la tabla anterior, los cálculos de PA y PO pueden ser representados por las siguientes fórmulas, respectivamente.
+
+\[
+{PA} = \sum_{i=1}^{CC}x=x+f(pos) 
+\]
+
+\[
+{PO} = \frac{PA}{PP} \cdot MP \cdot 0.1
+\]
+
 
 \subsubsection{Multiplicadores por Auto}
 Como ya se mencionó anteriormente, al principio de cada temporada se agregan y se eliminan autos del pack de RVA. Asimismo, RVA introduce el concepto de multiplicadores para dichos autos por temporada.
