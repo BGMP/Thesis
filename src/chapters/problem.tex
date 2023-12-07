@@ -154,6 +154,8 @@ Todos los jugadores que, en algún momento u otro, han participado en las sesion
 
 Para conseguir un sistema atractivo para sus jugadores, Re-Volt America organiza sus sesiones en una serie de rankings, los cuales consisten en 28 sesiones multijugador cada uno, jugandose una sesión al día. Al cumplirse 6 de estos rankings, se completa lo que en RVA se conoce como una temporada.
 
+Cada sesión organizada por RVA consiste en 20 carreras, las cuales se juegan en 20 pistas diferentes. Es por esto que, en una sesión, se producen 20 sets de resultados (1 por carrera).
+
 Cada año, en promedio, se inician dos temporadas, y cada una es nombrada en base a su año de inicio, y su periodo en relación a otras temporadas. Por ejemplo, si en el año 2023 se da inicio a una temporada en el mes de enero, esta vendría a llamarse ''2023'', ya que terminará dentro del mismo año en el que inició. Por otra parte, si la temporada inicia en el mes de diciembre de 2023, esto quiere decir que terminará dentro del año 2024, por lo que pasaría a llamarse ''2023-24''.
 
 Es así como Re-Volt America, desde el año 2017, hasta el presente, ha conseguido consolidarse como la comunidad de Re-Volt predilecta para los jugadores tanto de norteamerica como América latina.
@@ -357,20 +359,24 @@ Teniendo en cuenta lo anterior, la fórmula es modificada nuevamente. En este ca
 \]
 
 \section{Problemática Actual}
-De acuerdo con lo que se mencionó en los puntos anteriores, Re-Volt America ha mantenido los registros históricos de las sesiones celebradas a diario de manera interna hace aproximadamente 5 años. A partir de estos registros, se han publicado resultados por sesión y rankings acumulados. Además de esto, RVA también se ha encargado de recoger otro tipo de estadísticas e información de sus jugadores, como pueden ser su nacionalidad, total de puntos acumulados por temporada, carreras corridas, porcentaje por participación y puntajes totales dentro del sistema de puntuación.
+Hoy en día, Re-Volt America lleva la cuenta de sus temporadas y jugadores utilizando Microsoft Excel como una pseudo base de datos, y Dropbox para la sincronización de archivos entre administradores.
 
-En Re-Volt, cada carrera consiste en que los jugadores corren en una pista por una determinada cantidad de vueltas y, al finalizar, cada uno termina en una posición dependiendo de quien llega primero a la línea de meta, como en cualquier otro juego de carreras tradicional. Cada sesión organizada por RVA consiste en 20 carreras, las cuales se juegan en 20 pistas diferentes. Es por esto que, en una sesión, se producen 20 sets de resultados (1 por carrera).
+Cada temporada, los administradores manejan un documento maestro de Excel, el cual, en resumidas cuentas, es utilizado para registrar los resultados de cada sesión y, a la vez, llevar la cuenta de los puntos por jugador. Esto se consigue utilizando macros y demás componentes característicos de Excel.
 
-Ilustración 4: Tabla de resultados de RVA.
-Todo este proceso de cálculo de resultados es llevado a cabo actualmente de manera semiautomática por los organizadores y administradores de RVA. Este proceso consiste en los siguientes pasos:
-1.	Llevar a cabo la sesión multijugador y obtener el Session Log con los resultados crudos de cada carrera.
-2.	Pasar dicho Session Log por un programa de escritorio que ayuda a calcular los resultados en el formato de RVA.
-3.	Con dicho programa de escritorio, exportar los resultados en un formato separado por comas (archivo CSV).
-4.	Tomar los resultados exportados y copiarlos manualmente a un documento maestro en Microsoft Excel, en donde los resultados son indexados junto con el resto.
-5.	Agregar cierta información de manera manual, como la fecha de la sesión, número de sesión y corregir nombres de jugadores inválidos.
-6.	Publicar una fotografía de los resultados traspasados al documento maestro, y otra foto del ranking total de la temporada que también se mantiene actualizado dentro del mismo documento.
-A raíz de este largo y tedioso proceso de cálculo y manejo de resultados es que se ha dado origen a este proyecto, como una oportunidad de mejorar dicho proceso, y poder ofrecer así una mejor experiencia de usuario tanto a los jugadores de RVA, como a los organizadores de la comunidad que dedican su tiempo y pasión por este juego a mantener estos registros históricos al día para todos.
+Actualmente, el proceso para calcular y publicar los resultados de cada sesión es llevado a cabo, de manera semiautomática, por los organizadores y administradores de RVA. Este proceso consiste en los siguientes pasos:
 
+\begin{enumerate}
+	\item Una vez finalizada la sesión, se busca el Session Log generado por RVGL y se envía a los administradores.
+	\item El Session Log de la sesión es importado desde un programa de escritorio para calcular los resultados en el formato de RVA.
+	\item Con dicho programa de escritorio, los resultados procesados son exportados a otro archivo separado por comas.
+	\item Se copian los contenidos del archivo exportado al documento maestro de la temporada actual.
+	\item Se agrega cierta información de manera manual, como la fecha y número de la sesión.
+	\item Se revisa manualmente que los nombres de usuario de la sesión correspondan a los nombres que ya figuran en el documento maestro.
+	\item Se publica una fotografía de la tabla de resultados de la sesión en el Discord de RVA.
+	\item Se publica una fotografía del ranking actualizado con los datos de la sesión en el Discord de RVA.
+\end{enumerate}
+
+A raíz de este largo y tedioso proceso de cálculo y manejo de resultados es que se ha dado origen a este proyecto, como una oportunidad de mejorar dicho proceso, y poder ofrecer así una mejor experiencia de usuario tanto a los jugadores de RVA, como a los organizadores de la comunidad, quienes dedican su tiempo y pasión por este juego a mantener estos registros históricos al día para todos.
 
 \subsection{Diagrama de la Situación en la Actualidad}
 COLOCAR UN BPMN
