@@ -310,11 +310,22 @@ Una vez procesados, los resultados son llevados a una tabla final, tal como se p
 	\end{tabular}
 \end{center}
 
-De acuerdo con la tabla anterior, los cálculos de PA y PO pueden ser representados por las siguientes fórmulas, respectivamente.
+
+De acuerdo con la tabla anterior, los cálculos de PA, PP y MP pueden ser representados utilizando las siguientes fórmulas, respectivamente, en donde ''\textit{pos}'' es la posición del jugador en cada carrera, y ''\textit{r}'' la cantidad total de carreras de la sesión.
 
 \[
-{PA} = \sum_{i=1}^{CC}x=x+f(pos) 
+{PA} = \sum_{i=1}^{CC}x=x+f(pos_i) 
 \]
+
+\[
+{PP} = \frac{\left(\sum_{i=1}^{CC}x=x+pos_i\right)}{CC}
+\]
+
+\[
+{MP} = \frac{CC}{r}
+\]
+
+A partir de estos parámetros, podemos calcular el puntaje oficial, o PO, obtenido por el jugador en la sesión en cuestión.
 
 \[
 {PO} = \left(\frac{PA}{PP} \cdot MP\right) \cdot 0.1
@@ -332,7 +343,7 @@ La decisión de qué autos son buenos y qué autos son malos, en comparación co
 Considerando los distintos multiplicadores que puede tener cada auto, la fórmula para el cálculo del PA es modificada ligeramente, en donde ''\textit{mul}'' es el multiplicador del auto asociado.
 
 \[
-{PA} = \sum_{i=1}^{CC}x=x+f(pos) \cdot \textit{mul}
+{PA} = \sum_{i=1}^{CC}x=x+f(pos_i) \cdot mul_i
 \]
 
 Como se explicó anteriormente, existen varias categorías de autos en Re-Volt. Si bien las sesiones de RVA corresponden a una categoría a la vez, el sistema admite que jugadores elijan autos hasta 3 clases por debajo de la categoría de la sesión. Por ejemplo, si la sesión es publicada como de categoría ''Pro'', un jugador puede elegir un auto de categoría ''Semi-Pro''.
@@ -342,7 +353,7 @@ De acuerdo con el sistema de RVA, por cada categoría de diferencia entre la ses
 Teniendo en cuenta lo anterior, la fórmula es modificada nuevamente. En este caso, la variable ''\textit{delta}'' representa el bono asignado al jugador en la carrera.
 
 \[
-{PA} = \sum_{i=1}^{CC}x=x+f(pos) \cdot \left(\textit{mul} + \textit{delta}\right)
+{PA} = \sum_{i=1}^{CC}x=x+f(pos_i) \cdot \left(mul_i + delta_i\right)
 \]
 
 \section{Problemática Actual}
