@@ -170,123 +170,84 @@ El paquete de contenido de RVA, más conocido como RVA Pack, es, técnicamente, 
 \subsubsection{Sistema de Puntuación}
 Como se ha aludido a lo largo del estudio del problema, la comunidad de Re-Volt America cuenta con su propio sistema de puntuación, el cual le sirve para generar estadísticas por jugador, tablas de resultados al final de cada sesión, y demás métricas que, finalmente, promueven la competitividad y enriquecen la experiencia de los usuarios.
 
-El funcionamiento de dicho sistema de puntuación es el siguiente: dependiendo de la posición da cada jugador, al final de cada carrera, a estos se les asigna un puntaje. Cabe destacar que, dependiendo de si la cantidad total de jugadores en un carrera es de 10 o más, los puntajes son incrementados ligeramente de manera proporcional.
+El funcionamiento de dicho sistema de puntuación es el siguiente: dependiendo de la posición da cada jugador, al final de cada carrera, a estos se les asigna un puntaje. El mapeo de puntos para una carrera con menos de 10 participantes viene definido por la siguiente función que relaciona posiciones con puntos, respectivamente:
 
-Los lugares y sus puntajes correspondientes pueden apreciarse en las figuras de mapeo presentadas a continuación. En caso de que la carrera cuente con menos de 10 jugadores, el mapeo de puntos vendría definido de la siguiente manera:
-\begin{center}
-	\begin{tikzpicture}
-		% Elípses que contienen los elementos
-		\draw (0,0) ellipse (1cm and 5cm);
-		\draw (4,0) ellipse (1cm and 5cm);
-		
-		% Encabezados "Posición" y "Puntos".
-		\draw (0,5.5) node {A};
-		\draw (4,5.5) node {B};
-		
-		% Posición
-		\draw (0,4) node (s1) {1};
-		\draw (0,3) node (s2) {2};
-		\draw (0,2) node (s3) {3};
-		\draw (0,1) node (s4) {4};
-		\draw (0,0) node (s5) {5};
-		\draw (0,-1) node (s6) {6};
-		\draw (0,-2) node (s7) {7};
-		\draw (0,-3) node (s8) {8};
-		\draw (0,-4) node (s9) {9};
-		
-		% Puntos
-		\draw (4,4) node (d1) {15};
-		\draw (4,3) node (d2) {12};
-		\draw (4,2) node (d3) {10};
-		\draw (4,1) node (d4) {7};
-		\draw (4,0) node (d5) {5};
-		\draw (4,-1) node (d6) {4};
-		\draw (4,-2) node (d7) {2};
-		\draw (4,-3) node (d8) {1};
-		
-		% Líneas entre elementos.
-		\draw[-stealth] (s1) edge (d1);
-		\draw[-stealth] (s2) edge (d2);
-		\draw[-stealth] (s3) edge (d3);
-		\draw[-stealth] (s4) edge (d4);
-		\draw[-stealth] (s5) edge (d5);
-		\draw[-stealth] (s6) edge (d6);
-		\draw[-stealth] (s7) edge (d7);
-		\draw[-stealth] (s8) edge (d7);
-		\draw[-stealth] (s9) edge (d8);
-	\end{tikzpicture}
-\end{center}
+\[
+\mathlarger{
+	g_1= 
+	\begin{cases}
+		1 \to 15 \\
+		2 \to 12 \\
+		3 \to 10 \\
+		4 \to 7 \\
+		5 \to 5 \\
+		6 \to 4 \\
+		7 \to 2 \\
+		8 \to 2 \\
+		9 \to 1
+	\end{cases}
+}
+\]
 
 Por otro lado, en caso de que la carrera cuente con 10 jugadores o más, el mapeo de puntos sería el siguiente:
 
-\begin{center}
-	\begin{tikzpicture}
-		% Elípses que contienen los elementos
-		\draw (0,0) ellipse (1cm and 9cm);
-		\draw (4,0) ellipse (1cm and 5cm);
-		
-		% Encabezados "Posición" y "Puntos".
-		\draw (0,9.5) node {C};
-		\draw (4,5.5) node {D};
-		
-		% Posición
-		\draw (0,8) node (s1) {1};
-		\draw (0,7) node (s2) {2};
-		\draw (0,6) node (s3) {3};
-		\draw (0,5) node (s4) {4};
-		\draw (0,4) node (s5) {5};
-		\draw (0,3) node (s6) {6};
-		\draw (0,2) node (s7) {7};
-		\draw (0,1) node (s8) {8};
-		\draw (0,0) node (s9) {9};
-		\draw (0,-1) node (s10) {10};
-		\draw (0,-2) node (s11) {11};
-		\draw (0,-3) node (s12) {12};
-		\draw (0,-4) node (s13) {13};
-		\draw (0,-5) node (s14) {14};
-		\draw (0,-6) node (s15) {15};
-		\draw (0,-7) node (s16) {16};
-		
-		% Puntos
-		\draw (4,4) node (d1) {20};
-		\draw (4,3) node (d2) {16};
-		\draw (4,2) node (d3) {12};
-		\draw (4,1) node (d4) {10};
-		\draw (4,0) node (d5) {8};
-		\draw (4,-1) node (d6) {6};
-		\draw (4,-2) node (d7) {4};
-		\draw (4,-3) node (d8) {2};
-		\draw (4,-4) node (d9) {1};
-		
-		% Líneas entre elementos.
-		\draw[-stealth] (s1) edge (d1);
-		\draw[-stealth] (s2) edge (d2);
-		\draw[-stealth] (s3) edge (d3);
-		\draw[-stealth] (s4) edge (d4);
-		\draw[-stealth] (s5) edge (d5);
-		\draw[-stealth] (s6) edge (d5);
-		\draw[-stealth] (s7) edge (d6);
-		\draw[-stealth] (s8) edge (d7);
-		\draw[-stealth] (s9) edge (d8);
-		\draw[-stealth] (s10) edge (d8);
-		\draw[-stealth] (s11) edge (d9);
-		\draw[-stealth] (s12) edge (d9);
-		\draw[-stealth] (s13) edge (d9);
-		\draw[-stealth] (s14) edge (d9);
-		\draw[-stealth] (s15) edge (d9);
-		\draw[-stealth] (s16) edge (d9);
-	\end{tikzpicture}
-\end{center}
+\[
+\mathlarger{
+	g_2= 
+	\begin{cases}
+		1 \to 20 \\
+		2 \to 16 \\
+		3 \to 12 \\
+		4 \to 10 \\
+		5 \to 8 \\
+		6 \to 8 \\
+		7 \to 6 \\
+		8 \to 4 \\
+		9 \to 2 \\
+		10 \to 2 \\
+		11 \to 1 \\
+		12 \to 1 \\
+		13 \to 1 \\
+		14 \to 1 \\
+		15 \to 1 \\
+		16 \to 1
+	\end{cases}
+}
+\]
 
-
-Teniendo lo anterior en consideración, es posible definir una función que, al recibir una posición final de un jugador en una carrera determinada, retorne la cantidad de puntos correspondientes a dicha posición. Esta función vendría definida de la siguiente manera, en donde ''\textit{pos}'' es la posición final del jugador en la carrera en cuestión, y ''\textit{n}'' la cantidad de jugadores que participaron de la carrera.
+Por lo tanto, el conjunto que define los posibles puntajes obtenibles viene definido de la siguiente manera:
 
 \[
-f(pos, n)= 
+\mathlarger{
+	P = \{1, 2, 4, 5, 7, 10, 12, 15, 16, 20\}
+}
+\]
+
+Si se tiene que ''\textit{n}'' es la cantidad de jugadores que participaron de una carrera, entonces:
+
+\[
+\mathlarger{
+	A = \{1, \dots, n\} \subseteq \mathbb{N}
+}
+\]
+
+\[
+\mathlarger{
+	n = \lvert A \rvert
+}
+\]
+
+Teniendo en cuenta lo anterior, es posible definir una función que, al recibir una posición final de un jugador en una carrera determinada, retorne la cantidad de puntos correspondientes a dicha posición. Esta función vendría definida a continuación, en donde ''\textit{pos}'' es la posición final del jugador en la carrera en cuestión.
+
+\[
+\mathlarger{
+g : pos \in A \to 
 \begin{cases}
-	g : A \to B,& \text{if } n < 10\\
-	g : C \to D, & \text{if } n \geq 10
+	g_1(pos) & \text{if } n < 10\\
+	g_2(pos) & \text{if } n \geq 10
 \end{cases}
+\in P
+}
 \]
 
 Al finalizar una sesión, todos los puntajes de cada jugador, obtenidos en cada carrera, son sumados, normalizados, y sometidos a diferentes procesos de ajuste propios del sistema de RVA. Una vez ajustados, estos pasarán a ser los puntajes finales de la sesión.
@@ -316,21 +277,21 @@ Una vez procesados, los resultados son llevados a una tabla final, tal como se p
 De acuerdo con la tabla anterior, los cálculos de PA, PP y MP pueden ser representados utilizando las siguientes fórmulas, respectivamente, en donde ''\textit{pos}'' es la posición del jugador en cada carrera, y ''\textit{tot}'' la cantidad total de carreras de la sesión.
 
 \[
-\mathlarger{{PA} = \sum_{i=1}^{CC}x=x+f(pos_i)} 
+\mathlarger{{PA} = \sum_{i=1}^{CC}x=x+f(pos_i)}
 \]
 
 \[
-{PP} = \frac{\left(\sum_{i=1}^{CC}x=x+pos_i\right)}{CC}
+\mathlarger{{PP} = \frac{\left(\sum_{i=1}^{CC}x=x+pos_i\right)}{CC}}
 \]
 
 \[
-{MP} = \frac{CC}{tot}
+\mathlarger{{MP} = \frac{CC}{tot}}
 \]
 
 A partir de estos parámetros, podemos calcular el puntaje oficial, o PO, obtenido por el jugador en la sesión en cuestión.
 
 \[
-{PO} = \left(\frac{PA}{PP} \cdot MP\right) \cdot 0.1
+\mathlarger{{PO} = \left(\frac{PA}{PP} \cdot MP\right) \cdot 0.1}
 \]
 
 \subsubsection{Multiplicadores por Auto}
@@ -345,7 +306,7 @@ La decisión de qué autos son buenos y qué autos son malos, en comparación co
 Considerando los distintos multiplicadores que puede tener cada auto, la fórmula para el cálculo del PA es modificada ligeramente, en donde ''\textit{mul}'' es el multiplicador del auto asociado.
 
 \[
-{PA} = \sum_{i=1}^{CC}x=x+f(pos_i) \cdot mul_i
+\mathlarger{{PA} = \sum_{i=1}^{CC}x=x+f(pos_i) \cdot mul_i}
 \]
 
 Como se explicó anteriormente, existen varias categorías de autos en Re-Volt. Si bien las sesiones de RVA corresponden a una categoría a la vez, el sistema admite que jugadores elijan autos hasta 3 clases por debajo de la categoría de la sesión. Por ejemplo, si la sesión es publicada como de categoría ''Pro'', un jugador puede elegir un auto de categoría ''Semi-Pro''.
@@ -355,7 +316,7 @@ De acuerdo con el sistema de RVA, por cada categoría de diferencia entre la ses
 Teniendo en cuenta lo anterior, la fórmula es modificada nuevamente. En este caso, la variable ''\textit{delta}'' representa el bono asignado al jugador en la carrera.
 
 \[
-{PA} = \sum_{i=1}^{CC}x=x+f(pos_i) \cdot \left(mul_i + delta_i\right)
+\mathlarger{{PA} = \sum_{i=1}^{CC}x=x+f(pos_i) \cdot \left(mul_i + delta_i\right)}
 \]
 
 \section{Problemática Actual}
