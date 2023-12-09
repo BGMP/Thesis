@@ -324,18 +324,21 @@ Teniendo en cuenta lo anterior, la fórmula es modificada nuevamente. En este ca
 \]
 
 \section{Problemática Actual}
-Hoy en día, Re-Volt America lleva la cuenta de sus temporadas y jugadores utilizando Microsoft Excel como una pseudo base de datos, y Dropbox para la sincronización de archivos entre administradores.
+Hoy en día,  RVA utiliza una aplicación llamada ''RVA-Points'', la cual está hecha exclusivamente para procesar los Session Logs generados por RVGL y transformarlos en archivos separados por comas que contienen los resultados de las sesiones en el formato de RVA.
+
+Una vez procesados los Session Logs, RVA lleva la cuenta de sus temporadas y jugadores utilizando Microsoft Excel como una pseudo base de datos para registrarlos, y Dropbox para la sincronización de archivos entre administradores.
 
 Cada temporada, los administradores manejan un documento maestro de Excel, el cual, en resumidas cuentas, es utilizado para registrar los resultados de cada sesión y, a la vez, llevar la cuenta de los puntos por jugador. Esto se consigue utilizando macros y demás componentes característicos de Excel.
 
 Los documentos relacionados a cada temporada son archivados utilizando una carpeta compartida en Dropbox.
 
-Actualmente, el proceso para calcular y publicar los resultados de cada sesión es llevado a cabo, de manera semiautomática, por los administradores de RVA. Este proceso consiste en los siguientes pasos:
+Actualmente, el proceso diario para calcular y publicar los resultados de cada sesión es llevado a cabo, de manera semiautomática, por los administradores de RVA. Este proceso consiste en los siguientes pasos:
 
 \begin{enumerate}
-	\item Una vez finalizada la sesión, se busca el Session Log generado por RVGL y se hace llegar a los administradores.
-	\item El Session Log de la sesión es importado desde un programa de escritorio para calcular los resultados en el formato de RVA.
-	\item Con dicho programa de escritorio, los resultados procesados son exportados a otro archivo separado por comas.
+	\item Una vez finalizada la sesión, se busca el Session Log generado por RVGL, y este llega a los administradores de RVA.
+	\item Se revisan los nombres de usuario manualmente. Esto se hace en caso de que algún jugador haya utilizado un nombre ligeramente distinto al que usa normalmente.
+	\item El Session Log de la sesión es importado desde ''RVA-Points''. Este programa procesa el Session Log, y lo transforma en resultados ordenados en el formato de RVA.
+	\item También desde ''RVA-Points'', los resultados procesados son exportados a otro archivo separado por comas.
 	\item Se copian los contenidos del archivo exportado al documento maestro de la temporada actual.
 	\item Se agrega cierta información de manera manual, como la fecha y número de la sesión.
 	\item Se revisa manualmente que los nombres de usuario de la sesión correspondan a los nombres que ya figuran en el documento maestro.
@@ -343,7 +346,7 @@ Actualmente, el proceso para calcular y publicar los resultados de cada sesión 
 	\item Se publica una fotografía del ranking actualizado con los datos de la sesión en el Discord de RVA.
 \end{enumerate}
 
-A raíz de este largo y tedioso proceso de cálculo y manejo de resultados es que se ha dado origen a este proyecto, como una oportunidad de mejorar dicho proceso, y poder ofrecer así una mejor experiencia de usuario tanto a los jugadores de RVA, como a los organizadores de la comunidad, quienes dedican su tiempo y pasión por este juego a mantener estos registros históricos al día para todos.
+A raíz de este largo y tedioso proceso de cálculo y manejo de resultados, se ha dado origen a este proyecto de título, como una oportunidad de mejorar dicho proceso, y poder ofrecer así una mejor experiencia de usuario tanto para los jugadores de RVA, como para los organizadores de la comunidad, quienes dedican su tiempo y esfuerzo a mantener estos registros históricos al día para todos.
 
 \subsection{Diagrama de la Situación en la Actualidad}
 Teniendo en cuenta el contexto del problema, la situación en la actualidad puede representarse a través del siguiente diagrama BPMN:
@@ -362,7 +365,7 @@ A continuación, se describen las soluciones disponibles que pueden ser cataloga
 Existe un trabajo similar hace varios años, el cual fue desarrollado por la comunidad europea de RVGL: Re-Volt I/O. Este trabajo es también una aplicación web que permite a los jugadores importar los resultados de las sesiones multijugador y poder visualizarlos dentro de la misma página; sin embargo, dicho proyecto no cuenta con ningún tipo de interconexión entre resultados, lo que quiere decir que cada sesión de carreras publicada en dicho sitio es independiente de otras, por lo cual este proyecto no cuenta con perfiles de usuario, y por ende no permite visualizar estadísticas de ningún tipo, tampoco relacionar tablas de resultados entre sí, y en general fue hecho para ser algo simple y rápido que sirviera para calcular y renderizar resultados de manera oportuna, y no con una visión de persistencia en mente. A continuación, en la ilustración 4 puede apreciarse la tabla de resultados generada por la aplicación web de Re-Volt: I/O.
 
 \subsection{Aplicación para Cálculo de Puntos de RVA}
-RVA cuenta con una aplicación de escritorio...
+
 
 \section{Justificación del Problema}
 Actualmente, no existe ninguna plataforma que permita a los usuarios registrarse y visualizar resultados y estadísticas de las sesiones multijugador organizadas por la comunidad. Lo anterior significa que cuando se juegan partidas online no es posible obtener de manera automática rankings, estadísticas por vehículo y menos por usuario, ya que no hay forma de vincular de manera definitiva a los jugadores a través de un perfil dentro del juego. Tal como puede verse en la ilustración 2. Es por ello por lo que un usuario de nuestra comunidad no puede saber cuántas carreras o sesiones ha ganado con cierto auto, o en cierta pista, cómo se compara al resto, qué porcentaje de carreras ha perdido, etc.
