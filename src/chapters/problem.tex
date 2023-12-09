@@ -172,6 +172,9 @@ Como se ha aludido a lo largo del estudio del problema, la comunidad de Re-Volt 
 
 El funcionamiento de dicho sistema de puntuación es el siguiente: dependiendo de la posición da cada jugador, al final de cada carrera, a estos se les asigna un puntaje. El mapeo de puntos para una carrera con menos de 10 participantes viene definido por la siguiente función que relaciona posiciones con puntos, respectivamente:
 
+\newpage
+
+\[\hspace*{1.2cm} pos \hspace*{0.3cm} f_1(pos)\]
 \[
 \mathlarger{
 	f_1= 
@@ -191,6 +194,7 @@ El funcionamiento de dicho sistema de puntuación es el siguiente: dependiendo d
 
 Por otro lado, en caso de que la carrera cuente con 10 jugadores o más, el mapeo de puntos sería el siguiente:
 
+\[\hspace*{1.2cm} pos \hspace*{0.3cm} f_2(pos)\]
 \[
 \mathlarger{
 	f_2= 
@@ -281,7 +285,7 @@ De acuerdo con la tabla anterior, los cálculos de PA, PP y MP pueden ser repres
 \]
 
 \[
-\mathlarger{{PP} = \frac{\left(\sum_{i=1}^{CC}x=x+pos_i\right)}{CC}}
+\mathlarger{{PP} = \frac{\left(\sum\limits_{i=1}^{CC}x=x+pos_i\right)}{CC}}
 \]
 
 \[
