@@ -144,16 +144,59 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 
 \section{Requerimientos No Funcionales del Software}
 
-SEGURIDAD
-ROLES
-API
-CONTROL DE VERSIONES
-DESPLIEGUE CON INTEGRACIÓN CONTINUA
+% API
+\begin{center}
+	\begin{tabular}{ | l | p{15cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{API}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
+		\hline
+		{\textbf{RNF\_01}} & La plataforma contará con una API REST, la cual estará diseñada para ser consumida por aplicaciones de terceros. Todos los endpoints estarán disponibles sólo para lectura por parte de terceros. \\ \hline
+		
+		{\textbf{RNF\_02}} & La API contará con endpoints tanto de la vista de un solo auto, como de todos los autos (por categoría). \\ \hline
+		
+		{\textbf{RNF\_03}} & La API contará con endpoints tanto de la vista de una sola pista, como de todos las pistas. \\ \hline
+		
+		{\textbf{RNF\_04}} & La API contará con endpoints de las temporadas. \\ \hline
+		
+		{\textbf{RNF\_05}} & La API contará con endpoints de los rankings. \\ \hline
+		
+		{\textbf{RNF\_06}} & La API contará con endpoints de las sesiones. Todos los datos embedidos de las sesiones formarán también parte del cuerpo JSON de la respuesta. Esto quiere decir que los objetos se anidarán en el documento según corresponda.\\ \hline
+	\end{tabular}
+\end{center}
 
-SISTEMA DE ROLES -> SEGURIDAD
-LOGIN -> SEGURIDAD
-CODIGO EN GITHUB -> MANTENIBILIDAD, EXPANSIÓN Y ANÁLISIS
-API -> FACILIDAD DE INTEGRACIÓN
+% Roles
+\begin{center}
+	\begin{tabular}{ | l | p{15cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Módulo de Roles por Usuario}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
+		\hline
+		{\textbf{RNF\_07}} & La plataforma deberá contar con un rol de administrador. Este rol tendrá todos los permisos dentro de la plataforma. El rol de administrador sólo podrá ser asignado de manera interna.\\ \hline
+		
+		{\textbf{RNF\_08}} & La plataforma deberá contar con un rol de moderador. Este rol tendrá permiso para modificar cierta información de los perfiles de lo usuarios. El rol de moderador sólo puede ser asignado por usuarios con rol de administrador desde  la misma plataforma.\\ \hline
+		
+		{\textbf{RNF\_09}} & La plataforma deberá contar con un rol de organizador. Este rol tendrá permiso para subir sesiones a la plataforma. El rol de organizador sólo puede ser asignado por usuarios con rol de administrador desde la misma plataforma. \\ \hline
+		
+		{\textbf{RNF\_10}} & La plataforma deberá contar con usuarios normales. Para efectos de la plataforma, los usuarios normales se denotarán por no contar con ningún rol. Los usuarios normales sólo podrán editar sus propios perfiles y visualizar la plataforma.\\ \hline
+	\end{tabular}
+\end{center}
+
+% Control de Versiones
+\begin{center}
+	\begin{tabular}{ | l | p{15cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Módulo de Control de Versiones y Despliegue}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
+		\hline
+		{\textbf{RNF\_11}} & El software estará versionado a través de Git, utilizando GitHub como plataforma de almacenamiento en la nube para el control de versiones.\\ \hline
+		
+		{\textbf{RNF\_12}} & Se contará con un sistema de integración continua para el software, implementado directamente en GitHub. A través de este sistema se podrá ser desplegar el software de manera automática cuando se detecten cambios en una rama de Git determinada.\\ \hline
+	\end{tabular}
+\end{center}
 
 \section{Interfaces Internas de Salida}
 
