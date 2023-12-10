@@ -1,47 +1,156 @@
 \chapter{Factibilidad}
 
 \section{Factibilidad Técnica}
-PARA LA CORRECTA EJECUCIÓN DE LA APLICACION SE NECESITA QUE EL USUARIO TIENE TAL COSA:
+\subsection{Conocimientos de los Usuarios}
+Para el correcto funcionamiento de la aplicación propuesta, es de esperar que los distintos miembros del staff de RVA, quienes serán los principales usuarios del software, deban tener determinados conocimientos para poder operarla con éxito.
 
-SI EL SERVIDOR TIENE TAL COSA:
+Gracias a que, naturalmente, el staff de RVA lleva un largo tiempo manejando la comunidad y los resultados de las sesiones organizadas, no hace falta mayor capacitación técnica en cuanto al funcionamiento del cálculo de puntos, multiplicadores de autos, y demás características específicas del sistema de RVA. Para efectos de factibilidad técnica, el staff ya cuenta con los conocimientos necesarios para poder migrar a un sistema que sólo busca mejorar y facilitar los procesos actuales.
 
-SI LOS ADMINISTRADORES SABEN TAL COSA:
+En cuanto a la aplicación propuesta en este proyecto y su funcionamiento operacional, el staff será habituado al nuevo sistema mediante un video de inducción a la nueva plataforma web. También se asignará un periodo de prueba para que puedan utilizar la página ellos mismos, y así puedan adaptarse fácilmente.
 
-YO TENGO EL TIEMPO PARA REALIZARLO
+\subsection{Disponibilidad Profesional}
+Para el desarrollo de la aplicación propuesta se necesita del trabajo de un profesional en el área del desarrollo de software, el cual sea capaz de satisfacer las necesidades de RVA y cumplir los objetivos de desarrollo propuestos.
 
-YO TENGO LOS CONOCIMEIMNTOS TECNICOS
+Para efectos de este proyecto, se cuenta tanto con el tiempo profesional, como también con los conocimientos técnicos requeridos.
 
-YO TENGO EL EQUIPO PARA REALIZARLO CON TALES CARACTERÍSTICAS Y SOFTWARE INSTALADO: DETALLAR EL SOFTWARE:
+Adicionalmente, se cuenta con el equipo físico para poder desarrollar la aplicación, como puede ser un computador, acceso a internet y demás software para desarrollo. A continuación, se presentan tablas de especificación de los equipos físicos y el software con el que se cuenta para desarrollar la aplicación.
 
-DETALLAR DESPLIEGUE. ESPECIFICAR CARACTERÍSTICAS TÉCNICAS DEL SERVIDOR, Y SOFTWARE INSTALADO.
+% Equipos Físicos
+\begin{center}
+	\begin{tabular}{ | l | p{10cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Equipos Físicos}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textbf{Acceso}} \\
+		\hline
+		{\textbf{Windows PC}} & Equipo personal \\ \hline
+		
+		{\textbf{MacBook Pro M1}} & Equipo personal \\ \hline
+	\end{tabular}
+\end{center}
 
+% Software
+\begin{center}
+	\begin{tabular}{ | l | p{10cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Software}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textbf{Acceso}} \\
+		\hline
+		
+		{\textbf{Notepad++}} & Software libre \\ \hline
+		
+		{\textbf{MongoDB Compass}} & Software libre \\ \hline
+		
+		{\textbf{RedisInsight}} & Software libre \\ \hline
+		
+		{\textbf{Git/Git Bash}} & Software libre \\ \hline
+		
+		{\textbf{Ubuntu LTS}} & Software libre \\ \hline
+		
+		{\textbf{RubyMine}} & Licencia de estudiante \\ \hline
+		
+		{\textbf{Termius}} & Licencia de estudiante \\ \hline
+		
+		{\textbf{Microsoft Excel}} & Licencia de estudiante \\ \hline
+	\end{tabular}
+\end{center}
 
-Se realizó un estudio previo de factibilidad técnica, el cual arrojó que las tecnologías que se utilizarán para desarrollar el software en cuestión son capaces de resolver el problema.
-Descomponiendo los aspectos técnicos, podemos decir que está más que comprobado que Ruby on Rails ha sido utilizado para conseguir resultados similares con proyectos del mismo tipo, por lo que es completamente factible utilizarlo en el contexto de este proyecto.
-Las tecnologías utilizadas y la manera en que se montará el proyecto permitirá también que este sea perfectamente escalable y mejorable.
-Es por esto que es factible el desarrollo de este proyecto.
+\subsection{Despliegue y Servidor}
+Para realizar el despliegue de la aplicación a desarrollar, se ha escogido un servidor de tipo VPS (Servidor Virtual Privado). Las especificaciones técnicas de dicho servidor son las siguientes:
+
+% Servidor
+\begin{center}
+	\begin{tabular}{ | l | p{10cm} |}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{VPS}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Característica}} & \multicolumn{1}{|c|}{\textbf{Detalle}} \\
+		\hline
+		
+		{\textbf{Proveedor}} & DigitalOcean \\ \hline
+		
+		{\textbf{Región}} & Nueva York \\ \hline
+		
+		{\textbf{Sistema Operativo}} & Ubuntu 22.04 (LTS) x64 \\ \hline
+		
+		{\textbf{Tipo de CPU}} & Intel Regular \\ \hline
+		
+		{\textbf{Número de vCPUs}} & 1 CPU\\ \hline
+		
+		{\textbf{Memoria}} & 2 GB \\ \hline
+		
+		{\textbf{Almacenamiento (SSD)}} & 50 GB \\ \hline
+		
+		{\textbf{Transferencia}} & 2 TB \\ \hline
+	\end{tabular}
+\end{center}
+
+El software instalado en este servidor para efectos del despliegue de la aplicación es el mismo especificado en la \autoref{project:software}.
 
 \section{Factibilidad Operativa}
-TIEMPO VERBAL SIN TIEMPO NI PERSONA
+En cuanto a la factibilidad operativa de este proyecto, se sabe que el staff de Re-Volt America tiene gran disposición al cambio, ya que el sistema antiguo no solamente les demanda demasiado tiempo y esfuerzo, sino que, además, resulta poco preciso y muy propenso a errores en el uso diario, esto debido a la gran cantidad de pasos manuales que este conlleva.
 
-LOS ADMINISTRADORES TIENE DISPOSICION AL CAMBIO
-
-LOS ADMINITRADORES AYUDARON A PROBAR LA PAGINA, QUIEREN MIGRAR DEL SISTEMA ANTIGUO
-
-EL SISTEMA ANTIGUO ES TEDIOSO DE MANTENER
-
-SE REALIZÓ UN VIDEO DE CAPACITACIÓN PARA LOS ADMINISTRADORES. EL TESISTA DESARROLLÓ TAL COSA
-
-La factibilidad operativa es fácilmente demostrada al comparar la solución propuesta con el sistema que pretende reemplazar. Vale decir que actualmente quienes hacen uso del sistema de hojas de cálculo maestras y la aplicación de escritorio para el procesamiento de sesiones actualmente en RVA verían su trabajo facilitado en todos los sentidos al contar con una plataforma que se encargue de llevar la cuenta de todo, procesar los resultados y mantener las tablas de resultados y rankings de temporadas de manera automática.
+La factibilidad operativa es fácilmente demostrada al comparar la solución propuesta con el sistema que esta pretende reemplazar. Vale decir que, actualmente, quienes hacen uso del sistema de hojas de cálculo maestras y la aplicación de escritorio para el procesamiento de las sesiones actualmente en RVA verían su trabajo facilitado en todos los sentidos al contar con una plataforma que se encargue de llevar la cuenta de todo, procesar los resultados y mantener los rankings y temporadas al día de manera automática.
 
 \section{Factibilidad Económica}
-LICENCIAS DE SOFTWARE GRATIS? COSTO 0?
+A continuación se presenta un detalle y desglose del proyecto en términos económicos. Primero se listan el software y su costo asociado, y luego los costos asociados con el despliegue y la puesta en producción de la aplicación.
 
-COSTO HOST SERVIDORES (SE CAMBIO DE HOST, NO ES UN COSTO ADICIONAL)
+\subsection{Tablas de Costos}
 
-COSTO DEL MAILER
+% Equipos Físicos
+\begin{center}
+	\begin{tabular}{ | l | p{5cm} | p{5cm}|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Software}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textbf{Acceso}} & \multicolumn{1}{|c|}{\textbf{Precio (anual)}} \\
+		\hline
+		{\textbf{Notepad++}} & Software libre & \$0 \\ \hline
 
-COSTO DE DOMINIO (NO ES COSTO ADICIONAL ESPECIFICAR)
+		{\textbf{MongoDB Compass}} & Software libre & \$0 \\ \hline
+		
+		{\textbf{RedisInsight}} & Software libre & \$0 \\ \hline
+		
+		{\textbf{Git/Git Bash}} & Software libre & \$0 \\ \hline
+		
+		{\textbf{Ubuntu LTS}} & Software libre & \$0 \\ \hline
+		
+		{\textbf{RubyMine}} & Licencia de estudiante & \$0 \\ \hline
+		
+		{\textbf{Termius}} & Licencia de estudiante & \$0 \\ \hline
+		
+		{\textbf{Microsoft Excel}} & Licencia de estudiante & \$0 \\ \hline
+	\end{tabular}
+\end{center}
+
+% Costos de Producción
+\begin{center}
+	\begin{tabular}{ | l | p{5cm} | p{5cm}|}
+		\hline
+		\multicolumn{3}{|c|}{\textbf{Costos de Producción}} \\
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textbf{Proveedor}} & \multicolumn{1}{|c|}{\textbf{Precio (anual)}} \\
+		\hline
+		{\textbf{VPS}} & DigitalOcean & \$125.000 \\ \hline
+		
+		{\textbf{Mailer}} & Postmark & \$156.000 \\ \hline
+		
+		{\textbf{Dominio (rva.lat)}} & Namecheap & \$22.600 \\ \hline
+		
+		{\textbf{Git/Git Bash}} & Software libre & \$0 \\ \hline
+		
+		{\textbf{Ubuntu LTS}} & Software libre & \$0 \\ \hline
+		
+		{\textbf{RubyMine}} & Licencia de estudiante & \$0 \\ \hline
+		
+		{\textbf{Termius}} & Licencia de estudiante & \$0 \\ \hline
+		
+		{\textbf{Microsoft Excel}} & Licencia de estudiante & \$0 \\ \hline
+	\end{tabular}
+\end{center}
+
+\subsection{Desglose Económico}
 
 OBTENER LAS HORAS DE TRABAJO QUE SE INVIRTIERON EN EL PROYECTO -> LLEVAR EL TIEMPO A MESES Y MULTIPLICAR POR UN SUELDO MENSUAL. JUSTIFICAR CON UNA FUENTE DE ESTIMACIONES DE SUELDO (AHORRO)
 
@@ -50,7 +159,5 @@ VAN DE AHORRO CALCULAR
 VALORAR TRABAJO (AHORRO)
 VALORAR SOPORTE A LO LARGO DEL TIEMPO (AHORRO)
 
-Agregar factibilidad económica...
-
 \section{Conclusión de Factibilidad}
-Gracias al análisis realizado en los puntos anteriores, se puede concluir que el proyecto es completamente factible. Podrá ser desarrollado de manera efectiva y esto asegura una mejora sustancial del proceso actual de procesamiento de datos de las sesiones de RVA y manejo de resultados en general.
+Gracias al análisis realizado en los puntos anteriores, se puede concluir que el proyecto es completamente factible. La aplicación podrá ser desarrollada de manera efectiva, y esto asegura una mejora sustancial del proceso actual de procesamiento de datos de las sesiones de RVA y manejo de resultados en general.
