@@ -49,28 +49,23 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 \end{itemize}
 
 \section{Requerimientos Funcionales del Software}
-
-AGREGAR RELACIÓN A TEMPORADAS: 
-
-LOS AUTOS DEBEN ESTAR VINCULADOS A TEMPORADAS Y, DENTRO DE UNA MISMA TEMPORADA, NO PUEDEN TENER NOMBRES DUPLICADOS
-
 % Autos
 \begin{center}
 	\begin{tabular}{ | l | p{15cm} |}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{Módulo de Registros de Autos de Re-Volt America}} \\
+		\multicolumn{2}{|c|}{\textbf{Módulo de Registro de Autos de Re-Volt America}} \\
 		\hline
 		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
 		\hline
-		{\textbf{RF\_01}} & La plataforma contará con un módulo de creación de autos. Los autos deben contar con todos los parámetros obligatorios. Sólo los administradores pueden crear autos. \\ \hline
+		{\textbf{RF\_01}} & La plataforma contará con un módulo de creación de autos. Dentro de este módulo, los autos deben ser relacionados con una temporada. No podrán existir autos con nombres duplicados dentro de la misma temporada. Los autos deben ser importados desde un archivo separado por comas, el cual debe contar con todos los parámetros obligatorios del modelo de auto. Sólo los administradores pueden crear autos. \\ \hline
 
 		{\textbf{RF\_02}} & La plataforma contará con un módulo de visualización de autos. El listado estará separado por temporadas y por clases de autos. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 
-		{\textbf{RF\_03}} & La plataforma contará con un módulo de edición de un auto, los cuales deben contar con todos los parámetros obligatorios para ser modificados. Este módulo estará disponible sólo para los administradores. \\ \hline
+		{\textbf{RF\_03}} & La plataforma contará con un módulo de edición de un auto. Los autos deben contar con todos los parámetros obligatorios para ser modificados. Este módulo estará disponible sólo para los administradores. \\ \hline
 		
 		{\textbf{RF\_04}} & La plataforma contará con un módulo de eliminación de un auto. La eliminación no tendrá efectos secundarios a nivel de la base de datos, ya que la aplicación estará preparada para manejar excepciones cuando las entradas de corredores estén asociadas a un auto que no exista. Este módulo sólo estará disponible para administradores. \\ \hline
 		
-		{\textbf{RF\_05}} & La plataforma contará con un módulo de visualización de un solo auto. En esta vista se podrán ver todos los parámetros del auto. Este módulo estará disponible sólo para los administradores. \\ \hline
+		{\textbf{RF\_05}} & La plataforma contará con un módulo de visualización de un sólo auto. En esta vista se podrán ver todos los parámetros del auto. Este módulo estará disponible sólo para los administradores. \\ \hline
 	\end{tabular}
 \end{center}
 
@@ -78,19 +73,19 @@ LOS AUTOS DEBEN ESTAR VINCULADOS A TEMPORADAS Y, DENTRO DE UNA MISMA TEMPORADA, 
 \begin{center}
 	\begin{tabular}{ | l | p{15cm} |}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{Módulo de Registros de Pistas de Re-Volt America}} \\
+		\multicolumn{2}{|c|}{\textbf{Módulo de Registro de Pistas de Re-Volt America}} \\
 		\hline
 		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
 		\hline
-		{\textbf{RF\_06}} & La plataforma contará con un módulo de creación de pistas. Las pistas deben contar con todos los parámetros obligatorios. Sólo los administradores pueden crear pistas. \\ \hline
+		{\textbf{RF\_06}} & La plataforma contará con un módulo de creación de pistas. Dentro de este módulo, las pistas deben ser relacionados con una temporada. No podrán existir pistas con nombres duplicados dentro de la misma temporada. Las pistas deben contar con todos los parámetros obligatorios del modelo de pista. Sólo los administradores pueden crear pistas. \\ \hline
 		
-		{\textbf{RF\_07}} & La plataforma contará con un módulo de visualización de pistas. El listado estará separado por temporadas y por clases de pistas. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
+		{\textbf{RF\_07}} & La plataforma contará con un módulo de visualización de pistas. El listado estará separado por temporadas y paginado. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 		
-		{\textbf{RF\_08}} & La plataforma contará con un módulo de edición de una pista, las cuales deben contar con todos los parámetros obligatorios para ser modificadas. Este módulo estará disponible sólo para los administradores. \\ \hline
+		{\textbf{RF\_08}} & La plataforma contará con un módulo de edición de una pistas. Las pistas deben contar con todos los parámetros obligatorios para ser modificadas. Este módulo estará disponible sólo para los administradores. \\ \hline
 		
 		{\textbf{RF\_09}} & La plataforma contará con un módulo de eliminación de una pista. La eliminación no tendrá efectos secundarios a nivel de la base de datos, ya que la aplicación estará preparada para manejar excepciones cuando las carreras estén asociadas a una pista que no exista. Este módulo sólo estará disponible para administradores. \\ \hline
 		
-		{\textbf{RF\_10}} & La plataforma contará con un módulo de visualización de un solo pista. En esta vista se podrán ver todos los parámetros de la pista. Este módulo estará disponible sólo para los administradores. \\ \hline
+		{\textbf{RF\_10}} & La plataforma contará con un módulo de visualización de una sola pista. En esta vista se podrán ver todos los parámetros de la pista. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 	\end{tabular}
 \end{center}
 
@@ -98,17 +93,17 @@ LOS AUTOS DEBEN ESTAR VINCULADOS A TEMPORADAS Y, DENTRO DE UNA MISMA TEMPORADA, 
 \begin{center}
 	\begin{tabular}{ | l | p{15cm} |}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{Módulo de Registros de Temporadas de Re-Volt America}} \\
+		\multicolumn{2}{|c|}{\textbf{Módulo de Registro de Temporadas de Re-Volt America}} \\
 		\hline
 		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
 		\hline
-		{\textbf{RF\_11}} & La plataforma contará con un módulo de creación de temporadas. Las temporadas deben contar con todos los parámetros obligatorios. Sólo los administradores pueden crear temporadas. \\ \hline
+		{\textbf{RF\_11}} & La plataforma contará con un módulo de creación de temporadas. Las temporadas deben contar con todos los parámetros obligatorios. Al momento de crear una temporada, sus 6 rankings asociados deberán crearse automáticamente. Sólo los administradores pueden crear temporadas. \\ \hline
 		
-		{\textbf{RF\_12}} & La plataforma contará con un módulo de visualización de temporadas. El listado contendrá todos los rankings asociados a esta temporada. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
+		{\textbf{RF\_12}} & La plataforma contará con un módulo de visualización de temporadas. El listado contendrá todas las temporadas, las cuales vendrán ordenadas por fecha de inicio. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 		
 		{\textbf{RF\_13}} & La plataforma contará con un módulo de edición de una temporada, las cuales deben contar con todos los parámetros obligatorios para ser modificados. Este módulo estará disponible sólo para los administradores. \\ \hline
 		
-		{\textbf{RF\_14}} & La plataforma contará con un módulo de eliminación de una temporada. La eliminación no tendrá efectos secundarios a nivel de la base de datos, ya que la aplicación estará preparada para manejar excepciones cuando los rankings estén asociados a una temporada que no existe. Este módulo sólo estará disponible para administradores. \\ \hline
+		{\textbf{RF\_14}} & La plataforma contará con un módulo de eliminación de una temporada. Al eliminarse una temporada, se eliminarán también todos sus rankings asociados. Al mismo tiempo, todas las sesiones asociadas a dichos rankings también serán eliminadas. Las estadísticas globales de cada jugador también serán substraídas de sus perfiles. Este módulo sólo estará disponible para administradores. \\ \hline
 		
 		{\textbf{RF\_15}} & La plataforma contará con un módulo de visualización de una sola temporada. En esta vista se podrán ver todos los parámetros de la temporada. Este módulo estará disponible sólo para los administradores. \\ \hline
 	\end{tabular}
@@ -118,22 +113,16 @@ LOS AUTOS DEBEN ESTAR VINCULADOS A TEMPORADAS Y, DENTRO DE UNA MISMA TEMPORADA, 
 \begin{center}
 	\begin{tabular}{ | l | p{15cm} |}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{Módulo de Registros de Rankings de Re-Volt America}} \\
+		\multicolumn{2}{|c|}{\textbf{Módulo de Visualización de Rankings de Re-Volt America}} \\
 		\hline
 		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
 		\hline
-		{\textbf{RF\_16}} & La plataforma contará con un módulo de creación de rankings. Los rankings deben contar con todos los parámetros obligatorios. Sólo los administradores pueden crear rankings. \\ \hline
 		
-		{\textbf{RF\_17}} & La plataforma contará con un módulo de visualización de rankings. El listado estará separado por temporadas y por clases de rankings. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
+		{\textbf{RF\_16}} & La plataforma contará con un módulo de visualización de rankings, el cual se encontrará dentro de cada visualización de temporada. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 		
-		{\textbf{RF\_18}} & La plataforma contará con un módulo de edición de un ranking, los cuales deben contar con todos los parámetros obligatorios para ser modificados. Este módulo estará disponible sólo para los administradores. \\ \hline
-		
-		{\textbf{RF\_19}} & La plataforma contará con un módulo de eliminación de un ranking. La eliminación no tendrá efectos secundarios a nivel de la base de datos, ya que la aplicación estará preparada para manejar excepciones cuando las temporadas están asociadas a un ranking que no existe. Este módulo sólo estará disponible para administradores. \\ \hline
-		
-		{\textbf{RF\_20}} & La plataforma contará con un módulo de visualización de un solo ranking. En esta vista se podrán ver todos los parámetros del ranking. Este módulo estará disponible sólo para los administradores. \\ \hline
+		{\textbf{RF\_17}} & La plataforma contará con un módulo de visualización de un solo ranking. En esta vista se podrán ver todas las sesiones asociadas al ranking, junto con su tabla de resultados acumulados. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 	\end{tabular}
 \end{center}
-
 
 % Sesiones
 \begin{center}
@@ -143,15 +132,13 @@ LOS AUTOS DEBEN ESTAR VINCULADOS A TEMPORADAS Y, DENTRO DE UNA MISMA TEMPORADA, 
 		\hline
 		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
 		\hline
-		{\textbf{RF\_21}} & La plataforma contará con un módulo de subida de sesiones en forma de archivo CSV. Sólo los administradores pueden subir sesiones. Este módulo deberá permitir al usuario seleccionar un archivo de tipo CSV. Las sesiones deben contar con todos los parámetros obligatorios. Sólo los administradores pueden crear sesiones. \\ \hline
+		{\textbf{RF\_18}} & La plataforma contará con un módulo de subida de sesiones en forma de archivo separado por comas. El archivo separado por comas deberá ser un Session Log generado por RVGL. Este módulo deberá permitir al usuario seleccionar un archivo separado por comas. Las sesiones deben contar con todos los parámetros obligatorios. Sólo los administradores pueden crear sesiones. \\ \hline
 		
-		{\textbf{RF\_22}} & La plataforma contará con un módulo de visualización de sesiones. El listado estará separado por temporadas y por clases de sesiones. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
+		{\textbf{RF\_19}} & La plataforma contará con un módulo de visualización de sesiones. El listado contendrá las últimas sesiones del ranking vigente de la temporada actual. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 		
-		{\textbf{RF\_23}} & La plataforma contará con un módulo de edición de una sesión, las cuales deben contar con todos los parámetros obligatorios para ser modificadas. Este módulo estará disponible sólo para los administradores. \\ \hline
+		{\textbf{RF\_20}} & La plataforma contará con un módulo de eliminación de una sesión. La eliminación no tendrá efectos secundarios a nivel de la base de datos. Este módulo sólo estará disponible para administradores. \\ \hline
 		
-		{\textbf{RF\_24}} & La plataforma contará con un módulo de eliminación de una sesión. La eliminación no tendrá efectos secundarios a nivel de la base de datos. Este módulo sólo estará disponible para administradores. \\ \hline
-		
-		{\textbf{RF\_25}} & La plataforma contará con un módulo de visualización de una sola sesión. En esta vista se podrán ver todos los parámetros de la sesión. Este módulo estará disponible sólo para los administradores. \\ \hline
+		{\textbf{RF\_21}} & La plataforma contará con un módulo de visualización de una sola sesión. En esta vista se podrán ver todos los parámetros de la sesión, ordenados en el formato de RVA. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 	\end{tabular}
 \end{center}
 
