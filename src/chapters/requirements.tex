@@ -16,8 +16,8 @@
 Como se ha mencionado a lo largo de este informe, los usuarios a quienes apunta este proyecto de título son aquellos que forman parte de la comunidad de Re-Volt America. Estos usuarios, de manera general, se caracterizan por:
 
 \begin{itemize}
-	\item Pertenencia a un grupo etario entre 14 y 26 años (jóvenes y adultos).
-	\item Competencias técnicas.
+	\item Pertenencia a un grupo etario entre 14 y 26 años.
+	\item Competencias técnicas en uso de software similares.
 	\item Familiaridad con el juego y el sistema  de puntos de RVA.
 \end{itemize}
 
@@ -32,8 +32,8 @@ Por otra parte, tenemos la definición de quienes pueden ser clasificados como u
 		\hline
 		{\textbf{Administrador}} & Primario & Utiliza todas las funciones de la página, como subir autos, pistas, sesiones y manejo general del software. Configura el software para el resto de los usuarios.\\ \hline
 		{\textbf{Organizador}} & Primario & Utiliza las funciones específicamente relacionadas a la subida y manejo de sesiones en la página.\\ \hline
-		{\textbf{Moderador}} & Secundario & Utiliza las funciones específicas de manejo de usuarios, como infracciones y detalles de perfil. \\ \hline
-		{\textbf{Usuario}} & Terciario & Utiliza la página sólo para visualizar la información que esta ofrece. \\ \hline
+		{\textbf{Moderador}} & Secundario & Utiliza las funciones específicas de manejo de usuarios, tal como la edición de perfiles o aplicación de infracciones. \\ \hline
+		{\textbf{Jugador}} & Terciario & Utiliza la página sólo para visualizar la información que esta ofrece. \\ \hline
 	\end{tabular}
 \end{center}
 
@@ -65,7 +65,7 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 		
 		{\textbf{RF\_04}} & La plataforma contará con un módulo de eliminación de un auto. La eliminación no tendrá efectos secundarios a nivel de la base de datos, ya que la aplicación estará preparada para manejar excepciones cuando las entradas de corredores estén asociadas a un auto que no exista. Este módulo sólo estará disponible para administradores. \\ \hline
 		
-		{\textbf{RF\_05}} & La plataforma contará con un módulo de visualización de un sólo auto. En esta vista se podrán ver todos los parámetros del auto. Este módulo estará disponible sólo para los administradores. \\ \hline
+		{\textbf{RF\_05}} & La plataforma contará con un módulo de visualización de un sólo auto. En esta vista se podrán ver todos los parámetros del auto. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 	\end{tabular}
 \end{center}
 
@@ -192,7 +192,7 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 		\hline
 		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
 		\hline
-		{\textbf{RNF\_11}} & El software estará versionado a través de Git, utilizando GitHub como plataforma de almacenamiento en la nube para el control de versiones.\\ \hline
+		{\textbf{RNF\_11}} & El código estará versionado a través de Git, utilizando GitHub como plataforma de almacenamiento en la nube para el control de versiones.\\ \hline
 		
 		{\textbf{RNF\_12}} & Se contará con un sistema de integración continua para el software, implementado directamente en GitHub. A través de este sistema se podrá ser desplegar el software de manera automática cuando se detecten cambios en una rama de Git determinada.\\ \hline
 	\end{tabular}
