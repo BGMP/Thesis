@@ -201,14 +201,15 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 \section{Interfaces Internas de Salida}
 
 \begin{center}
-	\begin{tabular}{ | l | p{5.5cm} | p{8cm} |}
+	\begin{tabular}{ | c | p{2cm} | p{11cm} |}
 		\hline
-		{\textbf{Identificador}} & 	{\textbf{Nombre}} & {\textbf{Detalle de Datos}} \\ \hline
+		\textbf{Id} & {\textbf{Nombre}} & {\textbf{Detalle de Datos}} \\ \hline
 		{\textbf{IN\_01}} & Car & name, speed, accel, weight, multiplier, folder\_name, category, stock, season\_id \\ \hline
 		{\textbf{IN\_02}} & Track &  name, short\_name, difficulty, lenght, folder\_name, stock, season\_id \\ \hline
-		{\textbf{IN\_03}} & Season & name, start\_date, end\_date, current \\ \hline
-		{\textbf{IN\_04}} & Ranking & number, season\_id \\ \hline
-		{\textbf{IN\_05}} & User & username, encrypted\_password, reset\_password\_token, reset\_password\_sent\_at, remember\_created\_at, sign\_in\_count, current\_sign\_in\_at, last\_sign\_in\_at, current\_sign\_in\_ip, last\_sign\_in\_ip, confirmation\_token, confirmation\_token, confirmed\_at, confirmation\_sent\_at, unconfirmed\_email, failed\_attempts, unlock\_token, locked\_at, admin, mod, organizar, locale, profile, stats \\ \hline
+		{\textbf{IN\_03}} & Season & name, start\_date, end\_date, current, racer\_result\_entries \\ \hline
+		{\textbf{IN\_04}} & Ranking & number, racer\_result\_entries, season\_id \\ \hline
+		{\textbf{IN\_05}} & Session & number, host, version, physics, protocol, pickups, date, teams, category, session\_log\_data, ranking\_id, races, racer\_result\_entries \\ \hline
+		{\textbf{IN\_06}} & User & username, encrypted\_password, reset\_password\_token, reset\_password\_sent\_at, remember\_created\_at, sign\_in\_count, current\_sign\_in\_at, last\_sign\_in\_at, current\_sign\_in\_ip, last\_sign\_in\_ip, confirmation\_token, confirmation\_token, confirmed\_at, confirmation\_sent\_at, unconfirmed\_email, failed\_attempts, unlock\_token, locked\_at, admin, mod, organizar, locale, country, profile, stats \\ \hline
 	\end{tabular}
 \end{center}
 
@@ -217,15 +218,15 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 \section{Interfaces Externas de Salida}
 
 \begin{center}
-	\begin{tabular}{ | l | p{3.5cm} | p{6cm} | p{4cm} |}
+	\begin{tabular}{ | c | p{2cm} | p{7.5cm} | p{4cm} |}
 		\hline
-		{\textbf{Identificador}} & 	{\textbf{Nombre}} & {\textbf{Detalle de Datos}} & {\textbf{Medio de Salida}} \\
+		{\textbf{Id}} & 	{\textbf{Nombre}} & {\textbf{Detalle de Datos}} & {\textbf{Medio de Salida}} \\
 		\hline
-		{\textbf{OUT\_01}} & Sesión en Formato de RVA & races, number, host, version, physics, protocol, pickups, date, teams, category & Pantalla, Archivo XLS. \\ \hline
-		{\textbf{OUT\_02}} & Car & name, speed, accel, weight, multiplier, folder\_name, category, stock, season\_id & Pantalla \\ \hline
-		{\textbf{OUT\_03}} & Track & name, short\_name, difficulty, lenght, folder\_name, stock, season\_id & Pantalla \\ \hline
-		{\textbf{OUT\_04}} & Season & name, start\_date, end\_date, current & Pantalla \\ \hline
-		{\textbf{OUT\_05}} & Ranking & number, season\_id & Pantalla \\ \hline
-		{\textbf{OUT\_06}} & User & username, admin, mod, organizer, locale, profile, stats & Pantalla \\ \hline
+		{\textbf{OUT\_01}} & Car & name, speed, accel, weight, multiplier, folder\_name, category, stock, season\_id & Pantalla \\ \hline
+		{\textbf{OUT\_02}} & Track & name, short\_name, difficulty, lenght, folder\_name, stock, season\_id & Pantalla \\ \hline
+		{\textbf{OUT\_03}} & Season & name, start\_date, end\_date, current, racer\_result\_entries & Pantalla \\ \hline
+		{\textbf{OUT\_04}} & Ranking & number, racer\_result\_entries, season\_id & Pantalla \\ \hline
+		{\textbf{OUT\_05}} & Session & number, host, version, physics, protocol, pickups, date, teams, category, session\_log\_data, ranking\_id, races, racer\_result\_entries & Pantalla, Archivo CSV. \\ \hline
+		{\textbf{OUT\_06}} & User & username, admin, mod, organizer, locale, country, profile, stats & Pantalla \\ \hline
 	\end{tabular}
 \end{center}
