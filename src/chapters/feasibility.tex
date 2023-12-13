@@ -161,113 +161,153 @@ En segundo lugar, se hablará de una proyección de lo que costará, en término
 
 La valorización del tiempo de trabajo será determinada, en ambos casos, a partir de promedios y estimaciones que pueden encontrarse hoy en día en el mercado del desarrollo de software. Las referencias serán mencionadas oportunamente.
 
-\subsubsection{Desarrollo del Proyecto}
-Para poder realizar este flujo de caja, se han hecho algunas valorizaciones esenciales. En primer lugar, cuando se hace referencia a la inversión inicial, se habla de todo aquello que ha sido valorizado desde los inicios de la modernización de RVA (2021), hasta el comienzo del presente proyecto. Ejemplos de ello pueden ser el dominio de ''rva.lat'', o el tiempo profesional invertido en el desarrollo previo al inicio de este proyecto, ya que ambas son cosas que preceden a la puesta en marcha del proyecto como tal.
+\subsubsection{Contexto e Indicadores Económicos}
+\label{feasibility:economic:context}
+La tasa mínima aceptable de rendimiento (TMAR) para proyectos de desarrollo de software, a la cual llamaremos ''\textit{r}'', ha sido calculada para este proyecto a partir de la inflación promedio anual reportada por el Banco Central de Chile, y la prima de riesgo asociada a proyectos tecnológicos reportada por el Standish Group International en 2011 (CHAOS Manifesto).
 
-La tasa mínima aceptable de rendimiento (TMAR) para este proyecto ha sido calculada a partir de valores promedios reportados por el Banco Central de Chile (inflación), y por el Standish Group International en 2011 (CHAOS Manifesto) (prima de riesgo):
-
-% Costos de Producción
+% Tasa Anual
 \begin{center}
 	\begin{tabular}{ | p{7cm} | p{5cm}|}
 		\hline
-		{\textbf{Inflación Promedio}} & 4.3\%  \\ \hline
+		{\textbf{Inflación Promedio (anual)}} & 4.3\%  \\ \hline
 		{\textbf{Tasa Prima de Riesgo}} & 21\% \\ \hline
 	\end{tabular}
 \end{center}
 
+Para poder evaluar correctamente en el escenario presentado, realizamos un reajuste mensual simple de la inflación a través de la siguiente fórmula, la cual es utilizada para convertir la Tasa Efectiva Anual (\textit{TEA}) en Tasa Efectiva Mensual (\textit{TEM}), siendo ''\textit{n}'' el número de meses del año (12).
 
 \[
 \mathlarger{
-	r = 0.043+0.21\cdot(0.043\cdot0.21) = 26.2\%
+	TEM = [\left(1 + TEA\right)^\frac{1}{n}] - 1 = 0.35\%
 }
 \]
 
-A partir de estos datos, es posible realizar un cálculo del valor actual de costos (VAC) del proyecto. En este caso, todos los costos asociados figurarán como un ahorro para la comunidad de RVA, ya que debemos considerar que todo lo realizado vendría representar dinero que, potencialmente, la comunidad hubiese tenido que gastar en otro profesional y recursos de no haberse desarrollado el software en cuestión.
-
-A continuación, se desglosa el cálculo del VAC en un periodo de 6 meses, con una inversión inicial calculada a partir de la tabla de costos de la \autoref{feasibility:costs}, extrapolada a 2 años.
-
-La valorización del tiempo empleado en el desarrollo de software a lo largo del proyecto está basada en el sueldo promedio de un desarrollador de software en Chile según talent.com (\$1.262.000 mensual; \$7.769 por hora), ajustado a las horas de trabajo efectivas empleadas en el proyecto, las cuales fueron 4 horas de trabajo efectivo durante los 7 días de la semana por mes de desarrollo.
-
-\[
-\mathlarger{
-	Desarrollo = \$7.769 \cdot \left(4h\cdot7d\cdot4w\right) = \$870.128
-}
-\]
-
-% VAC
+% Tasa Mensual
 \begin{center}
-	\begin{tabular}{ | l | l | l | l | l | l | l | l |}
+	\begin{tabular}{ | p{7cm} | p{5cm}|}
 		\hline
-		\multicolumn{8}{|c|}{\textbf{VAC}} \\
+		{\textbf{Inflación Promedio (mensual)}} & 0.35\%  \\ \hline
+		{\textbf{Tasa Prima de Riesgo}} & 21\% \\ \hline
+	\end{tabular}
+\end{center}
+
+Con la inflación promedio mensual calculada y la tasa prima de riesgo, es posible calcular el valor de la TMAR asociada.
+
+\[
+\mathlarger{
+	r = 0.0035+0.21+(0.0035\cdot0.21) = 21.43\%
+}
+\]
+
+\subsubsection{Desarrollo del Proyecto}
+A partir de los datos obtenidos en la \autoref{feasibility:economic:context}, es posible realizar un cálculo del valor actual de costos (VAC) del proyecto. En este caso, todos los costos asociados figurarán como un ahorro para la comunidad de RVA, ya que debemos considerar que todo lo realizado vendría representar dinero que, potencialmente, la comunidad hubiese tenido que gastar en otro profesional y recursos de no haberse desarrollado el software en cuestión.
+
+La valorización del tiempo empleado en el desarrollo de software a lo largo del proyecto está basada en el sueldo promedio de un analista programador en Chile según Talent.com (\$900.000 mensual; \$5538 por hora), ajustado a las horas de trabajo efectivas empleadas en el proyecto, las cuales fueron 4 horas de trabajo efectivo durante 6 días de la semana por mes de desarrollo.
+
+\[
+\mathlarger{
+	Desarrollo = \$5.538 \cdot \left(4h\cdot6d\cdot4w\right) = 531.648\$
+}
+\]
+
+Además del tiempo valorizado, también se ha estimado una valorización de los costos de internet y electricidad asociados con el proyecto, basados en su costo promedio mensual y dividiéndolos por la mitad, para así obtener un valor realista.
+
+\[
+	Internet = \frac{\$20.000}{2} = \$10.000
+\]
+
+\[
+	Electricidad = \frac{\$40.000}{2} = \$20.000
+\]
+
+A continuación, se desglosa el cálculo del VAC en un periodo de 4 meses, que fueron los meses en los que se trabajó en el desarrollo del proyecto.
+
+% VAC Desarrollo
+\begin{center}
+	\begin{tabular}{ | l | l | l | l | l | l | }
 		\hline
-		 & \multicolumn{1}{|c|}{\textbf{0}} & \multicolumn{1}{|c|}{\textbf{1}} & \multicolumn{1}{|c|}{\textbf{2}} & \multicolumn{1}{|c|}{\textbf{3}} & \multicolumn{1}{|c|}{\textbf{4}} & \multicolumn{1}{|c|}{\textbf{5}} & \multicolumn{1}{|c|}{\textbf{6}} \\
+		 & \multicolumn{1}{|c|}{\textbf{0}} & \multicolumn{1}{|c|}{\textbf{1}} & \multicolumn{1}{|c|}{\textbf{2}} & \multicolumn{1}{|c|}{\textbf{3}} & \multicolumn{1}{|c|}{\textbf{4}} \\
 		\hline
-		{\textbf{Desarrollo}} &  & \multicolumn{1}{|r|}{\$870.128} & \multicolumn{1}{|r|}{\$870.128} & \multicolumn{1}{|r|}{\$870.128} & \multicolumn{1}{|r|}{\$870.128} & \multicolumn{1}{|r|}{\$870.128} & \multicolumn{1}{|r|}{\$870.128} \\ \hline
+		{\textbf{Desarrollo}} &  & \multicolumn{1}{|r|}{\$531.648} & \multicolumn{1}{|r|}{\$531.648} & \multicolumn{1}{|r|}{\$531.648} & \multicolumn{1}{|r|}{\$531.648} \\ \hline
 		
-		{\textbf{Internet}} &  & \multicolumn{1}{|r|}{\$15.000} & \multicolumn{1}{|r|}{\$15.000} & \multicolumn{1}{|r|}{\$15.000} & \multicolumn{1}{|r|}{\$15.000} & \multicolumn{1}{|r|}{\$15.000} & \multicolumn{1}{|r|}{\$15.000} \\ \hline
+		{\textbf{Internet}} &  & \multicolumn{1}{|r|}{\$10.000} & \multicolumn{1}{|r|}{\$10.000} & \multicolumn{1}{|r|}{\$10.000} & \multicolumn{1}{|r|}{\$10.000} \\ \hline
 		
-		{\textbf{Electricidad}} &  & \multicolumn{1}{|r|}{\$36.600} & \multicolumn{1}{|r|}{\$36.600} & \multicolumn{1}{|r|}{\$36.600} & \multicolumn{1}{|r|}{\$36.600} & \multicolumn{1}{|r|}{\$36.600} & \multicolumn{1}{|r|}{\$36.600} \\ \hline
+		{\textbf{Electricidad}} &  & \multicolumn{1}{|r|}{\$20.600} & \multicolumn{1}{|r|}{\$20.600} & \multicolumn{1}{|r|}{\$20.600} & \multicolumn{1}{|r|}{\$20.600} \\ \hline
 		
-		{\textbf{Hosting}} &  & \multicolumn{1}{|r|}{\$10.526} & \multicolumn{1}{|r|}{\$10.526} & \multicolumn{1}{|r|}{\$10.526} & \multicolumn{1}{|r|}{\$10.526} & \multicolumn{1}{|r|}{\$10.526} & \multicolumn{1}{|r|}{\$10.526} \\ \hline
-		
-		{\textbf{Flujo}} &  & \multicolumn{1}{|r|}{\$932.254} & \multicolumn{1}{|r|}{\$932.254} & \multicolumn{1}{|r|}{\$932.254} & \multicolumn{1}{|r|}{\$932.254} & \multicolumn{1}{|r|}{\$932.254} & \multicolumn{1}{|r|}{\$932.254} \\ \hline
-		& \multicolumn{1}{|r|}{\$606.000} & & & & & & \\ \hline
-		\textbf{Flujo Total} & \multicolumn{1}{|r|}{\$5.593.524} & & & & & & \\ \hline
+		{\textbf{Flujo}} &  & \multicolumn{1}{|r|}{\$561.648} & \multicolumn{1}{|r|}{\$561.648} & \multicolumn{1}{|r|}{\$561.648} & \multicolumn{1}{|r|}{\$561.648} \\ \hline
+		{\textbf{Inv. Inicial}}& \multicolumn{1}{|r|}{\$0} & & & & \\ \hline
+		\textbf{Flujo Total} & \multicolumn{1}{|r|}{\$2.246.592} & & & & \\ \hline
 	\end{tabular}
 \end{center}
 
 \[
 \mathlarger{
-	{VAC} = I_0 + \sum\limits_{t=i}^{n}\frac{C_t}{\left(1+r^t\right)} = \$3.283.422
+	{VAC_{1}} = I_0 + \sum\limits_{t=i}^{n}\frac{C_t}{\left(1+r^t\right)} = \$1.415.430
 }
 \]
 
 \subsubsection{Mantenimiento del Proyecto}
 Siguiendo con la lógica de la valorización de las horas de trabajo efectivas, se tiene que, una vez terminado el proyecto (al final de los 6 meses), la cantidad de horas efectivas necesarias para mantener el proyecto a lo largo del tiempo disminuirá sustancialmente.
 
-Diremos que si antes eran 4 las horas efectivas los 7 días de la semana, ahora sólo será 1 hora por 5 días de la semana, ya que el trabajo requerido por la comunidad ya no será de desarrollo de software, sino que de mantención, realización de mejoras oportunas, y soporte para la plataforma.
-
-Si proyectamos 6 meses con este nuevo ajuste, podemos calcular otra vez el flujo de caja y el nuevo VAC de ahorro.
+Diremos que si antes eran 4 las horas efectivas en 6 días de la semana, ahora sólo será 1 hora por 5 días de la semana, ya que el trabajo requerido por la comunidad ya no será de desarrollo de software, sino que de mantención, realización de mejoras oportunas, y soporte para la plataforma.
 
 \[
 \mathlarger{
-	Desarrollo = \$7.769 \cdot \left(1h\cdot5d\cdot4w\right) = \$155.380
+	Mantenimiento = \$5.538 \cdot \left(1h\cdot5d\cdot4w\right) = \$110.760
 }
 \]
 
-% VAC
+Además de lo anterior, se realiza el ajuste del costo de internet y electricidad en función de las valorizaciones del tiempo de desarrollo y mantenimiento calculados.
+
+\[
+\frac{Desarrollo}{Mantenimiento} = \frac{\$531.648}{\$110.760} = 4.8
+\]
+
+\[
+Internet = \frac{\$10.000}{4.8} = \$2.083
+\]
+
+\[
+Electricidad = \frac{\$20.600}{4.8} = \$5.208
+\]
+
+Si proyectamos 6 meses con este nuevo ajuste, podemos calcular otra vez el flujo de caja y el nuevo VAC de ahorro.
+
+% VAC Mantenimiento
 \begin{center}
 	\begin{tabular}{ | l | l | l | l | l | l | l | l |}
 		\hline
-		\multicolumn{8}{|c|}{\textbf{VAC}} \\
-		\hline
 		& \multicolumn{1}{|c|}{\textbf{0}} & \multicolumn{1}{|c|}{\textbf{1}} & \multicolumn{1}{|c|}{\textbf{2}} & \multicolumn{1}{|c|}{\textbf{3}} & \multicolumn{1}{|c|}{\textbf{4}} & \multicolumn{1}{|c|}{\textbf{5}} & \multicolumn{1}{|c|}{\textbf{6}} \\
 		\hline
-		{\textbf{Desarrollo}} &  & \multicolumn{1}{|r|}{\$155.380} & \multicolumn{1}{|r|}{\$155.380} & \multicolumn{1}{|r|}{\$155.380} & \multicolumn{1}{|r|}{\$155.380} & \multicolumn{1}{|r|}{\$155.380} & \multicolumn{1}{|r|}{\$155.380} \\ \hline
+		{\textbf{Mantenimiento}} &  & \multicolumn{1}{|r|}{\$110.760} & \multicolumn{1}{|r|}{\$110.760} & \multicolumn{1}{|r|}{\$110.760} & \multicolumn{1}{|r|}{\$110.760} & \multicolumn{1}{|r|}{\$110.760} & \multicolumn{1}{|r|}{\$110.760} \\ \hline
 		
-		{\textbf{Internet}} &  & \multicolumn{1}{|r|}{\$15.000} & \multicolumn{1}{|r|}{\$15.000} & \multicolumn{1}{|r|}{\$15.000} & \multicolumn{1}{|r|}{\$15.000} & \multicolumn{1}{|r|}{\$15.000} & \multicolumn{1}{|r|}{\$15.000} \\ \hline
+		{\textbf{Internet}} &  & \multicolumn{1}{|r|}{\$2.083} & \multicolumn{1}{|r|}{\$2.083} & \multicolumn{1}{|r|}{\$2.083} & \multicolumn{1}{|r|}{\$2.083} & \multicolumn{1}{|r|}{\$2.083} & \multicolumn{1}{|r|}{\$2.083} \\ \hline
 		
-		{\textbf{Electricidad}} &  & \multicolumn{1}{|r|}{\$36.600} & \multicolumn{1}{|r|}{\$36.600} & \multicolumn{1}{|r|}{\$36.600} & \multicolumn{1}{|r|}{\$36.600} & \multicolumn{1}{|r|}{\$36.600} & \multicolumn{1}{|r|}{\$36.600} \\ \hline
+		{\textbf{Electricidad}} &  & \multicolumn{1}{|r|}{\$5.208} & \multicolumn{1}{|r|}{\$5.208} & \multicolumn{1}{|r|}{\$5.208} & \multicolumn{1}{|r|}{\$5.208} & \multicolumn{1}{|r|}{\$5.208} & \multicolumn{1}{|r|}{\$5.208} \\ \hline
 		
 		{\textbf{Hosting}} &  & \multicolumn{1}{|r|}{\$10.526} & \multicolumn{1}{|r|}{\$10.526} & \multicolumn{1}{|r|}{\$10.526} & \multicolumn{1}{|r|}{\$10.526} & \multicolumn{1}{|r|}{\$10.526} & \multicolumn{1}{|r|}{\$10.526} \\ \hline
 		
-		{\textbf{Flujo}} &  & \multicolumn{1}{|r|}{\$217.506} & \multicolumn{1}{|r|}{\$217.506} & \multicolumn{1}{|r|}{\$217.506} & \multicolumn{1}{|r|}{\$217.506} & \multicolumn{1}{|r|}{\$217.506} & \multicolumn{1}{|r|}{\$217.506} \\ \hline
-		& \multicolumn{1}{|r|}{\$606.000} & & & & & & \\ \hline
-		\textbf{Flujo Total} & \multicolumn{1}{|r|}{\$1.305.036} & & & & & & \\ \hline
+		{\textbf{Flujo}} &  & \multicolumn{1}{|r|}{\$107.5252} & \multicolumn{1}{|r|}{\$107.525} & \multicolumn{1}{|r|}{\$107.525} & \multicolumn{1}{|r|}{\$107.525} & \multicolumn{1}{|r|}{\$107.525} & \multicolumn{1}{|r|}{\$107.525} \\ \hline
+		{\textbf{Inv. Inicial}} & \multicolumn{1}{|r|}{\$2.246.592} & & & & & & \\ \hline
+		\textbf{Flujo Total} & \multicolumn{1}{|r|}{\$645.154} & & & & & & \\ \hline
 	\end{tabular}
 \end{center}
 
 \[
 \mathlarger{
-	{VAC} = I_0 + \sum\limits_{t=i}^{n}\frac{C_t}{\left(1+r^t\right)} = \$1.230.675
+	{VAC_2} = I_0 + \sum\limits_{t=i}^{n}\frac{C_t}{\left(1+r^t\right)} = \$2.591.838
 }
 \]
-
-Si comparamos los VAC obtenidos en ambos casos, tenemos que existe una potencial reducción de costos de más del 50\% para la comunidad de RVA proyectada a 6 meses, la cual está ligada fuertemente al desarrollo de software.
 
 https://www.bcentral.cl/web/banco-central/contenido/-/detalle/informe-de-politica-monetaria-septiembre-2023 (INFLACIÓN)
 
 https://www.immagic.com/eLibrary/ARCHIVES/GENERAL/GENREF/ChaosManifest\_2011.pdf (TASA DE RIESGO)
+
+https://radio.uchile.cl/2023/04/13/cuentas-de-electricidad-de-hogares-de-mayor-consumo-subiran-entre-10-y-16/
+
+https://www.ine.gob.cl/estadisticas/economia/transporte-y-comunicaciones/estructura-del-transporte-por-carretera/2020/05/16/conexiones-a-internet-en-hogares-del-pa%C3%ADs-aumentaron-en-m%C3%A1s-de-670.000-en-los-%C3%BAltimos-cinco-a%C3%B1os
+
+https://cl.talent.com/salary?job=analista+programador
 
 \section{Conclusión de Factibilidad}
 Para concluir, podemos decir que en cuanto a los distintos tipos de factibilidad evaluados se cuenta con usuarios técnicamente capaces y con la disponibilidad profesional necesaria para el desarrollo del proyecto. Por el lado operativo, existe disposición al cambio por parte de los administradores y el staff en general. Económicamente, a partir de los costos y beneficios recopilados, se ha obtenido que existe un valor económico sustancial asociado al proyecto.
