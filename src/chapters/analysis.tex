@@ -25,25 +25,46 @@ La especificación de todos los actores se puede encontrar a continuación en la
 \section{Modelo de Datos}
 Diagrama con Modelo de datos no relacional:
 
+\begin{center}
+	\includegraphics{datamodel1.png}
+\end{center}
+
+\begin{center}
+	\includegraphics{datamodel2.png}
+\end{center}
+
+
+\begin{center}
+	\includegraphics{datamodel3.png}
+\end{center}
+
+\begin{center}
+	\includegraphics{datamodel4.png}
+\end{center}
+
 \section{Esquema de la Base de Datos}
 A continuación, se describen los datos de la base de datos mediante archivos de definición de modelos de Ruby con mongoid:
 
 \section{Diseño de Interfaz}
 
 \section{Diseño de Arquitectura}
-El proyecto en su estado actual hace uso de un servidor propio, el cual contiene los servicios web, de bases de datos y caché, todo en una sola máquina. Independientemente de donde se termine alojando, la aplicación web estará disponible en la siguiente dirección web, bajo el dominio “rva.lat”:
-
-•	https://rva.lat/
+El proyecto, en su estado actual, hace uso de un servidor propio, el cual contiene los servicios web, bases de datos y caché. Todo en una sola máquina. Independientemente de donde se termine alojanda, la aplicación web estará disponible en ''https://rva.lat/''.
 
 Además de esto, la planificación contempla dos servicios externos, que actualmente son proveídos por GitHub pages, los cuales sirven como repositorios de almacenamiento de datos masivos. Dichos repositorios se encargan actualmente de servir información y assets como las imágenes de las pistas y autos que la web ofrece a los usuarios:
 
-•	https://tracks.rva.lat/
-
-•	https://cars.rva.lat/
+\begin{itemize}
+	\item https://tracks.rva.lat/: Repositorio de pistas de RVA.
+	\item https://cars.rva.lat/: Repositorio de autos de RVA.
+\end{itemize}
 
 A continuación, se muestra un diagrama que ilustra todo el proceso de interacción entre servicios y usuarios:
 
-% IMAGEN
+
+
+
+
+
+
 
 Tal como se muestra en la ilustración, la arquitectura que da soporte a la aplicación web de RVA se concentra en un servidor, con dos almacenes de datos. Podemos ver que los usuarios en la práctica juegan la sesión, el host de la sesión sube el Session Log a la web, y los usuarios pueden visitar la misma web para revisar los resultados
 
