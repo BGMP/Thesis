@@ -201,15 +201,18 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 \section{Interfaces Internas de Salida}
 
 \begin{center}
-	\begin{tabular}{ | c | p{2cm} | p{11cm} |}
+	\begin{tabular}{ | c | p{3.5cm} | p{10cm} |}
 		\hline
 		\textbf{Id} & {\textbf{Nombre}} & {\textbf{Detalle de Datos}} \\ \hline
-		{\textbf{IN\_01}} & Car & name, speed, accel, weight, multiplier, folder\_name, category, stock, season\_id \\ \hline
-		{\textbf{IN\_02}} & Track &  name, short\_name, difficulty, lenght, folder\_name, stock, season\_id \\ \hline
+		{\textbf{IN\_01}} & Car & name, speed, accel, weight, multiplier, folder\_name, category, stock, season \\ \hline
+		{\textbf{IN\_02}} & Track &  name, short\_name, difficulty, lenght, folder\_name, stock, season \\ \hline
 		{\textbf{IN\_03}} & Season & name, start\_date, end\_date, current, racer\_result\_entries \\ \hline
-		{\textbf{IN\_04}} & Ranking & number, racer\_result\_entries, season\_id \\ \hline
-		{\textbf{IN\_05}} & Session & number, host, version, physics, protocol, pickups, date, teams, category, session\_log\_data, ranking\_id, races, racer\_result\_entries \\ \hline
-		{\textbf{IN\_06}} & User & username, encrypted\_password, reset\_password\_token, reset\_password\_sent\_at, remember\_created\_at, sign\_in\_count, current\_sign\_in\_at, last\_sign\_in\_at, current\_sign\_in\_ip, last\_sign\_in\_ip, confirmation\_token, confirmation\_token, confirmed\_at, confirmation\_sent\_at, unconfirmed\_email, failed\_attempts, unlock\_token, locked\_at, admin, mod, organizar, locale, country, profile, stats \\ \hline
+		{\textbf{IN\_04}} & Ranking & number, racer\_result\_entries, season \\ \hline
+		{\textbf{IN\_05}} & Session & number, host, version, physics, protocol, pickups, date, teams, category, session\_log\_data, ranking, races, racer\_result\_entries \\ \hline
+		{\textbf{IN\_06}} & Race & track\_name, laps, racers\_count, racer\_entries \\ \hline
+		{\textbf{IN\_07}} & RacerEntry & car\_name, position, username, time, best\_lap, finished, cheating, laps, racers\_count\\ \hline
+		{\textbf{IN\_08}} & RacerResultEntry & username, country, session\_count, race\_count, positions\_sum, average\_position, obtained\_points, official\_score, participation\_multiplier, team \\ \hline
+		{\textbf{IN\_09}} & User & username, encrypted\_password, reset\_password\_token, reset\_password\_sent\_at, remember\_created\_at, sign\_in\_count, current\_sign\_in\_at, last\_sign\_in\_at, current\_sign\_in\_ip, last\_sign\_in\_ip, confirmation\_token, confirmation\_token, confirmed\_at, confirmation\_sent\_at, unconfirmed\_email, failed\_attempts, unlock\_token, locked\_at, admin, mod, organizar, locale, country, profile, stats \\ \hline
 	\end{tabular}
 \end{center}
 
