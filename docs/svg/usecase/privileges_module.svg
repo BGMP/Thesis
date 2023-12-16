@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="15cm"
+   height="10cm"
+   viewBox="-0.5 -0.5 566.92913 377.95276"
+   animation="{&quot;meta&quot;:{&quot;version&quot;:20230504,&quot;patch&quot;:1},&quot;page&quot;:{&quot;animationInfo&quot;:{}},&quot;infos&quot;:[{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-0&quot;,&quot;parentId&quot;:null,&quot;childrenIds&quot;:[&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;,&quot;parentId&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-0&quot;,&quot;childrenIds&quot;:[&quot;MD7emSWmTT5kjdxdmfiT-38&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;parentId&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;,&quot;childrenIds&quot;:[&quot;a-9xMI1RbZUKOBCPs9zf-2&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-3&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-4&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-7&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-8&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-9&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-13&quot;,&quot;MD7emSWmTT5kjdxdmfiT-0&quot;,&quot;MD7emSWmTT5kjdxdmfiT-3&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:{&quot;name&quot;:&quot;Element&quot;,&quot;startTime&quot;:1,&quot;duration&quot;:1,&quot;loopForever&quot;:false,&quot;animations&quot;:[{&quot;id&quot;:&quot;IB11DjGAY4wKMAFU&quot;,&quot;startTime&quot;:0,&quot;duration&quot;:1,&quot;type&quot;:&quot;Always Show&quot;,&quot;animationId&quot;:null,&quot;animationOptions&quot;:null,&quot;animationJsonData&quot;:null},{&quot;id&quot;:&quot;IB11DjGAY4wKMAFV&quot;,&quot;startTime&quot;:1.5,&quot;duration&quot;:1,&quot;type&quot;:&quot;Always Show&quot;,&quot;animationId&quot;:null,&quot;animationOptions&quot;:null,&quot;animationJsonData&quot;:null}]}},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-2&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-3&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-4&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Generalization&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-7&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-8&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Generalization&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-9&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-13&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Generalization&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-0&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:[&quot;MD7emSWmTT5kjdxdmfiT-1&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;System&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-1&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-0&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;UseCase&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-3&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Association&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null}],&quot;pageMeta&quot;:{&quot;audios&quot;:[],&quot;videos&quot;:[],&quot;characters&quot;:[],&quot;video_duration&quot;:1,&quot;page_width&quot;:1100,&quot;page_height&quot;:850,&quot;page_hash&quot;:&quot;5d259976-d684-4f8a-bb08-46dc5678bd48&quot;}}"
+   isStartAnimationWithPreviousPage="after"
+   id="svg40"
+   sodipodi:docname="privileges_module.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   inkscape:export-filename="..\..\..\src\img\privileges_module.png"
+   inkscape:export-xdpi="350"
+   inkscape:export-ydpi="350"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview40"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0709081"
+     inkscape:cx="254.92384"
+     inkscape:cy="245.11907"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g39"
+     inkscape:document-units="cm" />
+  <defs
+     id="defs2">
+    <style
+       type="text/css"
+       id="style1">ul { margin-top: 0px; margin-bottom: 10px; }&#10;ol { margin-top: 0px; margin-bottom: 10px; }&#10;.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }&#10;h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }&#10;.h1, h1 { font-size: 2.5rem; }&#10;h2 { font-size: 1.5em; font-weight: bold; }&#10;h3 { font-size: 1.17em; font-weight: bold; }&#10;.h4, h4 { font-size: 1.5rem; }&#10;.h5, h5 { font-size: 1.25rem; }&#10;.h6, h6 { font-size: 1rem; }&#10;p { margin-top: 0; margin-bottom: 1rem; }&#10;a { color: #007bff; }&#10;</style>
+    <style
+       type="text/css"
+       id="style2">@import url(&quot;https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap&quot;);&#10;@import url(&quot;https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap&quot;);&#10;</style>
+  </defs>
+  <g
+     id="g39"
+     transform="matrix(1.0786595,0,0,1.0786595,-27.372921,47.662464)">
+    <g
+       shape-node=""
+       id="g5">
+      <circle
+         cell-id="a-9xMI1RbZUKOBCPs9zf-2"
+         cx="278"
+         cy="130.5"
+         fill="transparent"
+         stroke="#000000"
+         pointer-events="none"
+         id="ellipse2"
+         r="7.5"
+         style="fill:none" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-2"
+         d="m 278,138 v 25"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path2" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-2"
+         d="m 263,147 h 30"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path3" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-2"
+         d="m 278,163 -15,20"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path4" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-2"
+         d="m 278,163 15,20"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path5" />
+    </g>
+    <g
+       shape-node=""
+       text-node=""
+       id="g7">
+      <g
+         cell-id="a-9xMI1RbZUKOBCPs9zf-2"
+         transform="translate(-0.5,-0.5)"
+         id="g6">
+        <switch
+           cell-id="a-9xMI1RbZUKOBCPs9zf-2"
+           id="switch5">
+          <foreignObject
+             cell-id="a-9xMI1RbZUKOBCPs9zf-2"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 28px; height: 1px; padding-top: 190px; margin-left: 264px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   ani=""
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: none; word-break: break-word; white-space: normal; word-wrap: normal; ">Actor</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg5">
+            <defs
+               id="defs5">
+              <path
+                 id="R4_wjjGGqwDUiQUx"
+                 d="m 264.5,202.6 h 27" />
+            </defs>
+            <text
+               fill="#000000"
+               font-size="12px"
+               font-family="Helvetica, 'VP Default'"
+               font-weight="400"
+               id="text5"><textPath
+                 xlink:href="#R4_wjjGGqwDUiQUx"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath5"><tspan
+                   xml:space="preserve"
+                   id="tspan5">Actor</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g10">
+      <circle
+         cell-id="a-9xMI1RbZUKOBCPs9zf-3"
+         cx="113"
+         cy="195.5"
+         fill="transparent"
+         stroke="#000000"
+         pointer-events="none"
+         id="ellipse7"
+         r="7.5"
+         style="fill:none" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-3"
+         d="m 113,203 v 25"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path7" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-3"
+         d="m 98,212 h 30"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path8" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-3"
+         d="M 113,228 98,248"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path9" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-3"
+         d="m 113,228 15,20"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path10" />
+    </g>
+    <g
+       shape-node=""
+       text-node=""
+       id="g12">
+      <g
+         cell-id="a-9xMI1RbZUKOBCPs9zf-3"
+         transform="translate(-0.5,-0.5)"
+         id="g11">
+        <switch
+           cell-id="a-9xMI1RbZUKOBCPs9zf-3"
+           id="switch10">
+          <foreignObject
+             cell-id="a-9xMI1RbZUKOBCPs9zf-3"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 90px; height: 1px; padding-top: 255px; margin-left: 68px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   ani=""
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: none; word-break: break-word; white-space: normal; word-wrap: normal; ">Moderador</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg10">
+            <defs
+               id="defs10">
+              <path
+                 id="x4_wjjGGqwDUiQUy"
+                 d="m 83.5,267.6 h 59" />
+            </defs>
+            <text
+               fill="#000000"
+               font-size="12px"
+               font-family="Helvetica, 'VP Default'"
+               font-weight="400"
+               id="text10"><textPath
+                 xlink:href="#x4_wjjGGqwDUiQUy"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath10"><tspan
+                   xml:space="preserve"
+                   id="tspan10">Moderador</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g13">
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-4"
+         d="M 249.88,153 H 123 q -10,0 -10,10 v 25"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path12" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-4"
+         d="m 261.88,153 -12,6 v -12 z"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path13" />
+    </g>
+    <g
+       shape-node=""
+       id="g17">
+      <circle
+         cell-id="a-9xMI1RbZUKOBCPs9zf-7"
+         cx="65"
+         cy="7.5"
+         fill="transparent"
+         stroke="#000000"
+         pointer-events="none"
+         id="ellipse13"
+         r="7.5"
+         style="fill:none" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-7"
+         d="M 65,15 V 40"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path14" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-7"
+         d="M 50,24 H 80"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path15" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-7"
+         d="M 65,40 50,60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path16" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-7"
+         d="M 65,40 80,60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path17" />
+    </g>
+    <g
+       shape-node=""
+       text-node=""
+       id="g19"
+       transform="translate(0.42675781,-89.009178)">
+      <g
+         cell-id="a-9xMI1RbZUKOBCPs9zf-7"
+         transform="translate(-0.5,-0.5)"
+         id="g18">
+        <switch
+           cell-id="a-9xMI1RbZUKOBCPs9zf-7"
+           id="switch17">
+          <foreignObject
+             cell-id="a-9xMI1RbZUKOBCPs9zf-7"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 128px; height: 1px; padding-top: 67px; margin-left: 1px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   ani=""
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: none; word-break: break-word; white-space: normal; word-wrap: normal; ">Administrador</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg17">
+            <defs
+               id="defs17">
+              <path
+                 id="J4_wjjGGqwDUiQUz"
+                 d="m 26.5,79.6 h 77" />
+            </defs>
+            <text
+               fill="#000000"
+               font-size="12px"
+               font-family="Helvetica, 'VP Default'"
+               font-weight="400"
+               id="text17"><textPath
+                 xlink:href="#J4_wjjGGqwDUiQUz"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath17"><tspan
+                   xml:space="preserve"
+                   id="tspan17">Administrador</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g20">
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-8"
+         d="M 249.88,153 H 75 Q 65,153 65,143 V 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path19" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-8"
+         d="m 261.88,153 -12,6 v -12 z"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path20" />
+    </g>
+    <g
+       shape-node=""
+       id="g24">
+      <circle
+         cell-id="a-9xMI1RbZUKOBCPs9zf-9"
+         cx="205"
+         cy="7.5"
+         fill="transparent"
+         stroke="#000000"
+         pointer-events="none"
+         id="ellipse20"
+         r="7.5"
+         style="fill:none" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-9"
+         d="M 205,15 V 40"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path21" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-9"
+         d="m 190,24 h 30"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path22" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-9"
+         d="M 205,40 190,60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path23" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-9"
+         d="m 205,40 15,20"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path24" />
+    </g>
+    <g
+       shape-node=""
+       text-node=""
+       id="g26"
+       transform="translate(0.12792969,-90.125389)">
+      <g
+         cell-id="a-9xMI1RbZUKOBCPs9zf-9"
+         transform="translate(-0.5,-0.5)"
+         id="g25">
+        <switch
+           cell-id="a-9xMI1RbZUKOBCPs9zf-9"
+           id="switch24">
+          <foreignObject
+             cell-id="a-9xMI1RbZUKOBCPs9zf-9"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 90px; height: 1px; padding-top: 67px; margin-left: 160px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   ani=""
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: none; word-break: break-word; white-space: normal; word-wrap: normal; ">Organizador</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg24">
+            <defs
+               id="defs24">
+              <path
+                 id="p4_wjjGGqwDUiQU0"
+                 d="m 171.5,79.6 h 67" />
+            </defs>
+            <text
+               fill="#000000"
+               font-size="12px"
+               font-family="Helvetica, 'VP Default'"
+               font-weight="400"
+               id="text24"><textPath
+                 xlink:href="#p4_wjjGGqwDUiQU0"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath24"><tspan
+                   xml:space="preserve"
+                   id="tspan24">Organizador</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g27">
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-13"
+         d="M 249.88,153 H 215 q -10,0 -10,-10 V 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path26" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-13"
+         d="m 261.88,153 -12,6 v -12 z"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path27" />
+    </g>
+    <g
+       shape-node=""
+       id="g28">
+      <rect
+         cell-id="MD7emSWmTT5kjdxdmfiT-0"
+         x="357"
+         y="58"
+         width="193"
+         height="190"
+         fill="none"
+         stroke="#000000"
+         pointer-events="none"
+         id="rect27" />
+    </g>
+    <g
+       shape-node=""
+       id="g29">
+      <ellipse
+         cell-id="MD7emSWmTT5kjdxdmfiT-1"
+         cx="457"
+         cy="153"
+         rx="40"
+         ry="20"
+         fill="transparent"
+         stroke="#000000"
+         pointer-events="none"
+         id="ellipse28"
+         style="fill:none" />
+    </g>
+    <g
+       shape-node=""
+       text-node=""
+       id="g31">
+      <g
+         cell-id="MD7emSWmTT5kjdxdmfiT-1"
+         transform="translate(-0.5,-0.5)"
+         id="g30">
+        <switch
+           cell-id="MD7emSWmTT5kjdxdmfiT-1"
+           id="switch29">
+          <foreignObject
+             cell-id="MD7emSWmTT5kjdxdmfiT-1"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 153px; margin-left: 418px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   ani=""
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: none; word-break: break-word; white-space: normal; word-wrap: normal; ">Login</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg29">
+            <defs
+               id="defs29">
+              <path
+                 id="Z4_wjjGGqwDUiQU1"
+                 d="m 441.5,158.40005 h 31" />
+            </defs>
+            <text
+               fill="#000000"
+               font-size="12px"
+               font-family="Helvetica, 'VP Default'"
+               font-weight="400"
+               id="text29"><textPath
+                 xlink:href="#Z4_wjjGGqwDUiQU1"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath29"><tspan
+                   xml:space="preserve"
+                   id="tspan29">Login</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g32">
+      <path
+         cell-id="MD7emSWmTT5kjdxdmfiT-3"
+         d="M 292.67,152.83 H 345 q 10,0 20,0.03 l 52,0.14"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path31" />
+    </g>
+    <g
+       shape-node=""
+       id="g33">
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-4"
+         d="M 249.88,153 H 123 q -10,0 -10,10 v 25"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path32" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-4"
+         d="m 261.88,153 -12,6 v -12 z"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path33" />
+    </g>
+    <g
+       shape-node=""
+       id="g35">
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-8"
+         d="M 249.88,153 H 75 Q 65,153 65,143 V 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path34" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-8"
+         d="m 261.88,153 -12,6 v -12 z"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path35" />
+    </g>
+    <g
+       shape-node=""
+       id="g37">
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-13"
+         d="M 249.88,153 H 215 q -10,0 -10,-10 V 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path36" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-13"
+         d="m 261.88,153 -12,6 v -12 z"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path37" />
+    </g>
+    <g
+       shape-node=""
+       id="g38">
+      <path
+         cell-id="MD7emSWmTT5kjdxdmfiT-3"
+         d="M 292.67,152.83 H 345 q 10,0 20,0.03 l 52,0.14"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path38" />
+    </g>
+  </g>
+  <switch
+     id="switch40">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g40" />
+    <a
+       transform="translate(0,-5)"
+       id="a40">
+      <text
+         text-anchor="middle"
+         font-size="10px"
+         x="50%"
+         y="100%"
+         id="text40" />
+    </a>
+  </switch>
+</svg>
