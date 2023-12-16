@@ -1,5 +1,4 @@
-Thesis
-===
+# Thesis
 My thesis, written in TeX.
 
 ## Compiling
@@ -10,7 +9,7 @@ Windows
 pdflatex.exe -synctex=1 -interaction=nonstopmode -shell-escape %.tex
 ```
 
-Linux
+Linux & MacOS
 ```bash
 pdflatex -synctex=1 -interaction=nonstopmode -shell-escape %.tex
 ```
