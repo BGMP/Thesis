@@ -182,10 +182,10 @@ Con la inflación promedio anual y la tasa prima de riesgo, es posible calcular 
 }
 \]
 
-\subsubsection{Desarrollo del Proyecto}
+\subsubsection{Puesta en Marcha}
 A partir de los datos obtenidos en la \autoref{feasibility:economic:context}, es posible realizar un cálculo del valor actual neto (VAN) del proyecto. En este caso, todos los costos asociados figurarán como un ahorro para la comunidad de RVA, ya que debemos considerar que todo lo realizado vendría representar dinero que, potencialmente, la comunidad hubiese tenido que gastar en otro profesional y recursos de no haberse desarrollado el software en cuestión.
 
-La valorización del tiempo empleado en el desarrollo de software a lo largo del proyecto está basada en el sueldo promedio de un analista programador en Chile según Talent.com (\$900.000 mensual; \$5.538 por hora), ajustado a las horas de trabajo efectivas empleadas en el proyecto, las cuales fueron 4 horas de trabajo efectivo durante 6 días de la semana por mes de desarrollo.
+La valorización del tiempo empleado en el desarrollo de software a lo largo del proyecto está basada en el sueldo promedio de un analista programador en Chile según Talent.com (\$900.000 mensual; \$5.538 por hora), ajustado a las horas de trabajo efectivas empleadas en el proyecto, las cuales fueron 4 horas de trabajo efectivo durante 6 días de la semana por mes (4 semanas) de desarrollo.
 
 \[
 \mathlarger{
@@ -203,33 +203,33 @@ Además del tiempo valorizado, también se ha estimado una valorización de los 
 	Electricidad = \frac{\$40.000}{2} = \$20.000
 \]
 
-A continuación, se desglosa el cálculo de la inversión inicial a un periodo de 4 meses, que fueron los meses en los que se trabajó en el desarrollo del proyecto.
+A continuación, se presenta una tabla que contiene los gastos mensuales estimados asociados a la puesta en marcha del proyecto:
 
-% Inverión inicial
+% Costos Mensuales
 \begin{center}
-	\begin{tabular}{ | l | l | l | l | l | l | }
+	\begin{tabular}{ | p{5cm} | p{5cm} | }
 		\hline
-		 & \multicolumn{1}{|c|}{\textbf{0}} & \multicolumn{1}{|c|}{\textbf{1}} & \multicolumn{1}{|c|}{\textbf{2}} & \multicolumn{1}{|c|}{\textbf{3}} & \multicolumn{1}{|c|}{\textbf{4}} \\
+    \multicolumn{2}{|c|}{\textbf{Costos}} \\
 		\hline
-		{\textbf{Desarrollo}} &  & \multicolumn{1}{|r|}{\$531.648} & \multicolumn{1}{|r|}{\$531.648} & \multicolumn{1}{|r|}{\$531.648} & \multicolumn{1}{|r|}{\$531.648} \\ \hline
+		{\textbf{Desarrollo}} & \multicolumn{1}{|r|}{\$531.648} \\ \hline
 		
-		{\textbf{Internet}} &  & \multicolumn{1}{|r|}{\$10.000} & \multicolumn{1}{|r|}{\$10.000} & \multicolumn{1}{|r|}{\$10.000} & \multicolumn{1}{|r|}{\$10.000} \\ \hline
+		{\textbf{Internet}} & \multicolumn{1}{|r|}{\$10.000} \\ \hline
 		
-		{\textbf{Electricidad}} &  & \multicolumn{1}{|r|}{\$20.600} & \multicolumn{1}{|r|}{\$20.600} & \multicolumn{1}{|r|}{\$20.600} & \multicolumn{1}{|r|}{\$20.600} \\ \hline
-		
-		{\textbf{Flujo}} &  & \multicolumn{1}{|r|}{\$561.648} & \multicolumn{1}{|r|}{\$561.648} & \multicolumn{1}{|r|}{\$561.648} & \multicolumn{1}{|r|}{\$561.648} \\ \hline
-		{\textbf{Inv. Inicial}}& \multicolumn{1}{|r|}{\$0} & & & & \\ \hline
-		\textbf{Flujo Total} & \multicolumn{1}{|r|}{\$2.246.592} & & & & \\ \hline
+		{\textbf{Electricidad}} & \multicolumn{1}{|r|}{\$20.600} \\ \hline
+    
+    {\textbf{Total}} & \multicolumn{1}{|r|}{\$561.648} \\ \hline
 	\end{tabular}
 \end{center}
 
+Una vez calculado el total de gastos para la puesta en marcha, es posible extrapolar a 4 meses y calcular la inversión inicial del proyecto a través de la siguiente fórmula.
+
 \[
 \mathlarger{
-	{I_0} = \sum\limits_{t=i}^{n}C_t = \$2.246.592
+	{I_0} = \$561.648 \cdot 4\textit{ meses}= \$2.246.592
 }
 \]
 
-\subsubsection{Mantenimiento del Proyecto}
+\subsubsection{Cálculo del Valor Actual Neto}
 Siguiendo con la lógica de la valorización de las horas de trabajo efectivas, se tiene que, una vez terminado el proyecto (al final de los 4 meses), la cantidad de horas efectivas necesarias para mantener el proyecto a lo largo del tiempo disminuirá sustancialmente.
 
 Se dirá que, si antes eran 4 las horas efectivas en 6 días de la semana, ahora sólo será 1 hora por 5 días de la semana, ya que el trabajo requerido por la comunidad ya no será de desarrollo de software, sino que de mantención, realización de mejoras oportunas, y soporte para la plataforma.
@@ -254,7 +254,7 @@ Internet = \frac{\$10.000}{4.8} = \$2.083
 Electricidad = \frac{\$20.600}{4.8} = \$5.208
 \]
 
-Si proyectamos a 5 años, podemos calcular un VAN de ahorro para el proyecto.
+Si proyectamos a 5 años, podemos calcular el Valor Actual Neto (VAN) de ahorro para el proyecto.
 
 % VAC Mantenimiento
 \begin{center}
@@ -262,23 +262,23 @@ Si proyectamos a 5 años, podemos calcular un VAN de ahorro para el proyecto.
 		\hline
 		& \multicolumn{1}{|c|}{\textbf{0}} & \multicolumn{1}{|c|}{\textbf{1}} & \multicolumn{1}{|c|}{\textbf{2}} & \multicolumn{1}{|c|}{\textbf{3}} & \multicolumn{1}{|c|}{\textbf{4}} & \multicolumn{1}{|c|}{\textbf{5}} \\
 		\hline
-		{\textbf{Mantenimiento}} &  & \multicolumn{1}{|r|}{\$110.760} & \multicolumn{1}{|r|}{\$110.760} & \multicolumn{1}{|r|}{\$110.760} & \multicolumn{1}{|r|}{\$110.760} & \multicolumn{1}{|r|}{\$110.760} \\ \hline
+		{\textbf{Mantenimiento}} &  & \multicolumn{1}{|r|}{\$1.329.120} & \multicolumn{1}{|r|}{\$1.329.120} & \multicolumn{1}{|r|}{\$1.329.120} & \multicolumn{1}{|r|}{\$1.329.120} & \multicolumn{1}{|r|}{\$1.329.120} \\ \hline
 		
-		{\textbf{Internet}} &  & \multicolumn{1}{|r|}{\$2.083} & \multicolumn{1}{|r|}{\$2.083} & \multicolumn{1}{|r|}{\$2.083} & \multicolumn{1}{|r|}{\$2.083} & \multicolumn{1}{|r|}{\$2.083} \\ \hline
+		{\textbf{Internet}} &  & \multicolumn{1}{|r|}{\$24.996} & \multicolumn{1}{|r|}{\$24.996} & \multicolumn{1}{|r|}{\$24.996} & \multicolumn{1}{|r|}{\$24.996} & \multicolumn{1}{|r|}{\$24.996} \\ \hline
 		
-		{\textbf{Electricidad}} &  & \multicolumn{1}{|r|}{\$5.208} & \multicolumn{1}{|r|}{\$5.208} & \multicolumn{1}{|r|}{\$5.208} & \multicolumn{1}{|r|}{\$5.208} & \multicolumn{1}{|r|}{\$5.208} \\ \hline
+		{\textbf{Electricidad}} &  & \multicolumn{1}{|r|}{\$62.496} & \multicolumn{1}{|r|}{\$62.496} & \multicolumn{1}{|r|}{\$62.496} & \multicolumn{1}{|r|}{\$62.496} & \multicolumn{1}{|r|}{\$62.496} \\ \hline
 		
-		{\textbf{Hosting}} &  & \multicolumn{1}{|r|}{-\$10.526} & \multicolumn{1}{|r|}{-\$10.526} & \multicolumn{1}{|r|}{-\$-10.526} & \multicolumn{1}{|r|}{-\$10.526} & \multicolumn{1}{|r|}{-\$10.526} \\ \hline
+		{\textbf{Hosting}} &  & \multicolumn{1}{|r|}{-\$126.312} & \multicolumn{1}{|r|}{-\$126.312} & \multicolumn{1}{|r|}{-\$126.312} & \multicolumn{1}{|r|}{-\$126.312} & \multicolumn{1}{|r|}{-\$126.312} \\ \hline
 		
-		{\textbf{Flujo}} &  & \multicolumn{1}{|r|}{\$107.5252} & \multicolumn{1}{|r|}{\$107.525} & \multicolumn{1}{|r|}{\$107.525} & \multicolumn{1}{|r|}{\$107.525} & \multicolumn{1}{|r|}{\$107.525} \\ \hline
+		{\textbf{Flujo}} &  & \multicolumn{1}{|r|}{\$1.290.300} & \multicolumn{1}{|r|}{\$1.290.300} & \multicolumn{1}{|r|}{\$1.290.300} & \multicolumn{1}{|r|}{\$1.290.300} & \multicolumn{1}{|r|}{\$1.290.300} \\ \hline
 		{\textbf{Inv. Inicial}} & \multicolumn{1}{|r|}{\$2.246.592} & & & & & \\ \hline
-		\textbf{Flujo Total} & \multicolumn{1}{|r|}{\$537.628} & & & & & \\ \hline
+		\textbf{Flujo Total} & \multicolumn{1}{|r|}{\$6.451.500} & & & & & \\ \hline
 	\end{tabular}
 \end{center}
 
 \[
 \mathlarger{
-	{VAN} = I_0 + \sum\limits_{t=i}^{n}\frac{C_t}{\left(1+r^t\right)} = \$2.529.930
+	{VAN} = I_0 + \sum\limits_{t=i}^{n}\frac{C_t}{\left(1+r^t\right)} = \$5.646.624
 }
 \]
 
