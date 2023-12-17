@@ -20,7 +20,13 @@ La especificación de todos los actores se puede encontrar a continuación en la
 	\end{tabular}
 \end{center}
 
-\section{Diagramas de Casos de Uso}
+
+\newpage
+
+\section{Casos de Uso}
+Esta sección contiene todos los diagramas de casos de uso relevantes para el proyecto. Todos los casos de uso cuentan con su respectiva especificación y detalle según corresponda.
+
+\subsection{Diagramas de Casos de Uso}
 \label{analysis:usecases}
 \includegraphics{privileges_module.png}
 
@@ -40,13 +46,14 @@ La especificación de todos los actores se puede encontrar a continuación en la
 
 \includegraphics{rva_sessions_module_2.png}
 
-\section{Especificación de los Casos de Uso}
+\subsection{Especificación de los Casos de Uso}
+\label{analysis:usecases:specification}
 En esta sección se detallan todos los casos de uso diagramados en la \autoref{analysis:usecases}. De acuerdo con la jerarquía de actores presentada en la \autoref{analysis:actors}, se entenderá que, si un actor de tipo ''Jugador'' puede realizar una acción específica, entonces cualquier otro de los actores con cargo podrá realizarla también.
 
-A continuación, la tabla TABLENUM contiene los nombres y actores asociados a cada uno de los diagramas de casos de uso.
+A continuación, la tabla TABLENUM contiene los nombres y actores asociados a cada uno de los diagramas de casos de uso. Los casos de uso cuyos actores y nombre han sido marcados en negrita serán detallados posteriormente.
 
 \begin{center}
-  \begin{tabular}{| p{1.5cm} | p{5.5cm} | p{6.5cm} |}
+  \begin{tabular}{| p{1.5cm} | p{6.5cm} | p{5.5cm} |}
     \hline
     \multicolumn{3}{|c|}{\textbf{Casos de Uso}} \\
     \hline
@@ -54,10 +61,10 @@ A continuación, la tabla TABLENUM contiene los nombres y actores asociados a ca
     \hline
     
     % Módulo de Privilegios
-    {\textbf{CU\_01}} & Administrador, Moderador, Organizador y Jugador & Iniciar Sesión\\ \hline
+    {\textbf{CU\_01}} & \textbf{Administrador, Moderador, Organizador y Jugador} & \textbf{Iniciar Sesión}\\ \hline
     
     % Módulo de Autos
-    {\textbf{CU\_02}} & Administrador & Importar Autos\\ \hline
+    {\textbf{CU\_02}} & \textbf{Administrador} & \textbf{Importar Autos}\\ \hline
     {\textbf{CU\_03}} & Administrador & Crear Auto\\ \hline
     {\textbf{CU\_04}} & Administrador & Editar Auto \\\hline
     {\textbf{CU\_05}} & Administrador & Eliminar Auto\\ \hline
@@ -65,11 +72,11 @@ A continuación, la tabla TABLENUM contiene los nombres y actores asociados a ca
     {\textbf{CU\_07}} & Administrador & Validar Parámetros\\ \hline
     
     {\textbf{CU\_08}} & Jugador & Visualizar Autos\\ \hline
-    {\textbf{CU\_09}} & Jugador & Visualizar un Auto\\ \hline
+    {\textbf{CU\_09}} & \textbf{Jugador} & \textbf{Visualizar un Auto}\\ \hline
     {\textbf{CU\_10}} & Jugador & Filtrar por Categoría\\ \hline
     
     % Módulo de Pistas
-    {\textbf{CU\_11}} & Administrador & Importar Pistas\\ \hline
+    {\textbf{CU\_11}} & \textbf{Administrador} & \textbf{Importar Pistas}\\ \hline
     {\textbf{CU\_12}} & Administrador & Crear Pista\\ \hline
     {\textbf{CU\_13}} & Administrador & Editar Pista\\\hline
     {\textbf{CU\_14}} & Administrador & Eliminar Pista\\ \hline
@@ -80,37 +87,602 @@ A continuación, la tabla TABLENUM contiene los nombres y actores asociados a ca
     {\textbf{CU\_18}} & Jugador & Visualizar una Pista\\ \hline
     {\textbf{CU\_19}} & Jugador & Filtrar por Temporada\\ \hline
     
-   % Módulo de Temporadas
-   {\textbf{CU\_20}} & Administrador & Crear Temporada\\ \hline
-   {\textbf{CU\_21}} & Administrador & Eliminar Temporada\\ \hline
-   {\textbf{CU\_22}} & Administrador & Validar Parámetros\\\hline
-   {\textbf{CU\_23}} & Administrador & Crear Rankings Asociados\\ \hline
-   {\textbf{CU\_24}} & Administrador & Eliminar Rankings Asociados\\ \hline
-   {\textbf{CU\_25}} & Administrador & Eliminar Sesiones Asociadas\\ \hline
-   
-   {\textbf{CU\_26}} & Jugador & Visualizar Temporadas\\ \hline
-   {\textbf{CU\_27}} & Jugador & Visualizar una Temporada\\ \hline
-   {\textbf{CU\_28}} & Jugador & Visualizar Ranking\\ \hline
-   {\textbf{CU\_29}} & Jugador & Mostrar Tabla de Resultados\\ \hline
-   
-   % Módulo de Sesiones
-  {\textbf{CU\_30}} & Administrador y Organizador & Importar Sesión\\ \hline
-  {\textbf{CU\_31}} & Administrador y Organizador & Crear Sesión\\ \hline
-  {\textbf{CU\_32}} & Administrador y Organizador & Eliminar Sesión\\ \hline
-  {\textbf{CU\_33}} & Administrador y Organizador & Validar Archivo CSV\\ \hline
-  {\textbf{CU\_34}} & Administrador y Organizador & Validar Parámetros\\ \hline
-  {\textbf{CU\_35}} & Administrador y Organizador & Calcular Resultados\\ \hline
-
-  {\textbf{CU\_36}} & Jugador & Visualizar Sesiones\\ \hline
-  {\textbf{CU\_37}} & Jugador & Visualizar una Sesión\\ \hline
-  {\textbf{CU\_38}} & Jugador & Visualizar Sesiones Recientes\\ \hline
+    % Módulo de Temporadas
+    {\textbf{CU\_20}} & \textbf{Administrador} & \textbf{Crear Temporada}\\ \hline
+    {\textbf{CU\_21}} & \textbf{Administrador} & \textbf{Eliminar Temporada}\\ \hline
+    {\textbf{CU\_22}} & Administrador & Validar Parámetros\\\hline
+    {\textbf{CU\_23}} & Administrador & Crear Rankings Asociados\\ \hline
+    {\textbf{CU\_24}} & Administrador & Eliminar Rankings Asociados\\ \hline
+    {\textbf{CU\_25}} & Administrador & Eliminar Sesiones Asociadas\\ \hline
+    
+    {\textbf{CU\_26}} & Jugador & Visualizar Temporadas\\ \hline
+    {\textbf{CU\_27}} & Jugador & Visualizar una Temporada\\ \hline
+    {\textbf{CU\_28}} & Jugador & Visualizar Ranking\\ \hline
+    {\textbf{CU\_29}} & Jugador & Mostrar Tabla de Resultados\\ \hline
+    
+    % Módulo de Sesiones
+    {\textbf{CU\_30}} & \textbf{Administrador y Organizador} & \textbf{Importar Sesión}\\ \hline
+    {\textbf{CU\_31}} & Administrador y Organizador & Crear Sesión\\ \hline
+    {\textbf{CU\_32}} & \textbf{Administrador y Organizador} & \textbf{Eliminar Sesión}\\ \hline
+    {\textbf{CU\_33}} & Administrador y Organizador & Validar Archivo CSV\\ \hline
+    {\textbf{CU\_34}} & Administrador y Organizador & Validar Parámetros\\ \hline
+    {\textbf{CU\_35}} & Administrador y Organizador & Calcular Resultados\\ \hline
+    
+    {\textbf{CU\_36}} & Jugador & Visualizar Sesiones\\ \hline
+    {\textbf{CU\_37}} & \textbf{Jugador} & \textbf{Visualizar una Sesión}\\ \hline
+    {\textbf{CU\_38}} & Jugador & Visualizar Sesiones Recientes\\ \hline
   \end{tabular}
 \end{center}
 
+\subsection{Detalle de los Casos de Uso}
+A continuación, se presentan tablas de detalle para cada uno de los casos de uso listados en la \autoref{analysis:usecases:specification}. Aquellos casos de uso que fueron marcados en negrita anteriormente también contarán con un detalle de su flujo de eventos básico.
 
+%
+% Privilegios
+%
 
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_01\_INICIAR\_SESION} (Usuario)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El usuario debe estar en la página web. El usuario debe haberse registrado en la plataforma.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El usuario inicia sesión en la plataforma.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuarios:} Administrador, Organizador, Moderador y Jugador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. Renderiza la pantalla de inicio de sesión.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. Ingresa su correo y contraseña, y luego pulsa el botón para iniciar sesión.}& 
+    \multicolumn{1}{|p{7.5cm}|}{3. Valida la información ingresada por el usuario.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4. Sesión iniciada. Redirecciona al usuario a la página principal.}\\ \hline
+    
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Alternativo}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuarios:} Administrador, Organizador, Moderador y Jugador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{3 (b). Si las credenciales son incorrectas, el sistema muestra un mensaje de error.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
+  \end{tabular}
+\end{center}
 
+%
+% Autos
+%
 
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_02\_IMPORTAR\_AUTOS} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El sistema crea los autos y los guarda en la base de datos.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Administrador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. Renderiza el formulario de importación de autos.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. Selecciona el archivo CSV con la información de los autos y la temporada. Luego pulsa el botón para importar.}& 
+    \multicolumn{1}{|p{7.5cm}|}{3. Valida el archivo CSV con la información de los autos. Valida si los datos son correctos. Verifica si ya existe un auto con el mismo nombre relacionado con la misma temporada.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4. Autos creados. Redirecciona al administrador a la página de importación de autos.}\\ \hline
+    
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Alternativo}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Administrador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{3 (b). Si el archivo seleccionado no es válido, el sistema muestra un mensaje de error.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_03\_CREAR\_AUTO} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema guarda el modelo de auto en la base de datos con los datos ingresados por el administrador. } \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_04\_EDITAR\_AUTO} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema actualiza el modelo de auto en la base de datos con los datos ingresados por el administrador.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_05\_ELIMINAR\_AUTO} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema elimina el modelo de auto en la base de datos.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_06\_VALIDAR\_ARCHIVO\_CSV}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_02}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema lee el archivo y verifica que éste esté en el formato adecuado, y que contenga datos válidos para crear modelos de autos.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_07\_VALIDAR\_PARAMETROS}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_03}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} Verifica que los parámetros cumplan con las restricciones del modelo de auto.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_08\_VISUALIZAR\_AUTOS} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} No tiene.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza los autos por pantalla.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_09\_VISUALIZAR\_UN\_AUTO} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} No tiene.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El sistema renderiza un auto por pantalla.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Jugador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. El sistema renderiza un enlace a la página del auto, ya sea una imagen o texto clickeable.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. El usuario clickea el enlace.}& 
+    \multicolumn{1}{|p{7.5cm}|}{}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{3. El sistema renderiza una visualización del auto seleccionado por el usuario.}\\ \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_10\_FILTRAR\_POR\_CATEGORIA}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_08}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema verifica la categoría de los autos y la utiliza para separarlos en diferentes secciones de la plataforma.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+%
+% Pistas
+%
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_11\_IMPORTAR\_PISTAS} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El sistema crea las pistas y las guarda en la base de datos.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Administrador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. Renderiza el formulario de importación de pistas.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. Selecciona el archivo CSV con la información de las pistas y la temporada. Luego pulsa el botón para importar.}& 
+    \multicolumn{1}{|p{7.5cm}|}{3. Valida el archivo CSV con la información de las pistas. Valida si los datos son correctos. Verifica si ya existe una pista con el mismo nombre relacionada con la misma temporada.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4. Pistas creadas. Redirecciona al administrador a la página de importación de pistas.}\\ \hline
+    
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Alternativo}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Administrador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{3 (b). Si el archivo seleccionado no es válido, el sistema muestra un mensaje de error.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_12\_CREAR\_PISTA} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema guarda el modelo de pista en la base de datos con los datos ingresados por el administrador. } \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_13\_EDITAR\_PISTA} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema actualiza el modelo de pista en la base de datos con los datos ingresados por el administrador.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_14\_ELIMINAR\_PISTA} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema elimina el modelo de pista en la base de datos.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_15\_VALIDAR\_ARCHIVO\_CSV}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_11}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema lee el archivo y verifica que éste esté en el formato adecuado, y que contenga datos válidos para crear modelos de pistas.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_16\_VALIDAR\_PARAMETROS}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_12}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} Verifica que los parámetros cumplan con las restricciones del modelo de pista.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_17\_VISUALIZAR\_PISTAS} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} No tiene.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza las pistas por pantalla.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_18\_VISUALIZAR\_UNA\_PISTA} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} No tiene.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El sistema renderiza una pista por pantalla.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Jugador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. El sistema renderiza un enlace a la página de la pista, ya sea una imagen o texto clickeable.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. El usuario clickea el enlace.} & 
+    \multicolumn{1}{|p{7.5cm}|}{}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{3. El sistema renderiza una visualización de la pista seleccionada por el usuario.}\\ \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_19\_FILTRAR\_POR\_TEMPORADA}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_17}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema verifica la temporada de las pistas y la utiliza para renderizar las pistas de la temporada actual.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+% Temporadas
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_20\_CREAR\_TEMPORADA} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El sistema crea la temporada y sus rankings asociados.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Administrador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. Renderiza el formulario de creación de temporada.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. Llena los campos del formulario de creación de temporada.}& 
+    \multicolumn{1}{|p{7.5cm}|}{3. Valida los datos ingresados por el administrador.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4. El sistema crea la temporada.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{5. El sistema crea 6 rankings y los relaciona con la temporada recién creada.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{6. Temporada y rankings asociados creados. Redirecciona al administrador a la página de la temporada recién creada.}\\ \hline
+    
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Alternativo}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Administrador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{3 (b). Si los datos ingresados son inválidos, el sistema muestra un mensaje de error.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_21\_ELIMINAR\_TEMPORADA} (Administrador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El sistema elimina la temporada, sus rankings asociados y todas las sesiones asociadas a dichos rankings.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Administrador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. Renderiza las opciones de administrador en la vista de temporada.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. El administrador clickea el botón de eliminar.}& 
+    \multicolumn{1}{|p{7.5cm}|}{3. El sistema busca y elimina todas las sesiones de todos los rankings de la temporada eliminada.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4. El sistema elimina todos los rankings asociados a la temporada.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{5. El sistema elimina la temporada.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{6. Temporada eliminada. Redirecciona al administrador a la página de la temporadas.}\\ \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_22\_VALIDAR\_PARAMETROS}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_20}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} Verifica que los parámetros cumplan con las restricciones del modelo de temporada.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_23\_CREAR\_RANKINGS\_ASOCIADOS}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_20}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema crea 6 modelos de ranking y los asocia a la temporada que se está creando en \textbf{CU\_20}.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_24\_ELIMINAR\_RANKINGS\_ASOCIADOS}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_21}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema elimina los 6 modelos de ranking asociados a la temporada que se está eliminando en \textbf{CU\_20}.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_25\_ELIMINAR\_SESIONES\_ASOCIADAS}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_24}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema elimina todos los modelos de sesión asociados con el ranking que se está eliminando en \textbf{CU\_24}.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_26\_VISUALIZAR\_TEMPORADAS} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} No tiene.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza las temporadas por pantalla.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_27\_VISUALIZAR\_UNA\_TEMPORADA} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} No tiene.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza una temporada por pantalla.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_28\_VISUALIZAR\_RANKING} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} No tiene.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza un ranking por pantalla.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_29\_VISUALIZAR\_TABLA\_DE\_RESULTADOS} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_27}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza una taba de resultados asociada a la temporada.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+% Sesiones
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_30\_IMPORTAR\_SESION} (Administrador y Organizador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador u organizador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El sistema crea la sesión y la guarda en la base de datos. El sistema también calcula y suma las estadísticas a la temporada y ranking de la sesión en cuestión. De la misma forma, suma los resultados calculados a las estadísticas individuales de los jugadores que participaron en ella.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuarios:} Administrador y Organizador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. Renderiza el formulario de importación de sesión.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. Selecciona el archivo CSV (Session Log), la temporada y el ranking. Luego pulsa el botón para importar.}& 
+    \multicolumn{1}{|p{7.5cm}|}{3. Valida el archivo Session Log. Valida si los datos son correctos.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4. Sesión creada. Redirecciona al administrador u organizador a la página de visualización de la sesión importada.}\\ \hline
+    
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Alternativo}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Administrador y Organizador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{3 (b). Si el archivo seleccionado no es válido, el sistema muestra un mensaje de error.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_31\_CREAR\_SESION} (Administrador y Organizador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador u organizador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema guarda el modelo de sesión en la base de datos. El sistema calcula y suma las estadísticas de cada jugador a sus perfiles, y también a los resultados acumulados de los modelos de ranking y temporada asociados a la sesión.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_32\_ELIMINAR\_SESION} (Administrador y Organizador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} El administrador u organizador debe haber iniciado sesión con sus credenciales.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El sistema elimina la sesión. El sistema sustrae las estadísticas asociadas a la sesión de los perfiles de los jugadores que participaron en ella.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Administrador y Organizador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. Renderiza las opciones de administrador en la vista de sesión.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. El administrador u organizador clickea el botón de eliminar.}& 
+    \multicolumn{1}{|p{7.5cm}|}{3. El sistema calcula los resultados de la sesión.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{4. El sistema busca los perfiles de cada jugador que partició en la sesión.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{5. El sistema sustrae los resultados calculados de cada perfil de jugador, respectivamente.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{6. Sesión eliminada. Redirecciona al administrador u organizador a la página principal.}\\ \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_33\_VALIDAR\_ARCHIVO\_CSV}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_30}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema lee el archivo y verifica que éste esté en el formato adecuado, y que contenga datos válidos para crear un modelo de sesión.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_34\_VALIDAR\_PARAMETROS}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_31}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} Verifica que los parámetros cumplan con las restricciones del modelo de sesión y sus sub-modelos.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_35\_CALCULAR\_RESULTADOS}} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_31}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} Calcula los resultados de la sesión, transformándolos de datos crudos del Session Log a resultados en el formato de RVA.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_36\_VISUALIZAR\_SESIONES} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} No tiene.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza las sesiones por pantalla.} \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_37\_VISUALIZAR\_UNA\_SESION} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} No tiene.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Post-Condiciones:} El sistema renderiza una sesión por pantalla.} \\ \hline
+    \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Básicos}} \\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{\textbf{Usuario:} Jugador} & \multicolumn{1}{|p{7.5cm}|}{\textbf{Sistema}} \\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{1. El sistema renderiza un enlace a la página de una sesión.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{2. El usuario clickea el enlace.}& 
+    \multicolumn{1}{|p{7.5cm}|}{}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{3. El sistema calcula los resultados de la sesión y los transforma en resultados en el formato de RVA.}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{} & 
+    \multicolumn{1}{|p{7.5cm}|}{3. El sistema renderiza la sesión por pantalla.}\\ \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{| p{7.5cm} | p{7.5cm} |}
+    \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{CU\_38\_VISUALIZAR\_SESIONES\_RECIENTES} (Jugador)} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Pre-Condiciones:} Debe ser activado por \textbf{CU\_36}.} \\ \hline
+    \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema las últimas sesiones, buscando la temporada más reciente por fecha, y luego buscando la última sesión del ranking más alto posible (primero al sexto).} \\
+    \hline
+  \end{tabular}
+\end{center}
 
 
 
