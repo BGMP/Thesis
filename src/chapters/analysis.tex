@@ -1,6 +1,7 @@
 \chapter{Análisis Funcional}
 
 \section{Actores}
+\label{analysis:actors}
 En el software desarrollado, cada rol dentro del staff de RVA ha sido considerado como un actor diferente. Para el contexto del presente proyecto, el cargo de cada actor corresponde a su nombre, lo que quiere decir que si un actor lleva por nombre ''Administrador'', se entenderá que su cargo es ''Administrador de la comunidad de RVA''. Sólo los jugadores no cuentan con un cargo dentro de RVA.
 
 La especificación de todos los actores se puede encontrar a continuación en la tabla TABLENUM.
@@ -19,12 +20,11 @@ La especificación de todos los actores se puede encontrar a continuación en la
 	\end{tabular}
 \end{center}
 
-\section{Diagrama de Casos de Uso}
+\section{Diagramas de Casos de Uso}
+\label{analysis:usecases}
 \includegraphics{privileges_module.png}
 
 \includegraphics{rva_cars_module_1.png}
-
-\newpage
 
 \includegraphics{rva_cars_module_2.png}
 
@@ -39,6 +39,80 @@ La especificación de todos los actores se puede encontrar a continuación en la
 \includegraphics{rva_sessions_module_1.png}
 
 \includegraphics{rva_sessions_module_2.png}
+
+\section{Especificación de los Casos de Uso}
+En esta sección se detallan todos los casos de uso diagramados en la \autoref{analysis:usecases}. De acuerdo con la jerarquía de actores presentada en la \autoref{analysis:actors}, se entenderá que, si un actor de tipo ''Jugador'' puede realizar una acción específica, entonces cualquier otro de los actores con cargo podrá realizarla también.
+
+A continuación, la tabla TABLENUM contiene los nombres y actores asociados a cada uno de los diagramas de casos de uso.
+
+\begin{center}
+  \begin{tabular}{| p{1.5cm} | p{5.5cm} | p{6.5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{\textbf{Casos de Uso}} \\
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Actor}} & \multicolumn{1}{|c|}{\textbf{Nombre}}\\
+    \hline
+    
+    % Módulo de Privilegios
+    {\textbf{CU\_01}} & Administrador, Moderador, Organizador y Jugador & Iniciar Sesión\\ \hline
+    
+    % Módulo de Autos
+    {\textbf{CU\_02}} & Administrador & Importar Autos\\ \hline
+    {\textbf{CU\_03}} & Administrador & Crear Auto\\ \hline
+    {\textbf{CU\_04}} & Administrador & Editar Auto \\\hline
+    {\textbf{CU\_05}} & Administrador & Eliminar Auto\\ \hline
+    {\textbf{CU\_06}} & Administrador & Validar Archivo CSV\\ \hline
+    {\textbf{CU\_07}} & Administrador & Validar Parámetros\\ \hline
+    
+    {\textbf{CU\_08}} & Jugador & Visualizar Autos\\ \hline
+    {\textbf{CU\_09}} & Jugador & Visualizar un Auto\\ \hline
+    {\textbf{CU\_10}} & Jugador & Filtrar por Categoría\\ \hline
+    
+    % Módulo de Pistas
+    {\textbf{CU\_11}} & Administrador & Importar Pistas\\ \hline
+    {\textbf{CU\_12}} & Administrador & Crear Pista\\ \hline
+    {\textbf{CU\_13}} & Administrador & Editar Pista\\\hline
+    {\textbf{CU\_14}} & Administrador & Eliminar Pista\\ \hline
+    {\textbf{CU\_15}} & Administrador & Validar Archivo CSV\\ \hline
+    {\textbf{CU\_16}} & Administrador & Validar Parámetros\\ \hline
+    
+    {\textbf{CU\_17}} & Jugador & Visualizar Pistas\\ \hline
+    {\textbf{CU\_18}} & Jugador & Visualizar una Pista\\ \hline
+    {\textbf{CU\_19}} & Jugador & Filtrar por Temporada\\ \hline
+    
+   % Módulo de Temporadas
+   {\textbf{CU\_20}} & Administrador & Crear Temporada\\ \hline
+   {\textbf{CU\_21}} & Administrador & Eliminar Temporada\\ \hline
+   {\textbf{CU\_22}} & Administrador & Validar Parámetros\\\hline
+   {\textbf{CU\_23}} & Administrador & Crear Rankings Asociados\\ \hline
+   {\textbf{CU\_24}} & Administrador & Eliminar Rankings Asociados\\ \hline
+   {\textbf{CU\_25}} & Administrador & Eliminar Sesiones Asociadas\\ \hline
+   
+   {\textbf{CU\_26}} & Jugador & Visualizar Temporadas\\ \hline
+   {\textbf{CU\_27}} & Jugador & Visualizar una Temporada\\ \hline
+   {\textbf{CU\_28}} & Jugador & Visualizar Ranking\\ \hline
+   {\textbf{CU\_29}} & Jugador & Mostrar Tabla de Resultados\\ \hline
+   
+   % Módulo de Sesiones
+  {\textbf{CU\_30}} & Administrador y Organizador & Importar Sesión\\ \hline
+  {\textbf{CU\_31}} & Administrador y Organizador & Crear Sesión\\ \hline
+  {\textbf{CU\_32}} & Administrador y Organizador & Eliminar Sesión\\ \hline
+  {\textbf{CU\_33}} & Administrador y Organizador & Validar Archivo CSV\\ \hline
+  {\textbf{CU\_34}} & Administrador y Organizador & Validar Parámetros\\ \hline
+  {\textbf{CU\_35}} & Administrador y Organizador & Calcular Resultados\\ \hline
+
+  {\textbf{CU\_36}} & Jugador & Visualizar Sesiones\\ \hline
+  {\textbf{CU\_37}} & Jugador & Visualizar una Sesión\\ \hline
+  {\textbf{CU\_38}} & Jugador & Visualizar Sesiones Recientes\\ \hline
+  \end{tabular}
+\end{center}
+
+
+
+
+
+
+
 
 \section{Modelo de Datos}
 Diagrama con Modelo de datos no relacional:
