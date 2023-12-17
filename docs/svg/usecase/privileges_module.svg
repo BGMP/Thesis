@@ -3,13 +3,13 @@
    version="1.1"
    width="15cm"
    height="10cm"
-   viewBox="-0.5 -0.5 566.92913 377.95276"
-   animation="{&quot;meta&quot;:{&quot;version&quot;:20230504,&quot;patch&quot;:1},&quot;page&quot;:{&quot;animationInfo&quot;:{}},&quot;infos&quot;:[{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-0&quot;,&quot;parentId&quot;:null,&quot;childrenIds&quot;:[&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;,&quot;parentId&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-0&quot;,&quot;childrenIds&quot;:[&quot;MD7emSWmTT5kjdxdmfiT-38&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;parentId&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;,&quot;childrenIds&quot;:[&quot;a-9xMI1RbZUKOBCPs9zf-2&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-3&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-4&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-7&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-8&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-9&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-13&quot;,&quot;MD7emSWmTT5kjdxdmfiT-0&quot;,&quot;MD7emSWmTT5kjdxdmfiT-3&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:{&quot;name&quot;:&quot;Element&quot;,&quot;startTime&quot;:1,&quot;duration&quot;:1,&quot;loopForever&quot;:false,&quot;animations&quot;:[{&quot;id&quot;:&quot;IB11DjGAY4wKMAFU&quot;,&quot;startTime&quot;:0,&quot;duration&quot;:1,&quot;type&quot;:&quot;Always Show&quot;,&quot;animationId&quot;:null,&quot;animationOptions&quot;:null,&quot;animationJsonData&quot;:null},{&quot;id&quot;:&quot;IB11DjGAY4wKMAFV&quot;,&quot;startTime&quot;:1.5,&quot;duration&quot;:1,&quot;type&quot;:&quot;Always Show&quot;,&quot;animationId&quot;:null,&quot;animationOptions&quot;:null,&quot;animationJsonData&quot;:null}]}},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-2&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-3&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-4&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Generalization&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-7&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-8&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Generalization&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-9&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-13&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Generalization&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-0&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:[&quot;MD7emSWmTT5kjdxdmfiT-1&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;System&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-1&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-0&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;UseCase&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-3&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Association&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null}],&quot;pageMeta&quot;:{&quot;audios&quot;:[],&quot;videos&quot;:[],&quot;characters&quot;:[],&quot;video_duration&quot;:1,&quot;page_width&quot;:1100,&quot;page_height&quot;:850,&quot;page_hash&quot;:&quot;5d259976-d684-4f8a-bb08-46dc5678bd48&quot;}}"
-   isStartAnimationWithPreviousPage="after"
-   id="svg40"
+   viewBox="-0.5 -0.5 566.92914 377.95276"
+   animation="{&quot;meta&quot;:{&quot;version&quot;:20230504,&quot;patch&quot;:1},&quot;page&quot;:{&quot;animationInfo&quot;:{}},&quot;infos&quot;:[{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-0&quot;,&quot;parentId&quot;:null,&quot;childrenIds&quot;:[&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;,&quot;parentId&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-0&quot;,&quot;childrenIds&quot;:[&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;VV7ZB-_vYZTa23PE-AWT-12&quot;,&quot;VV7ZB-_vYZTa23PE-AWT-13&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;parentId&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;,&quot;childrenIds&quot;:[&quot;a-9xMI1RbZUKOBCPs9zf-2&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-3&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-4&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-7&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-8&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-9&quot;,&quot;a-9xMI1RbZUKOBCPs9zf-13&quot;,&quot;MD7emSWmTT5kjdxdmfiT-0&quot;,&quot;MD7emSWmTT5kjdxdmfiT-3&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:null,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:{&quot;name&quot;:&quot;Element&quot;,&quot;startTime&quot;:1,&quot;duration&quot;:1,&quot;loopForever&quot;:false,&quot;animations&quot;:[{&quot;id&quot;:&quot;IB11DjGAY4wKMAFU&quot;,&quot;startTime&quot;:0,&quot;duration&quot;:1,&quot;type&quot;:&quot;Always Show&quot;,&quot;animationId&quot;:null,&quot;animationOptions&quot;:null,&quot;animationJsonData&quot;:null},{&quot;id&quot;:&quot;IB11DjGAY4wKMAFV&quot;,&quot;startTime&quot;:1.5,&quot;duration&quot;:1,&quot;type&quot;:&quot;Always Show&quot;,&quot;animationId&quot;:null,&quot;animationOptions&quot;:null,&quot;animationJsonData&quot;:null}]}},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-2&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-3&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-4&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:[],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Generalization&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-7&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-8&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Generalization&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-9&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-13&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Generalization&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-0&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:[&quot;MD7emSWmTT5kjdxdmfiT-1&quot;],&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;System&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-1&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-0&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;UseCase&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;MD7emSWmTT5kjdxdmfiT-3&quot;,&quot;parentId&quot;:&quot;MD7emSWmTT5kjdxdmfiT-38&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Association&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;VV7ZB-_vYZTa23PE-AWT-12&quot;,&quot;parentId&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Actor&quot;,&quot;vertex&quot;:true,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null},{&quot;cell&quot;:{&quot;id&quot;:&quot;VV7ZB-_vYZTa23PE-AWT-13&quot;,&quot;parentId&quot;:&quot;a-9xMI1RbZUKOBCPs9zf-1&quot;,&quot;childrenIds&quot;:null,&quot;groupParentId&quot;:null,&quot;groupChildrenIds&quot;:null,&quot;shapeType&quot;:&quot;Generalization&quot;,&quot;vertex&quot;:false,&quot;maskedCell&quot;:false,&quot;webComponentType&quot;:null},&quot;animationInfo&quot;:null}],&quot;pageMeta&quot;:{&quot;audios&quot;:[],&quot;videos&quot;:[],&quot;characters&quot;:[],&quot;video_duration&quot;:1,&quot;page_width&quot;:1100,&quot;page_height&quot;:850,&quot;page_hash&quot;:&quot;a6df8a84-25cc-4431-965b-6a6a239d1932&quot;}}"
+   isStartAnimationWithPreviousPage="with"
+   id="svg49"
    sodipodi:docname="privileges_module.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
-   inkscape:export-filename="..\..\..\src\img\privileges_module.png"
+   inkscape:export-filename="privileges_module.png"
    inkscape:export-xdpi="350"
    inkscape:export-ydpi="350"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -19,7 +19,7 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <sodipodi:namedview
-     id="namedview40"
+     id="namedview49"
      pagecolor="#ffffff"
      bordercolor="#999999"
      borderopacity="1"
@@ -27,15 +27,15 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.0709081"
-     inkscape:cx="254.92384"
-     inkscape:cy="245.11907"
+     inkscape:zoom="0.84515573"
+     inkscape:cx="143.76049"
+     inkscape:cy="157.95905"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g39"
+     inkscape:current-layer="g48"
      inkscape:document-units="cm" />
   <defs
      id="defs2">
@@ -47,14 +47,15 @@
        id="style2">@import url(&quot;https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap&quot;);&#10;@import url(&quot;https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap&quot;);&#10;</style>
   </defs>
   <g
-     id="g39"
-     transform="matrix(1.0786595,0,0,1.0786595,-27.372921,47.662464)">
+     id="g48"
+     transform="translate(-10.070866,37.649636)">
     <g
        shape-node=""
-       id="g5">
+       id="g5"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <circle
          cell-id="a-9xMI1RbZUKOBCPs9zf-2"
-         cx="278"
+         cx="317"
          cy="130.5"
          fill="transparent"
          stroke="#000000"
@@ -64,7 +65,7 @@
          style="fill:none" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-2"
-         d="m 278,138 v 25"
+         d="m 317,138 v 25"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -72,7 +73,7 @@
          id="path2" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-2"
-         d="m 263,147 h 30"
+         d="m 302,147 h 30"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -80,7 +81,7 @@
          id="path3" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-2"
-         d="m 278,163 -15,20"
+         d="m 317,163 -15,20"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -88,7 +89,7 @@
          id="path4" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-2"
-         d="m 278,163 15,20"
+         d="m 317,163 15,20"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -98,7 +99,8 @@
     <g
        shape-node=""
        text-node=""
-       id="g7">
+       id="g7"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <g
          cell-id="a-9xMI1RbZUKOBCPs9zf-2"
          transform="translate(-0.5,-0.5)"
@@ -114,12 +116,12 @@
              height="100%"
              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
             <xhtml:div
-               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 28px; height: 1px; padding-top: 190px; margin-left: 264px;">
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 54px; height: 1px; padding-top: 190px; margin-left: 290px;">
               <xhtml:div
                  style="box-sizing: border-box; font-size: 0; text-align: center; ">
                 <xhtml:div
                    ani=""
-                   style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: none; word-break: break-word; white-space: normal; word-wrap: normal; ">Actor</xhtml:div>
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: none; word-break: break-word; white-space: normal; word-wrap: normal; ">Usuario</xhtml:div>
               </xhtml:div>
             </xhtml:div>
           </foreignObject>
@@ -131,8 +133,8 @@
             <defs
                id="defs5">
               <path
-                 id="R4_wjjGGqwDUiQUx"
-                 d="m 264.5,202.6 h 27" />
+                 id="ghgCrjGAeSnqmwCW"
+                 d="m 295,202.6 h 44" />
             </defs>
             <text
                fill="#000000"
@@ -140,22 +142,23 @@
                font-family="Helvetica, 'VP Default'"
                font-weight="400"
                id="text5"><textPath
-                 xlink:href="#R4_wjjGGqwDUiQUx"
+                 xlink:href="#ghgCrjGAeSnqmwCW"
                  startOffset="50%"
                  text-anchor="middle"
                  id="textPath5"><tspan
                    xml:space="preserve"
-                   id="tspan5">Actor</tspan></textPath></text>
+                   id="tspan5">Usuario</tspan></textPath></text>
           </svg>
         </switch>
       </g>
     </g>
     <g
        shape-node=""
-       id="g10">
+       id="g10"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <circle
          cell-id="a-9xMI1RbZUKOBCPs9zf-3"
-         cx="113"
+         cx="120"
          cy="195.5"
          fill="transparent"
          stroke="#000000"
@@ -165,7 +168,7 @@
          style="fill:none" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-3"
-         d="m 113,203 v 25"
+         d="m 120,203 v 25"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -173,7 +176,7 @@
          id="path7" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-3"
-         d="m 98,212 h 30"
+         d="m 105,212 h 30"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -181,7 +184,7 @@
          id="path8" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-3"
-         d="M 113,228 98,248"
+         d="m 120,228 -15,20"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -189,7 +192,7 @@
          id="path9" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-3"
-         d="m 113,228 15,20"
+         d="m 120,228 15,20"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -199,7 +202,8 @@
     <g
        shape-node=""
        text-node=""
-       id="g12">
+       id="g12"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <g
          cell-id="a-9xMI1RbZUKOBCPs9zf-3"
          transform="translate(-0.5,-0.5)"
@@ -215,7 +219,7 @@
              height="100%"
              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
             <xhtml:div
-               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 90px; height: 1px; padding-top: 255px; margin-left: 68px;">
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 90px; height: 1px; padding-top: 255px; margin-left: 75px;">
               <xhtml:div
                  style="box-sizing: border-box; font-size: 0; text-align: center; ">
                 <xhtml:div
@@ -232,8 +236,8 @@
             <defs
                id="defs10">
               <path
-                 id="x4_wjjGGqwDUiQUy"
-                 d="m 83.5,267.6 h 59" />
+                 id="whgCrjGAeSnqmwCX"
+                 d="m 90.5,267.6 h 59" />
             </defs>
             <text
                fill="#000000"
@@ -241,7 +245,7 @@
                font-family="Helvetica, 'VP Default'"
                font-weight="400"
                id="text10"><textPath
-                 xlink:href="#x4_wjjGGqwDUiQUy"
+                 xlink:href="#whgCrjGAeSnqmwCX"
                  startOffset="50%"
                  text-anchor="middle"
                  id="textPath10"><tspan
@@ -253,10 +257,11 @@
     </g>
     <g
        shape-node=""
-       id="g13">
+       id="g13"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-4"
-         d="M 249.88,153 H 123 q -10,0 -10,10 v 25"
+         d="M 275.88,153 H 130 q -10,0 -10,10 v 25"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -264,7 +269,7 @@
          id="path12" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-4"
-         d="m 261.88,153 -12,6 v -12 z"
+         d="m 287.88,153 -12,6 v -12 z"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -273,7 +278,8 @@
     </g>
     <g
        shape-node=""
-       id="g17">
+       id="g17"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <circle
          cell-id="a-9xMI1RbZUKOBCPs9zf-7"
          cx="65"
@@ -321,7 +327,7 @@
        shape-node=""
        text-node=""
        id="g19"
-       transform="translate(0.42675781,-89.009178)">
+       transform="matrix(1.0334023,0,0,1.0334023,-18.197689,-89.174419)">
       <g
          cell-id="a-9xMI1RbZUKOBCPs9zf-7"
          transform="translate(-0.5,-0.5)"
@@ -354,7 +360,7 @@
             <defs
                id="defs17">
               <path
-                 id="J4_wjjGGqwDUiQUz"
+                 id="IhgCrjGAeSnqmwCY"
                  d="m 26.5,79.6 h 77" />
             </defs>
             <text
@@ -363,7 +369,7 @@
                font-family="Helvetica, 'VP Default'"
                font-weight="400"
                id="text17"><textPath
-                 xlink:href="#J4_wjjGGqwDUiQUz"
+                 xlink:href="#IhgCrjGAeSnqmwCY"
                  startOffset="50%"
                  text-anchor="middle"
                  id="textPath17"><tspan
@@ -375,10 +381,11 @@
     </g>
     <g
        shape-node=""
-       id="g20">
+       id="g20"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-8"
-         d="M 249.88,153 H 75 Q 65,153 65,143 V 60"
+         d="M 275.88,153 H 75.03 q -10,0 -10,-10 V 60"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -386,7 +393,7 @@
          id="path19" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-8"
-         d="m 261.88,153 -12,6 v -12 z"
+         d="m 287.88,153 -12,6 v -12 z"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -395,10 +402,11 @@
     </g>
     <g
        shape-node=""
-       id="g24">
+       id="g24"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <circle
          cell-id="a-9xMI1RbZUKOBCPs9zf-9"
-         cx="205"
+         cx="176"
          cy="7.5"
          fill="transparent"
          stroke="#000000"
@@ -408,7 +416,7 @@
          style="fill:none" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-9"
-         d="M 205,15 V 40"
+         d="M 176,15 V 40"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -416,7 +424,7 @@
          id="path21" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-9"
-         d="m 190,24 h 30"
+         d="m 161,24 h 30"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -424,7 +432,7 @@
          id="path22" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-9"
-         d="M 205,40 190,60"
+         d="M 176,40 161,60"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -432,7 +440,7 @@
          id="path23" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-9"
-         d="m 205,40 15,20"
+         d="m 176,40 15,20"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -443,7 +451,7 @@
        shape-node=""
        text-node=""
        id="g26"
-       transform="translate(0.12792969,-90.125389)">
+       transform="matrix(1.0334023,0,0,1.0334023,-18.506498,-90.327914)">
       <g
          cell-id="a-9xMI1RbZUKOBCPs9zf-9"
          transform="translate(-0.5,-0.5)"
@@ -459,7 +467,7 @@
              height="100%"
              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
             <xhtml:div
-               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 90px; height: 1px; padding-top: 67px; margin-left: 160px;">
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 90px; height: 1px; padding-top: 67px; margin-left: 131px;">
               <xhtml:div
                  style="box-sizing: border-box; font-size: 0; text-align: center; ">
                 <xhtml:div
@@ -476,8 +484,8 @@
             <defs
                id="defs24">
               <path
-                 id="p4_wjjGGqwDUiQU0"
-                 d="m 171.5,79.6 h 67" />
+                 id="ohgCrjGAeSnqmwCZ"
+                 d="m 142.5,79.6 h 67" />
             </defs>
             <text
                fill="#000000"
@@ -485,7 +493,7 @@
                font-family="Helvetica, 'VP Default'"
                font-weight="400"
                id="text24"><textPath
-                 xlink:href="#p4_wjjGGqwDUiQU0"
+                 xlink:href="#ohgCrjGAeSnqmwCZ"
                  startOffset="50%"
                  text-anchor="middle"
                  id="textPath24"><tspan
@@ -497,10 +505,11 @@
     </g>
     <g
        shape-node=""
-       id="g27">
+       id="g27"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-13"
-         d="M 249.88,153 H 215 q -10,0 -10,-10 V 60"
+         d="M 275.88,153 H 186 q -10,0 -10,-10 V 60"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -508,7 +517,7 @@
          id="path26" />
       <path
          cell-id="a-9xMI1RbZUKOBCPs9zf-13"
-         d="m 261.88,153 -12,6 v -12 z"
+         d="m 287.88,153 -12,6 v -12 z"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -517,10 +526,11 @@
     </g>
     <g
        shape-node=""
-       id="g28">
+       id="g28"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <rect
          cell-id="MD7emSWmTT5kjdxdmfiT-0"
-         x="357"
+         x="383"
          y="58"
          width="193"
          height="190"
@@ -531,12 +541,14 @@
     </g>
     <g
        shape-node=""
-       id="g29">
+       id="g29"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)"
+       style="fill:none">
       <ellipse
          cell-id="MD7emSWmTT5kjdxdmfiT-1"
-         cx="457"
+         cx="479.5"
          cy="153"
-         rx="40"
+         rx="66.5"
          ry="20"
          fill="transparent"
          stroke="#000000"
@@ -547,7 +559,8 @@
     <g
        shape-node=""
        text-node=""
-       id="g31">
+       id="g31"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <g
          cell-id="MD7emSWmTT5kjdxdmfiT-1"
          transform="translate(-0.5,-0.5)"
@@ -563,12 +576,12 @@
              height="100%"
              requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
             <xhtml:div
-               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 153px; margin-left: 418px;">
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 131px; height: 1px; padding-top: 153px; margin-left: 414px;">
               <xhtml:div
                  style="box-sizing: border-box; font-size: 0; text-align: center; ">
                 <xhtml:div
                    ani=""
-                   style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: none; word-break: break-word; white-space: normal; word-wrap: normal; ">Login</xhtml:div>
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: none; word-break: break-word; white-space: normal; word-wrap: normal; ">Iniciar Sesión</xhtml:div>
               </xhtml:div>
             </xhtml:div>
           </foreignObject>
@@ -580,8 +593,8 @@
             <defs
                id="defs29">
               <path
-                 id="Z4_wjjGGqwDUiQU1"
-                 d="m 441.5,158.40005 h 31" />
+                 id="YhgCrjGAeSnqmwCa"
+                 d="m 442,158.40005 h 75" />
             </defs>
             <text
                fill="#000000"
@@ -589,22 +602,23 @@
                font-family="Helvetica, 'VP Default'"
                font-weight="400"
                id="text29"><textPath
-                 xlink:href="#Z4_wjjGGqwDUiQU1"
+                 xlink:href="#YhgCrjGAeSnqmwCa"
                  startOffset="50%"
                  text-anchor="middle"
                  id="textPath29"><tspan
                    xml:space="preserve"
-                   id="tspan29">Login</tspan></textPath></text>
+                   id="tspan29">Iniciar Sesión</tspan></textPath></text>
           </svg>
         </switch>
       </g>
     </g>
     <g
        shape-node=""
-       id="g32">
+       id="g32"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <path
          cell-id="MD7emSWmTT5kjdxdmfiT-3"
-         d="M 292.67,152.83 H 345 q 10,0 20,0.03 l 52,0.14"
+         d="m 345.31,152.72 h 23.72 q 10,0 20,0.09 L 413,153"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -613,38 +627,45 @@
     </g>
     <g
        shape-node=""
-       id="g33">
+       id="g35"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
+      <circle
+         cell-id="VV7ZB-_vYZTa23PE-AWT-12"
+         cx="212"
+         cy="195.5"
+         fill="transparent"
+         stroke="#000000"
+         pointer-events="none"
+         id="ellipse32"
+         r="7.5"
+         style="fill:none" />
       <path
-         cell-id="a-9xMI1RbZUKOBCPs9zf-4"
-         d="M 249.88,153 H 123 q -10,0 -10,10 v 25"
+         cell-id="VV7ZB-_vYZTa23PE-AWT-12"
+         d="m 212,203 v 25"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
          pointer-events="none"
          id="path32" />
       <path
-         cell-id="a-9xMI1RbZUKOBCPs9zf-4"
-         d="m 261.88,153 -12,6 v -12 z"
+         cell-id="VV7ZB-_vYZTa23PE-AWT-12"
+         d="m 197,212 h 30"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
          pointer-events="none"
          id="path33" />
-    </g>
-    <g
-       shape-node=""
-       id="g35">
       <path
-         cell-id="a-9xMI1RbZUKOBCPs9zf-8"
-         d="M 249.88,153 H 75 Q 65,153 65,143 V 60"
+         cell-id="VV7ZB-_vYZTa23PE-AWT-12"
+         d="m 212,228 -15,20"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
          pointer-events="none"
          id="path34" />
       <path
-         cell-id="a-9xMI1RbZUKOBCPs9zf-8"
-         d="m 261.88,153 -12,6 v -12 z"
+         cell-id="VV7ZB-_vYZTa23PE-AWT-12"
+         d="m 212,228 15,20"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
@@ -653,51 +674,193 @@
     </g>
     <g
        shape-node=""
-       id="g37">
+       text-node=""
+       id="g37"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
+      <g
+         cell-id="VV7ZB-_vYZTa23PE-AWT-12"
+         transform="translate(-0.5,-0.5)"
+         id="g36">
+        <switch
+           cell-id="VV7ZB-_vYZTa23PE-AWT-12"
+           id="switch35">
+          <foreignObject
+             cell-id="VV7ZB-_vYZTa23PE-AWT-12"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 90px; height: 1px; padding-top: 255px; margin-left: 167px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   ani=""
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: none; word-break: break-word; white-space: normal; word-wrap: normal; ">Jugador</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg35">
+            <defs
+               id="defs35">
+              <path
+                 id="4hgCrjGAeSnqmwCb"
+                 d="m 189.5,267.6 h 45" />
+            </defs>
+            <text
+               fill="#000000"
+               font-size="12px"
+               font-family="Helvetica, 'VP Default'"
+               font-weight="400"
+               id="text35"><textPath
+                 xlink:href="#4hgCrjGAeSnqmwCb"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath35"><tspan
+                   xml:space="preserve"
+                   id="tspan35">Jugador</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g38"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
       <path
-         cell-id="a-9xMI1RbZUKOBCPs9zf-13"
-         d="M 249.88,153 H 215 q -10,0 -10,-10 V 60"
-         fill="none"
-         stroke="#000000"
-         stroke-miterlimit="10"
-         pointer-events="none"
-         id="path36" />
-      <path
-         cell-id="a-9xMI1RbZUKOBCPs9zf-13"
-         d="m 261.88,153 -12,6 v -12 z"
+         cell-id="VV7ZB-_vYZTa23PE-AWT-13"
+         d="M 275.88,153.03 221.03,153 q -10,0 -10,10 v 25"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
          pointer-events="none"
          id="path37" />
-    </g>
-    <g
-       shape-node=""
-       id="g38">
       <path
-         cell-id="MD7emSWmTT5kjdxdmfiT-3"
-         d="M 292.67,152.83 H 345 q 10,0 20,0.03 l 52,0.14"
+         cell-id="VV7ZB-_vYZTa23PE-AWT-13"
+         d="m 287.88,153.04 -12,5.99 v -12 z"
          fill="none"
          stroke="#000000"
          stroke-miterlimit="10"
          pointer-events="none"
          id="path38" />
     </g>
+    <g
+       shape-node=""
+       id="g40"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-4"
+         d="M 275.88,153 H 130 q -10,0 -10,10 v 25"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path39" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-4"
+         d="m 287.88,153 -12,6 v -12 z"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path40" />
+    </g>
+    <g
+       shape-node=""
+       id="g42"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-8"
+         d="M 275.88,153 H 75.03 q -10,0 -10,-10 V 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path41" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-8"
+         d="m 287.88,153 -12,6 v -12 z"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path42" />
+    </g>
+    <g
+       shape-node=""
+       id="g44"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-13"
+         d="M 275.88,153 H 186 q -10,0 -10,-10 V 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path43" />
+      <path
+         cell-id="a-9xMI1RbZUKOBCPs9zf-13"
+         d="m 287.88,153 -12,6 v -12 z"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path44" />
+    </g>
+    <g
+       shape-node=""
+       id="g45"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
+      <path
+         cell-id="MD7emSWmTT5kjdxdmfiT-3"
+         d="m 345.31,152.72 h 23.72 q 10,0 20,0.09 L 413,153"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path45" />
+    </g>
+    <g
+       shape-node=""
+       id="g47"
+       transform="matrix(1.0334023,0,0,1.0334023,-18.638701,1.4969408)">
+      <path
+         cell-id="VV7ZB-_vYZTa23PE-AWT-13"
+         d="M 275.88,153.03 221.03,153 q -10,0 -10,10 v 25"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path46" />
+      <path
+         cell-id="VV7ZB-_vYZTa23PE-AWT-13"
+         d="m 287.88,153.04 -12,5.99 v -12 z"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="none"
+         id="path47" />
+    </g>
   </g>
   <switch
-     id="switch40">
+     id="switch49">
     <g
        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-       id="g40" />
+       id="g49" />
     <a
        transform="translate(0,-5)"
-       id="a40">
+       id="a49">
       <text
          text-anchor="middle"
          font-size="10px"
          x="50%"
          y="100%"
-         id="text40" />
+         id="text49" />
     </a>
   </switch>
 </svg>
