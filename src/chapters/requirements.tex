@@ -143,59 +143,98 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 \end{center}
 
 \section{Requerimientos No Funcionales del Software}
+La presente sección hablará de los requerimientos no funcionales de la aplicación desarrollada. Todos los requerimientos no funcionales se relacionarán con uno o más atributos. Si un atributo aplica a un requerimiento no funcional, eso quiere decir que el requerimiento contribuye a la calidad del software desarrollado a través de ese atributo. Todos los atributos listados están basados en la norma ISO 25010.
 
 % API
 \begin{center}
-	\begin{tabular}{ | l | p{15cm} |}
-		\hline
-		\multicolumn{2}{|c|}{\textbf{API}} \\
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
-		\hline
-		{\textbf{RNF\_01}} & La plataforma contará con una API REST, la cual estará diseñada para ser consumida por aplicaciones de terceros. Todos los endpoints estarán disponibles sólo para lectura por parte de terceros. \\ \hline
-		
-		{\textbf{RNF\_02}} & La API contará con endpoints tanto de la vista de un solo auto, como de todos los autos (por categoría). \\ \hline
-		
-		{\textbf{RNF\_03}} & La API contará con endpoints tanto de la vista de una sola pista, como de todos las pistas. \\ \hline
-		
-		{\textbf{RNF\_04}} & La API contará con endpoints de las temporadas. \\ \hline
-		
-		{\textbf{RNF\_05}} & La API contará con endpoints de los rankings. \\ \hline
-		
-		{\textbf{RNF\_06}} & La API contará con endpoints de las sesiones. Todos los datos embedidos de las sesiones formarán también parte del cuerpo JSON de la respuesta. Esto quiere decir que los objetos se anidarán en el documento según corresponda.\\ \hline
-	\end{tabular}
+  \begin{tabular}{ | p{2cm}| p{8cm} | p{5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{\textbf{RNF\_01}} \\
+    \hline
+    
+    \multicolumn{1}{|p{2cm}|}{\textbf{Descripción}} & \multicolumn{2}{|p{13cm}|}{La plataforma contará con una API REST, la cual estará diseñada para ser consumida por aplicaciones de terceros. Todos los endpoints estarán disponibles sólo para lectura por parte de terceros.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\textbf{{Atributo}}} & \multicolumn{1}{|p{1.5cm}|}{\textbf{Aplica}} & \multicolumn{1}{|p{10cm}|}{\textbf{Especificación}} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Adecuación Funcional}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{La API contribuye a la corrección funcional, ya que facilita la obtención de datos precisos del sistema a terceros.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Eficiencia de Desempeño}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Compatibilidad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{La API contribuye a la coexistencia con otras piezas de software independientes, ya que permite a dicho software consumir información del sistema en tiempo real.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Usabilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Fiabilidad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{La API contribuye a la madurez del software, ya que es gracias a ella que el sistema puede satisfacer las necesidades de los usuarios que consumen información del mismo.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Seguridad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{Gracias al diseño de la API, sólo se exponen endpoints de lectura, por lo que esta contribuye a la confidencialidad e integridad de la información.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Mantenibilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Portabilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\
+
+    \hline
+  \end{tabular}
 \end{center}
 
 % Roles
 \begin{center}
-	\begin{tabular}{ | l | p{15cm} |}
-		\hline
-		\multicolumn{2}{|c|}{\textbf{Módulo de Roles por Usuario}} \\
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
-		\hline
-		{\textbf{RNF\_07}} & La plataforma deberá contar con un rol de administrador. Este rol tendrá todos los permisos dentro de la plataforma. El rol de administrador sólo podrá ser asignado de manera interna.\\ \hline
-		
-		{\textbf{RNF\_08}} & La plataforma deberá contar con un rol de moderador. Este rol tendrá permiso para modificar cierta información de los perfiles de lo usuarios. El rol de moderador sólo puede ser asignado por usuarios con rol de administrador desde  la misma plataforma.\\ \hline
-		
-		{\textbf{RNF\_09}} & La plataforma deberá contar con un rol de organizador. Este rol tendrá permiso para subir sesiones a la plataforma. El rol de organizador sólo puede ser asignado por usuarios con rol de administrador desde la misma plataforma. \\ \hline
-		
-		{\textbf{RNF\_10}} & La plataforma deberá contar con usuarios normales. Para efectos de la plataforma, los usuarios normales se denotarán por no contar con ningún rol. Los usuarios normales sólo podrán editar sus propios perfiles y visualizar la plataforma.\\ \hline
-	\end{tabular}
+  \begin{tabular}{ | p{2cm}| p{8cm} | p{5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{\textbf{RNF\_02}} \\
+    \hline
+    
+    \multicolumn{1}{|p{2cm}|}{\textbf{Descripción}} & \multicolumn{2}{|p{13cm}|}{La plataforma contará con una separación interna de roles a nivel de software. Estos roles serán: administrador, organizador, moderador y jugador, siendo el último denotado por no tener ninguno de los otros roles. El rol del primer administrador del sistema deberá ser asignado de manera interna. Una vez que existe un administrador, este podrá modificar los roles de todos los usuarios desde la misma página web.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\textbf{{Atributo}}} & \multicolumn{1}{|p{1.5cm}|}{\textbf{Aplica}} & \multicolumn{1}{|p{10cm}|}{\textbf{Especificación}} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Adecuación Funcional}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{Contribuye a la completitud y pertinencia funcional, ya que, gracias a contar con una separación de privilegios de usuario, el sistema puede proveerles opciones específicas basado en la jerarquía de roles definida.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Eficiencia de Desempeño}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Compatibilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Usabilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Fiabilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Seguridad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{La presencia de roles en el sistema contribuye directamente a la autenticidad, ya que con ellos el sistema es capaz de decernir si el usuario debiera poder realizar una determinada acción o no basándose en su identidad dentro del software.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Mantenibilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Portabilidad}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\
+    
+    \hline
+  \end{tabular}
 \end{center}
 
-% Control de Versiones
+% Roles
 \begin{center}
-	\begin{tabular}{ | l | p{15cm} |}
-		\hline
-		\multicolumn{2}{|c|}{\textbf{Módulo de Control de Versiones y Despliegue}} \\
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Id}} & \multicolumn{1}{|c|}{\textbf{Descripción}} \\
-		\hline
-		{\textbf{RNF\_11}} & El código estará versionado a través de Git, utilizando GitHub como plataforma de almacenamiento en la nube para el control de versiones.\\ \hline
-		
-		{\textbf{RNF\_12}} & Se contará con un sistema de integración continua para el software, implementado directamente en GitHub. A través de este sistema se podrá ser desplegar el software de manera automática cuando se detecten cambios en una rama de Git determinada.\\ \hline
-	\end{tabular}
+  \begin{tabular}{ | p{2cm}| p{8cm} | p{5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{\textbf{RNF\_03}} \\
+    \hline
+    
+    \multicolumn{1}{|p{2cm}|}{\textbf{Descripción}} & \multicolumn{2}{|p{13cm}|}{El código estará versionado a través de Git, utilizando GitHub como plataforma de almacenamiento en la nube para el control de versiones. El proyecto será de código abierto, y se contará con un sistema de integración continua para el software implementado directamente en GitHub. A través de este sistema se podrá ser desplegar el software de manera automática cuando se detecten cambios en una rama de Git determinada.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\textbf{{Atributo}}} & \multicolumn{1}{|p{1.5cm}|}{\textbf{Aplica}} & \multicolumn{1}{|p{10cm}|}{\textbf{Especificación}} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Adecuación Funcional}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Eficiencia de Desempeño}} & \multicolumn{1}{|c|}{} & \multicolumn{1}{|p{10cm}|}{} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Compatibilidad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{Contribuye a la coexistencia del software con otros sistemas, ya que, gracias a estar versionado en Git y ser de código abierto, los mantenedores y desarrolladores de otras piezas de software podrán tener acceso a toda la información técnica que necesiten para poder integrar sus productos con la plataforma de RVA exitosamente.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Usabilidad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{Existe una contribución al reconocimiento de la adecuación, ya que un usuario, al poder visualizar el historial de desarrollo completo en Git, podrá entender si el software, a nivel técnico, es adecuado para sus necesidades.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Fiabilidad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{Gracias al sistema de despliegue que detalla, este requerimiento no funciona contribuye a la madurez, disponibilidad y tolerancia a fallos del sistema. Al contar con un sistema de despliegue y versionado del proyecto, los desarrolladores pueden trabajar en el y hacer llegar actualizaciones muchísimo más rápido al entorno de producción, y por ende a los usuarios finales del software.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Seguridad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{Contribuye al no repudio, ya que, gracias a que el control de versiones lleva registro de todo lo que se modifica en la base de código, será posible rastrear malas decisiones o errores con facilidad.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Mantenibilidad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{Este requerimiento contribuye a la modularidad, reusabilidad analizabilidad y a la capacidad del software para ser modificado y probado. Todo esto gracias a que los cambios realizados en el software son documentados a través del control de versiones.} \\ \hline
+    
+    \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Portabilidad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{Contribuye a la adaptabilidad del software, y a la capacidad del mismo para ser instalado. Como todo el software es público y se encuentra en Git, analizarlo para adaptarlo resulta muy sencillo. Por otra parte, el sistema de despliegue facilita enormemente el instalar la aplicación en un entorno determinado.} \\
+    \hline
+  \end{tabular}
 \end{center}
 
 \section{Interfaces Internas de Salida}
