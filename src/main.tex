@@ -1,6 +1,7 @@
 \documentclass[12pt]{report}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{caption}
 \usepackage[hidelinks]{hyperref}
 \usepackage[spanish, es-nodecimaldot]{babel}
 \usepackage[utf8]{inputenc}
@@ -29,6 +30,8 @@
 	linkcolor=black,
 	urlcolor=black
 }
+
+\newenvironment{longlisting}{\captionsetup{type=listing}}{}
 
 % Profundidad de secciones
 \setcounter{tocdepth}{4}
