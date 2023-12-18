@@ -15,6 +15,7 @@ A continuación, se definirán algunos conceptos relevantes en el contexto del v
 	\item RVA: Abreviación para ''Re-Volt America''.
 	\item Sesión: Serie de carreras de RVGL en línea, en donde dos o más personas compiten en carreras multijugador.
 	\item Session Log: Archivo separado por comas, el cual contiene un registro crudo de los resultados de las carreras jugadas en una sesión de RVGL.
+ 	\item Host/Anfitrión: El jugador que abre una partida online de Re-Volt para que otros jugadores puedan conectarse a él.
 \end{itemize}
 
 \section{Historia de Re-Volt y sus Comunidades}
@@ -67,13 +68,13 @@ En Re-Volt, existen diferentes tipos de autos que pueden ser elegidos por el jug
 	\item Advanced (Avanzado).
 	\item Semi-Pro (Semi-Profesional).
 	\item Pro (Profesional).
+  \item Clockwork.
 \end{itemize}
 
 Además de las categorías originales, también existen categorías especiales que han surgido a partir del contenido creado por la comunidad de Re-Volt y RVGL. Estas categorías son las siguientes:
 
 \begin{itemize}
 	\item Super-Pro
-	\item Clockwork
 \end{itemize}
 
 La categoría o ''Rating'' de cada auto puede apreciarse desde el menú del juego, tal como se puede ver en la figura FIGNUM.
@@ -123,7 +124,7 @@ A continuación, la tabla TABLENUM es una especificación de los elementos relev
 		
 		{\textbf{B2}} & Fecha y hora de apertura de la sesión. \\ \hline
 		
-		{\textbf{C2}} & Nombres del jugador anfitrión de la sesión. \\ \hline
+		{\textbf{C2}} & Nombre del jugador anfitrión de la sesión. \\ \hline
 		
 		{\textbf{D2}} & Tipo de colisión entre autos, seleccionado por el anfitrión. \\ \hline
 		
@@ -302,7 +303,7 @@ A partir de estos parámetros, podemos calcular el puntaje oficial, o PO, obteni
 \subsubsection{Multiplicadores por Auto}
 Como ya se mencionó anteriormente, al principio de cada temporada, se agregan y se eliminan autos del pack de RVA. Asimismo, RVA introduce el concepto de multiplicadores para dichos autos por temporada.
 
-De acuerdo con el sistema de RVA, el puntaje obtenido por un jugador al finalizar una carrera es multiplicado por el multiplicador del auto que utiliza en dicha carrera. De esta forma, el puntaje obtenido por el jugador incrementa o disminuye dependiendo del multiplicador asociado a su auto.
+De acuerdo con el sistema de RVA, el puntaje obtenido por un jugador al finalizar una carrera es alterado por el multiplicador del auto que utiliza en dicha carrera. De esta forma, el puntaje obtenido por el jugador incrementa o disminuye dependiendo del multiplicador asociado a su auto.
 
 Los multiplicadores de cada auto son un reflejo de su potencial para desempeñarse en carreras en línea en comparación a los demás autos de su categoría. Por ejemplo, si un auto es increíblemente rápido, fácil de manejar y no tiene dificultad alguna, entonces a este se le asocia con un multiplicador bajo, para así nivelar los puntos que, potencialmente, pueda obtener un jugador al utilizarlo. Por el contrario, si un auto es muy lento, difícil de manejar, y simplemente es peor que los demás autos de su categoría, entonces se le asocia con un multiplicador alto, para así otorgar puntos extra a quien lo utilice.
 
@@ -375,6 +376,3 @@ En general, esta solución fue concebida para ser algo simple y rápido que sirv
 
 \section{Justificación del Problema}
 Actualmente, no existe ninguna plataforma que permita a los usuarios registrarse o visualizar resultados y estadísticas de las sesiones multijugador organizadas por la comunidad. Lo anterior significa que, cuando se juegan partidas online, no es posible obtener de manera automática rankings, estadísticas por vehículo y menos por usuario, ya que no hay forma de vincular, de manera definitiva, a los jugadores a través de un perfil dentro del juego. Es por ello que un usuario de nuestra comunidad no puede saber cuántas carreras o sesiones ha ganado con cierto auto, o en cierta pista, cómo se compara al resto, qué porcentaje de carreras ha perdido, ganado, etc.
-
-
-
