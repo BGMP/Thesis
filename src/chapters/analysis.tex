@@ -1104,7 +1104,6 @@ end
 
 \subsection{Paleta de Colores}
 
-
 \section{Diseño de Arquitectura}
 El proyecto, en su estado actual, hace uso de un servidor propio, el cual contiene los servicios web, bases de datos y caché. Todo en una sola máquina. Independientemente de donde se termine alojanda, la aplicación web estará disponible en ''https://rva.lat/''.
 
@@ -1119,10 +1118,27 @@ A continuación, se muestra un diagrama que ilustra todo el proceso de interacci
 
 Tal como se puede apreciar en la ilustración anterior, la arquitectura que da soporte a la aplicación web de RVA se concentra en un servidor, con dos almacenes de datos. Podemos ver que los usuarios juegan la sesión, el host de la sesión sube el Session Log a la web, y los usuarios pueden visitar la misma web para revisar los resultados
 
-\section{Estructura del código}
-El proyecto, al ser una aplicación hecha en el framework de Ruby on Rails, sigue patrón de MVC (Model View Controller), o modelo, vista, controlador. El árbol de directorio se ve de la siguiente manera:
+\newpage
 
-% IMAGEN
+\section{Estructura del código}
+El proyecto, al ser una aplicación hecha en el framework de Ruby on Rails, sigue el patrón de MVC (Model View Controller) o modelo, vista, controlador. El árbol de directorios del proyecto se ve de la siguiente manera.
+
+\begin{center}
+  \includegraphics[height=16cm]{tree.png} \\
+\end{center}
+
+Dentro los archivos relevantes para la estructura del código, tenemos aquellos archivos en los que se definen dependencias y módulos de despliegue.
+
+\begin{center}
+  \begin{tabular}{ | l | p{12.5cm} |}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Directorio}} & \multicolumn{1}{|c|}{\textbf{Detalle}} \\
+    \hline
+    
+    {\textbf{Capfile}} & Contiene la carga de módulos para el despliegue de la aplicación. \\ \hline
+    {\textbf{Gemfile}} & Contiene todas las dependencias del proyecto, con sus respectivas versiones. \\ \hline
+  \end{tabular}
+\end{center}
 
 \subsection{Backend}
 
