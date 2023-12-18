@@ -727,16 +727,16 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     \multicolumn{1}{|c|}{\textbf{Atributo}} & \multicolumn{1}{|c|}{\textbf{Detalle}} \\
     \hline
     
-    {\textit{store\_in}} & Define el nombre de la base de datos de mongo en donde los documentos de este modelo serán almacenados.\\ \hline
-    {\textit{field}} & Define el nombre de un campo del modelo. \\ \hline
-    {\textit{embeds\_many}} & Define que el modelo contendrá varios modelos de otro tipo dentro de si en forma de JSON anidado. \\ \hline
-    {\textit{accepts\_nested\_attributes\_for}} & Declara que el modelo aceptará atributos anidados pasados a modelos que este anida. \\ \hline
-    {\textit{validates\_presence\_of}} & Valida si el campo proveído existe al momento de guardar el modelo en la base de datos. \\ \hline
-    {\textit{belongs\_to}} & Quiere decir que el modelo tendrá una referencia por ID a otro modelo, quedando esta registrada como un atributo.
+    {\textit{store\_in}} & Declara el nombre de la base de datos de mongo en donde los documentos de este modelo serán almacenados.\\ \hline
+    {\textit{field}} & Declara el nombre de un campo del modelo. \\ \hline
+    {\textit{embeds\_many}} & Declara que el modelo contendrá una colección de modelos anidados. \\ \hline
+    {\textit{accepts\_nested\_attributes\_for}} & Declara que el modelo aceptará atributos para los modelos anidados que éste contenga. \\ \hline
+    {\textit{validates\_presence\_of}} & Valida si el campo proveído no está vacío al momento de guardar el modelo en la base de datos. \\ \hline
+    {\textit{belongs\_to}} & Declara que el modelo tendrá una referencia por ID a otro modelo, quedando esta registrada como un atributo.
      \\ \hline
-    {\textit{has\_many}} & Define que el modelo podrá ser referenciado por ID desde varios otros modelos. \\ \hline
-    {\textit{has\_one}} & Define que el modelo contará con una referencia singular a otro modelo. \\ \hline
-    {\textit{validates}} & Define una o más validaciones para un campo del modelo, tales como su presencia garantizada, singularidad, tamaño mínimo o máximo, entre otras.\\ \hline
+    {\textit{has\_many}} & Declara que el modelo podrá ser referenciado por ID desde varios otros modelos. \\ \hline
+    {\textit{has\_one}} & Declara que el modelo contará con una referencia singular por ID a otro modelo. \\ \hline
+    {\textit{validates}} & Declara una o más validaciones para un campo del modelo, tales como su presencia garantizada, singularidad, tamaño mínimo o máximo, entre otras.\\ \hline
   \end{tabular}
 \end{center}
 
