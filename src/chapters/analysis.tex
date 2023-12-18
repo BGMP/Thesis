@@ -114,7 +114,9 @@ A continuación, la tabla TABLENUM contiene los nombres y actores asociados a ca
 \end{center}
 
 \subsection{Detalle de los Casos de Uso}
-A continuación, se presentan tablas de detalle para cada uno de los casos de uso listados en la \autoref{analysis:usecases:specification}. Aquellos casos de uso que fueron marcados en negrita anteriormente también contarán con un detalle de su flujo de eventos básico.
+A continuación, se presentan tablas de detalle para cada uno de los casos de uso listados en la \autoref{analysis:usecases:specification} y que fueron marcados en negrita. También contarán con un detalle de su flujo de eventos básico.
+
+Los casos de uso seleccionados para ser detallados fueron elegidos porque cumplen funciones fundamentales de los requisitos funcionales de la aplicación desarrollada. El resto de los casos de uso solamente contarán con sus precondiciones y una descripción simple.
 
 %
 % Privilegios
@@ -167,10 +169,13 @@ A continuación, se presentan tablas de detalle para cada uno de los casos de us
     \multicolumn{1}{|p{7.5cm}|}{1. Renderiza el formulario de importación de autos.}\\ \hline
     
     \multicolumn{1}{|p{7.5cm}|}{2. Selecciona el archivo CSV con la información de los autos y la temporada. Luego pulsa el botón para importar.}& 
-    \multicolumn{1}{|p{7.5cm}|}{3. Valida el archivo CSV con la información de los autos. Valida si los datos son correctos. Verifica si ya existe un auto con el mismo nombre relacionado con la misma temporada.}\\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{}& 
+    \multicolumn{1}{|p{7.5cm}|}{3. Llama al \textbf{CU\_06\_VALIDAR\_ARCHIVO\_CSV}.}\\ \hline
     
     \multicolumn{1}{|p{7.5cm}|}{} & 
-    \multicolumn{1}{|p{7.5cm}|}{4. Autos creados. Redirecciona al administrador a la página de importación de autos.}\\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{4. El sistema crea las colecciones y las almacena en la base de datos. Se notifica éxito al usuario.}\\ \hline
     
     \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Alternativo}} \\ \hline
     
@@ -291,10 +296,13 @@ A continuación, se presentan tablas de detalle para cada uno de los casos de us
     \multicolumn{1}{|p{7.5cm}|}{1. Renderiza el formulario de importación de pistas.}\\ \hline
     
     \multicolumn{1}{|p{7.5cm}|}{2. Selecciona el archivo CSV con la información de las pistas y la temporada. Luego pulsa el botón para importar.}& 
-    \multicolumn{1}{|p{7.5cm}|}{3. Valida el archivo CSV con la información de las pistas. Valida si los datos son correctos. Verifica si ya existe una pista con el mismo nombre relacionada con la misma temporada.}\\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{}\\ \hline
+    
+    \multicolumn{1}{|p{7.5cm}|}{}& 
+    \multicolumn{1}{|p{7.5cm}|}{3. Llama al \textbf{CU\_15\_VALIDAR\_ARCHIVO\_CSV}.}\\ \hline
     
     \multicolumn{1}{|p{7.5cm}|}{} & 
-    \multicolumn{1}{|p{7.5cm}|}{4. Pistas creadas. Redirecciona al administrador a la página de importación de pistas.}\\ \hline
+    \multicolumn{1}{|p{7.5cm}|}{4. El sistema crea las colecciones y las almacena en la base de datos. Se notifica éxito al usuario.}\\ \hline
     
     \multicolumn{2}{|p{7.5cm}|}{\textbf{Flujo de Eventos Alternativo}} \\ \hline
     
@@ -698,7 +706,6 @@ Diagrama con Modelo de datos no relacional:
 	\includegraphics{datamodel2.png}
 \end{center}
 
-
 \begin{center}
 	\includegraphics{datamodel3.png}
 \end{center}
@@ -708,10 +715,7 @@ Diagrama con Modelo de datos no relacional:
 \end{center}
 
 \section{Esquema de la Base de Datos}
-Todas las bases de datos dentro de MongoDB están prefijadas utilizando el término “rv”. Por ejemplo, la base de datos que almacena las colecciones de autos se llama “rv\_cars”, la de los usuarios “rv\_users”, etc.
-
-EXPLICAR NOMENCLATURA DE COLECCIONES DE REDIS
-
+Todas las bases de datos dentro de MongoDB están prefijadas utilizando el término ''rv''. (Re-Volt) Por ejemplo, la base de datos que almacena las colecciones de autos se llama ''rv\_cars'', la de los usuarios ''rv\_users'', etc.
 
 A continuación, se exponen fragmentos de código de Ruby con los modelos definidos para este proyecto. Los fragmentos de código están en formato de mongoid (librería de Ruby para MongoDB). Este formato se compone de la declaración de los campos de los modelos, especificando tipo y otras restricciones asociadas. Además, se mezcla el concepto de relaciones entre modelos de Ruby on Rails.
 
@@ -730,11 +734,11 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     {\textit{validates\_presence\_of}} & Valida si el campo proveído existe al momento de guardar el modelo en la base de datos. \\ \hline
     {\textit{belongs\_to}} & Quiere decir que el modelo tendrá una referencia por ID a otro modelo, quedando esta registrada como un atributo.
      \\ \hline
-    {\textit{validates\_presence\_of}} & Valida si el campo proveído existe al momento de guardar el modelo en la base de datos. \\ \hline
+    {\textit{has\_many}} & Define que el modelo podrá ser referenciado por ID desde varios otros modelos. \\ \hline
+    {\textit{has\_one}} & Define que el modelo contará con una referencia singular a otro modelo. \\ \hline
+    {\textit{validates}} & Define una o más validaciones para un campo del modelo, tales como su presencia garantizada, singularidad, tamaño mínimo o máximo, entre otras.\\ \hline
   \end{tabular}
 \end{center}
-
-
 
 \begin{listing}
   \begin{minted}[mathescape,
@@ -1107,12 +1111,16 @@ end
 \clearpage
 
 \section{Diseño de Interfaz}
+El diseño de las interfaces de Re-Volt America ha sido debidamente cuidado a la hora de ser implementado en la aplicación desarrollada.
+Dentro de las secciones de autos, pistas y sesiones se cuenta con una barra de sub-navegación, la cual integra todos los elementos de una temporada, dando acceso al usuario de manera más práctica a toda la información que este podría necesitar.
 
 \includegraphics[width=15cm, height=8cm]{img/landing.png} \\
 
+\includegraphics[width=15cm, height=8cm]{img/cars.png} \\
+
 \includegraphics[width=15cm, height=8cm]{img/tracks.png} \\
 
-\includegraphics[width=15cm, height=8cm]{img/cars.png} \\
+\includegraphics[width=15cm, height=8cm]{img/session.png} \\
 
 \includegraphics[width=15cm, height=8cm]{img/profile1.png} \\
 
