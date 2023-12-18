@@ -712,7 +712,29 @@ Todas las bases de datos dentro de MongoDB están prefijadas utilizando el térm
 
 EXPLICAR NOMENCLATURA DE COLECCIONES DE REDIS
 
-A continuación, se describen los datos de la base de datos mediante archivos de definición de modelos de Ruby con mongoid:
+
+A continuación, se exponen fragmentos de código de Ruby con los modelos definidos para este proyecto. Los fragmentos de código están en formato de mongoid (librería de Ruby para MongoDB). Este formato se compone de la declaración de los campos de los modelos, especificando tipo y otras restricciones asociadas. Además, se mezcla el concepto de relaciones entre modelos de Ruby on Rails.
+
+Para facilitar la comprensión de los esquemas de bases de datos a continuación, la siguiente tabla contiene una pequeña especificación de los atributos utilizados para definir los modelos.
+
+\begin{center}
+  \begin{tabular}{ | p{6cm} | p{11cm} |}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Atributo}} & \multicolumn{1}{|c|}{\textbf{Detalle}} \\
+    \hline
+    
+    {\textit{store\_in}} & Define el nombre de la base de datos de mongo en donde los documentos de este modelo serán almacenados.\\ \hline
+    {\textit{field}} & Define el nombre de un campo del modelo. \\ \hline
+    {\textit{embeds\_many}} & Define que el modelo contendrá varios modelos de otro tipo dentro de si en forma de JSON anidado. \\ \hline
+    {\textit{accepts\_nested\_attributes\_for}} & Declara que el modelo aceptará atributos anidados pasados a modelos que este anida. \\ \hline
+    {\textit{validates\_presence\_of}} & Valida si el campo proveído existe al momento de guardar el modelo en la base de datos. \\ \hline
+    {\textit{belongs\_to}} & Quiere decir que el modelo tendrá una referencia por ID a otro modelo, quedando esta registrada como un atributo.
+     \\ \hline
+    {\textit{validates\_presence\_of}} & Valida si el campo proveído existe al momento de guardar el modelo en la base de datos. \\ \hline
+  \end{tabular}
+\end{center}
+
+
 
 \begin{listing}
   \begin{minted}[mathescape,
