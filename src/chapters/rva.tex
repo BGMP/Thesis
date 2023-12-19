@@ -55,11 +55,15 @@ A nivel organizacional, se cuenta con algunas variables secretas para el desplie
 \section{Repositorios del Paquete de Contenido de RVA}
 Como se explicó en la \autoref{problem:context:rva:pack}, RVA maneja un paquete de contenido de expansión para RVGL. Este paquete de contenido es versionado a través de Git en los repositorios de \textit{rva\_cars/} y \textit{rva\_tracks/}. Estos dos repositorios son sub-módulos del repositorio \textit{rva\_pack/}. Para integrar todos estos repositorios, se tiene un archivo \textbf{Rakefile}, el cual contiene las tareas necesarias para comprimir y desplegar el paquete de contenido de RVA.
 
-El árbol de directorios del repositorio \textit{rva\_pack/} se ve de la siguiente manera.
+El árbol de directorios del repositorio \textit{rva\_pack/} se puede ver en la \autoref{fig:rva_pack.png}.
 
-\begin{center}
-  \includegraphics{rva_pack.png}
-\end{center}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{rva_pack.png}
+  \end{center}
+  \caption[Árbol de directorios de rva\_pack]{Árbol de directorios de rva\_pack}
+  \label{fig:rva_pack.png}
+\end{figure}
 
 Para versionar los paquetes, se utiliza un sistema basado en fechas. Por ejemplo, si la fecha es 30/10/2023, entonces ésta se traduce a la versión \textit{23.1030a-1}. El sufijo \textit{a-1} es simplemente una forma de diferenciar las versiones que fueron lanzadas en un mismo día.
 

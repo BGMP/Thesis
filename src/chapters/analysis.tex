@@ -27,23 +27,80 @@ Esta sección contiene todos los diagramas de casos de uso relevantes para el pr
 
 \subsection{Diagramas de Casos de Uso}
 \label{analysis:usecases}
-\includegraphics{privileges_module.png}
 
-\includegraphics{rva_cars_module_1.png}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{privileges_module.png}
+  \end{center}
+  \caption[Diagrama de Casos de Uso del módulo de privilegios]{Diagrama de Casos de Uso del módulo de privilegios}
+  \label{fig:privileges_module.png}
+\end{figure}
 
-\includegraphics{rva_cars_module_2.png}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{rva_cars_module_1.png}
+  \end{center}
+  \caption[Diagrama de Casos de Uso del módulo de autos 1]{Diagrama de Casos de Uso del módulo de autos 1}
+  \label{fig:rva_cars_module_1}
+\end{figure}
 
-\includegraphics{rva_tracks_module_1.png}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{rva_cars_module_2.png}
+  \end{center}
+  \caption[Diagrama de Casos de Uso del módulo de autos 2]{Diagrama de Casos de Uso del módulo de autos 2}
+  \label{fig:rva_cars_module_2}
+\end{figure}
 
-\includegraphics{rva_tracks_module_2.png}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{rva_tracks_module_1.png}
+  \end{center}
+  \caption[Diagrama de Casos de Uso del módulo de pistas 1]{Diagrama de Casos de Uso del módulo de pistas 1}
+  \label{fig:rva_tracks_module_1}
+\end{figure}
 
-\includegraphics{rva_seasons_module_1.png}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{rva_tracks_module_2.png}
+  \end{center}
+  \caption[Diagrama de Casos de Uso del módulo de pistas 2]{Diagrama de Casos de Uso del módulo de pistas 2}
+  \label{fig:rva_tracks_module_2}
+\end{figure}
 
-\includegraphics{rva_seasons_module_2.png}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{rva_seasons_module_1.png}
+  \end{center}
+  \caption[Diagrama de Casos de Uso del módulo de temporadas 1]{Diagrama de Casos de Uso del módulo de temporadas 1}
+  \label{fig:rva_seasons_module_1}
+\end{figure}
 
-\includegraphics{rva_sessions_module_1.png}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{rva_seasons_module_2.png}
+  \end{center}
+  \caption[Diagrama de Casos de Uso del módulo de temporadas 2]{Diagrama de Casos de Uso del módulo de temporadas 2}
+  \label{fig:rva_seasons_module_2}
+\end{figure}
 
-\includegraphics{rva_sessions_module_2.png}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{rva_sessions_module_1.png}
+  \end{center}
+  \caption[Diagrama de Casos de Uso del módulo de sesiones 1]{Diagrama de Casos de Uso del módulo de sesiones 1}
+  \label{fig:rva_sessions_module_1}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{rva_sessions_module_2.png}
+  \end{center}
+  \caption[Diagrama de Casos de Uso del módulo de sesiones 1]{Diagrama de Casos de Uso del módulo de sesiones 1}
+  \label{fig:rva_sessions_module_2}
+\end{figure}
+
+\newpage
 
 \subsection{Especificación de los Casos de Uso}
 \label{analysis:usecases:specification}
@@ -692,27 +749,49 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
 \end{center}
 
 \section{Modelo de Datos}
-Diagrama con Modelo de datos no relacional:
+Los siguientes diagramas contienen información relevante de los modelos de datos utilizados para desarrollar la aplicación de este proyecto de título. Algunos de ellos se muestran por separado para mayor claridad.
 
-\begin{center}
-  \includegraphics{datamodels.png}
-\end{center}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{datamodels.png}
+  \end{center}
+  \caption[Resumen de modelo de datos]{Resumen de modelos de datos}
+  \label{fig:datamodels}
+\end{figure}
 
-\begin{center}
-	\includegraphics{datamodel1.png}
-\end{center}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{datamodel1.png}
+  \end{center}
+  \caption[Modelo de relaciones entre usuario, perfil y estadísticas]{Modelo de relaciones entre usuario, perfil y estadísticas}
+  \label{fig:datamodels1}
+\end{figure}
 
-\begin{center}
-	\includegraphics{datamodel2.png}
-\end{center}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{datamodel2.png}
+  \end{center}
+  \caption[Modelo de relación entre temporada, autos y pistas]{Modelo de relación entre temporada, autos y pistas}
+  \label{fig:datamodels2}
+\end{figure}
 
-\begin{center}
-	\includegraphics{datamodel3.png}
-\end{center}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{datamodel3.png}
+  \end{center}
+  \caption[Modelo de relaciones entre temporada, ranking y sesiones con sus componentes]{Modelo de relaciones entre temporada, ranking y sesiones con sus componentes}
+  \label{fig:datamodels3}
+\end{figure}
 
-\begin{center}
-	\includegraphics{datamodel4.png}
-\end{center}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{datamodel4.png}
+  \end{center}
+  \caption[Modelo de relación entre sesión, carrera y entrada de corredor]{Modelo de relación entre sesión, carrera y entrada de corredor}
+  \label{fig:datamodels4}
+\end{figure}
+
+\newpage
 
 \section{Esquema de la Base de Datos}
 Todas las bases de datos dentro de MongoDB están prefijadas utilizando el término ''rv''. (Re-Volt) Por ejemplo, la base de datos que almacena las colecciones de autos se llama ''rv\_cars'', la de los usuarios ''rv\_users'', etc.
@@ -1122,61 +1201,120 @@ En la parte superior, se encuentra la barra de navegación principal, la cual in
   \item Un botón para poder registrarse, iniciar sesión o visualizar información del perfil en caso de existir una sesión iniciada.
 \end{itemize}
 
-\includegraphics[width=15cm, height=8cm]{img/landing.png} \\
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=15cm, height=8cm]{img/landing.png} 
+  \end{center}
+  \caption[Landing page de RVA]{Landing page de RVA}
+  \label{fig:landing}
+\end{figure}
 
 Dentro de las secciones de autos, pistas y sesiones se cuenta con una barra de sub-navegación, la cual integra todos los elementos de una temporada, dando acceso al usuario de manera más práctica a toda la información que este podría necesitar.
 
-\includegraphics[width=15cm, height=8cm]{img/cars.png} \\
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=15cm, height=8cm]{img/landing.png} 
+  \end{center}
+  \caption[Página de autos de RVA]{Página de autos de RVA}
+  \label{fig:cars}
+\end{figure}
 
-\includegraphics[width=15cm, height=8cm]{img/tracks.png} \\
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=15cm, height=8cm]{img/tracks.png} 
+  \end{center}
+  \caption[Página de pistas de RVA]{Página de pistas de RVA}
+  \label{fig:tracks}
+\end{figure}
 
 El diseño de la interfaz de las sesiones respeta fielmente el formato original de RVA.
 
-\includegraphics[width=15cm, height=8cm]{img/session.png} \\
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=15cm, height=8cm]{img/tracks.png} 
+  \end{center}
+  \caption[Página de sesión de RVA]{Página de sesión de RVA}
+  \label{fig:session}
+\end{figure}
 
 La el diseño de la página de perfil de los usuarios cuenta con su nombre en grande, un resumen de sus estadísticas, posición en el ranking y un pequeño historial de las últimas sesiones en las que han participado.
 
-\includegraphics[width=15cm, height=8cm]{img/profile1.png} \\
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=15cm, height=8cm]{img/profile1.png} 
+  \end{center}
+  \caption[Página de perfil de usuario de RVA]{Página de perfil de usuario de RVA}
+  \label{fig:profile}
+\end{figure}
 
 Por último, la página de estadísticas sigue un formato simple de tabla de resultados, con un selector que permite filtrar dichos resultados según diversos criterios.
 
-\includegraphics[width=15cm, height=8cm]{img/stats.png} \\
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=15cm, height=8cm]{img/stats.png} 
+  \end{center}
+  \caption[Página de estadísticas globales de RVA]{Página de estadísticas globales de RVA}
+  \label{fig:stats}
+\end{figure}
 
 \subsection{Paleta de Colores y Tipografía}
 Como preámbulo principal en cuanto a la pelta de colores y tipografía de RVA, debemos recordar que esta comunidad nace de un grupo de jugadores de Re-Volt, no de una empresa o compañía con estándares definidos. Por lo tanto, para comprender los orígenes de estos elementos, debemos remontarnos a los inicios de Re-Volt America por el año 2017.
 
-Durante los inicios de RVA, se diseña su logo principal, el cual puede apreciarse en la figura FIGNUM.
+Durante los inicios de RVA, se diseña su logo principal, el cual puede apreciarse en la \autoref{fig:rva-logo}.
 
-\begin{center}
-  \includegraphics[width=8cm, height=8cm]{rva.png}
-\end{center}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=8cm, height=8cm]{img/rva.png} 
+  \end{center}
+  \caption[Logotipo de RVA]{Logotipo de RVA}
+  \label{fig:rva-logo}
+\end{figure}
 
 Del logo de RVA, se derivan los colores blanco y negro (absolutos), los cuales son utilizados como paleta principal para la comunidad.
 
-Así como los colores, la comunidad ha utilizado una fuente muy similar a la empleada en el logotipo a lo largo de los años. Esta fuente se titula ''Nissan Opti'', desarrollada originalmente por Castcraft Software. La caracterización de esta compañía tipográfica puede verse a continuación en la figura FIGNUM.
+Así como los colores, la comunidad ha utilizado una fuente muy similar a la empleada en el logotipo a lo largo de los años. Esta fuente se titula ''Nissan Opti'', desarrollada originalmente por Castcraft Software. La caracterización de esta compañía tipográfica puede verse a continuación en la \autoref{fig:optifont}.
 
-\begin{center}
-  \includegraphics{optifont.png}
-\end{center}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{img/optifont.png} 
+  \end{center}
+  \caption[Arte de Castcraft Software]{Arte de Castcraft Software}
+  \label{fig:optifont}
+\end{figure}
 
 De la misma forma, nacen las paletas de colores para las tablas de resultados de sesiones y rankings acumulados. Estas últimas pueden apreciarse a continuación.
 
-\begin{center}
-  \includegraphics[width=15cm, height=8cm]{session_table.png}
-\end{center}
 
-\begin{center}
-  \includegraphics[width=15cm, height=8cm]{ranking_table.png}
-\end{center}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=16cm, height=11cm]{img/session_table.png} 
+  \end{center}
+  \caption[Tabla de resultados de sesión de RVA]{Tabla de resultados de sesión de RVA}
+  \label{fig:session-table}
+\end{figure}
 
-La paleta de colores de las tablas de resultados, junto a su definición en RGB (Red, Green, Blue), puede encontrarse en la figura FIGNUM a continuación.
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=16cm, height=11cm]{img/ranking_table.png} 
+  \end{center}
+  \caption[Tabla de ranking de RVA]{Tabla de ranking de RVA}
+  \label{fig:ranking-table.png}
+\end{figure}
 
-\begin{center}
-  \includegraphics[width=15cm, height=10cm]{rva_session_colors.png}
-\end{center}
+La paleta de colores de las tablas de resultados, junto a su definición en RGB (Red, Green, Blue), puede encontrarse en la \autoref{fig:rva-session-colors} a continuación.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=15cm, height=10cm]{img/rva_session_colors.png} 
+  \end{center}
+  \caption[Paleta de colores de sesiones de RVA]{Paleta de colores de sesiones de RVA}
+  \label{fig:rva-session-colors}
+\end{figure}
+
+\newpage
 
 \section{Diseño de Arquitectura}
-El proyecto, en su estado actual, hace uso de un servidor propio, el cual contiene los servicios web, bases de datos y caché. Todo en una sola máquina. Independientemente de donde se termine alojanda, la aplicación web estará disponible en ''https://rva.lat/''.
+El proyecto, en su estado actual, hace uso de un servidor propio, el cual contiene los servicios web, bases de datos y caché. Todo en una sola máquina. Independientemente de donde se termine alojando, la aplicación web estará disponible en ''https://rva.lat/''.
 
 Además de esto, la planificación contempla dos servicios externos, que actualmente son proveídos por GitHub pages, los cuales sirven como repositorios de almacenamiento de datos masivos. Dichos repositorios se encargan actualmente de servir información y assets como las imágenes de las pistas y autos que la web ofrece a los usuarios:
 
@@ -1187,16 +1325,28 @@ Además de esto, la planificación contempla dos servicios externos, que actualm
 
 A continuación, se muestra un diagrama que ilustra todo el proceso de interacción entre servicios y usuarios:
 
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=16cm, height=11cm]{img/architecture.png} 
+  \end{center}
+  \caption[Diagrama de arquitectura de RVA]{Diagrama de arquitectura de RVA}
+  \label{fig:architecture.png}
+\end{figure}
+
 Tal como se puede apreciar en la ilustración anterior, la arquitectura que da soporte a la aplicación web de RVA se concentra en un servidor, con dos almacenes de datos. Podemos ver que los usuarios juegan la sesión, el host de la sesión sube el Session Log a la web, y los usuarios pueden visitar la misma web para revisar los resultados
 
 \newpage
 
-\section{Estructura del código}
+\section{Estructura del Código}
 El proyecto, al ser una aplicación hecha en el framework de Ruby on Rails, sigue el patrón de MVC (Model View Controller) o modelo, vista, controlador. El árbol de directorios del proyecto se ve de la siguiente manera.
 
-\begin{center}
-  \includegraphics[height=16cm]{tree.png} \\
-\end{center}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[height=16cm]{img/tree.png} 
+  \end{center}
+  \caption[Árbol de directorios del proyecto]{Árbol de directorios del proyecto}
+  \label{fig:tree.png}
+\end{figure}
 
 Dentro los archivos relevantes para la estructura del código, tenemos aquellos archivos en los que se definen dependencias y módulos de despliegue.
 
@@ -1211,21 +1361,49 @@ Dentro los archivos relevantes para la estructura del código, tenemos aquellos 
   \end{tabular}
 \end{center}
 
+\subsection{Estándres de Codificación}
+El código de este proyecto sigue las recomendaciones estándar para la programación con Ruby, y otros estándares de manera consistente:
+\begin{itemize}
+  \item Toda la base de código y documentación debe estar escrita en inglés.
+  \item Eng eneral, todo el proyecto sigue las convenciones de nombrado y otros lineamientos útiles del sitio de RubyStyle.
+  \item Se utilizan linebreaks (EOL - End of Line) CRLF.
+  \item Se utilizan dos espacios para la indentación del código, no tabulaciones.
+  \item La codificación del proyecto es en UTF-8. 
+\end{itemize}
 
-This project, being a Rails application, follows the MVC (Model View Controller) pattern.
-Databases are prefixed using the term rv (Re-Volt). Follow this standard when naming model databases.
-Cache keys are named in lowercase, and spaces are replaced by underscores. In case of compound cache keys, we use the following format:
-%object_type:id
-%object_type:id#field
-%object_type:id#embedded_object:id
-%object_type:id#embedded_object:id#field
+\subsection{Caché con Redis}
+Las llaves o entradas del caché de Redis son nombradas en minúscula, y los espacios que pudieran existir en ellas son reemplazados por guiones bajos. En caso de llaves compuestas, se utiliza el siguiente formato:
 
-%EXPLAIN DEPLOYMENT
-%EXPLAIN RVA PACK
-%EXPLAIN RVA_POINTS
-%EXPLAIN VERSIONING
-%EXPLAIN DISTRIBUTING SERVER
-%EXPLAIN GITHUB ORGANIZATION
+\begin{itemize}
+  \item \text{object\_type:id}
+  \item \text{object\_type:id\#field}
+  \item \text{object\_type:id\#embedded\_object:id}
+  \item \text{object\_type:id\#embedded\_object:id\#field}
+\end{itemize}
+
+\begin{longlisting}
+  \begin{minted}[mathescape,
+    linenos,
+    numbersep=5pt,
+    breaklines,
+    frame=single,
+    framesep=2mm]{ruby}  
+def show
+  require 'rva_calculate_results_service'
+  
+  @count = 0
+  @rva_results = Rails.cache.fetch("Session:#{@session.id}") do
+    RvaCalculateResultsService.new(@session).call
+  end
+  
+  respond_with @session do |format|
+    format.json { render :layout => false }
+  end
+end
+\end{minted}
+  \caption[Ejemplo de Caché en Código]{Implementación de caché con Redis en Rails (\textit{sessions\_controller.rb})}
+\end{longlisting}
+
 
 \subsection{Backend}
 
