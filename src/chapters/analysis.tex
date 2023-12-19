@@ -4,7 +4,7 @@
 \label{analysis:actors}
 En el software desarrollado, cada rol dentro del staff de RVA ha sido considerado como un actor diferente. Para el contexto del presente proyecto, el cargo de cada actor corresponde a su nombre, lo que quiere decir que si un actor lleva por nombre ''Administrador'', se entenderá que su cargo es ''Administrador de la comunidad de RVA''. Sólo los jugadores no cuentan con un cargo dentro de RVA.
 
-La especificación de todos los actores se puede encontrar a continuación en la tabla TABLENUM.
+La especificación de todos los actores se puede encontrar a continuación en la \autoref{table:analysis:actors}.
 
 \begin{center}
 	\begin{tabular}{| p{3cm} | p{4.5cm} | p{4.5cm} | p{2cm} |}
@@ -18,6 +18,7 @@ La especificación de todos los actores se puede encontrar a continuación en la
 		{\textbf{Moderador}} & Utiliza las funciones específicas de manejo de usuarios, tal como la edición de perfiles o aplicación de infracciones. & Requiere conocimientos que se limitan al manejo de usuarios dentro de la web. & Intermedio (manejo de usuarios).\\ \hline
 		{\textbf{Jugador}} & Utiliza la página sólo para visualizar la información que esta ofrece. & No requiere conocimientos técnicos más allá de iniciar sesión. & Ninguno.\\ \hline
 	\end{tabular}
+  \captionof{table}{Tabla de actores}\label{table:analysis:actors}
 \end{center}
 
 \newpage
@@ -168,6 +169,8 @@ A continuación, la tabla TABLENUM contiene los nombres y actores asociados a ca
     {\textbf{CU\_37}} & \textbf{Jugador} & \textbf{Visualizar una Sesión}\\ \hline
     {\textbf{CU\_38}} & Jugador & Visualizar Sesiones Recientes\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla de especificación de casos de uso}\label{table:usecase:specification}
 \end{center}
 
 \subsection{Detalle de los Casos de Uso}
@@ -207,6 +210,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{1}{|p{7.5cm}|}{} & 
     \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_01\_INICIAR\_SESION}\label{table:usecase:1}
 \end{center}
 
 %
@@ -244,6 +249,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{1}{|p{7.5cm}|}{} & 
     \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_02\_IMPORTAR\_AUTOS}\label{table:usecase:2}
 \end{center}
 
 \begin{center}
@@ -254,6 +261,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema guarda el modelo de auto en la base de datos con los datos ingresados por el administrador. } \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_03\_CREAR\_AUTO}\label{table:usecase:3}
 \end{center}
 
 \begin{center}
@@ -264,6 +273,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema actualiza el modelo de auto en la base de datos con los datos ingresados por el administrador.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_04\_EDITAR\_AUTO}\label{table:usecase:4}
 \end{center}
 
 \begin{center}
@@ -274,6 +285,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema elimina el modelo de auto en la base de datos.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_05\_ELIMINAR\_AUTO}\label{table:usecase:5}
 \end{center}
 
 \begin{center}
@@ -284,6 +297,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema lee el archivo y verifica que éste esté en el formato adecuado, y que contenga datos válidos para crear modelos de autos.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_06\_VALIDAR\_ARCHIVO\_CSV}\label{table:usecase:6}
 \end{center}
 
 \begin{center}
@@ -294,6 +309,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} Verifica que los parámetros cumplan con las restricciones del modelo de auto.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_07\_VALIDAR\_PARAMETROS}\label{table:usecase:7}
 \end{center}
 
 \begin{center}
@@ -304,6 +321,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza los autos por pantalla.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_08\_VISUALIZAR\_AUTOS}\label{table:usecase:8}
 \end{center}
 
 \begin{center}
@@ -324,6 +343,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{1}{|p{7.5cm}|}{} & 
     \multicolumn{1}{|p{7.5cm}|}{3. El sistema renderiza una visualización del auto seleccionado por el usuario.}\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_09\_VISUALIZAR\_UN\_AUTO}\label{table:usecase:9}
 \end{center}
 
 \begin{center}
@@ -334,6 +355,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema verifica la categoría de los autos y la utiliza para separarlos en diferentes secciones de la plataforma.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_10\_FILTRAR\_POR\_CATEGORIA}\label{table:usecase:10}
 \end{center}
 
 %
@@ -371,6 +394,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{1}{|p{7.5cm}|}{} & 
     \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_11\_IMPORTAR\_PISTAS}\label{table:usecase:11}
 \end{center}
 
 \begin{center}
@@ -381,6 +406,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema guarda el modelo de pista en la base de datos con los datos ingresados por el administrador. } \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_12\_CREAR\_PISTA}\label{table:usecase:12}
 \end{center}
 
 \begin{center}
@@ -391,6 +418,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema actualiza el modelo de pista en la base de datos con los datos ingresados por el administrador.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_13\_EDITAR\_PISTA}\label{table:usecase:13}
 \end{center}
 
 \begin{center}
@@ -401,6 +430,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema elimina el modelo de pista en la base de datos.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_14\_ELIMINAR\_PISTA}\label{table:usecase:14}
 \end{center}
 
 \begin{center}
@@ -411,6 +442,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema lee el archivo y verifica que éste esté en el formato adecuado, y que contenga datos válidos para crear modelos de pistas.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_15\_VALIDAR\_ARCHIVO\_CSV}\label{table:usecase:15}
 \end{center}
 
 \begin{center}
@@ -421,6 +454,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} Verifica que los parámetros cumplan con las restricciones del modelo de pista.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_16\_VALIDAR\_PARAMETROS}\label{table:usecase:16}
 \end{center}
 
 \begin{center}
@@ -431,6 +466,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza las pistas por pantalla.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_17\_VISUALIZAR\_PISTAS}\label{table:usecase:17}
 \end{center}
 
 \begin{center}
@@ -451,6 +488,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{1}{|p{7.5cm}|}{} & 
     \multicolumn{1}{|p{7.5cm}|}{3. El sistema renderiza una visualización de la pista seleccionada por el usuario.}\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_18\_VISUALIZAR\_UNA\_PISTA}\label{table:usecase:18}
 \end{center}
 
 \begin{center}
@@ -461,6 +500,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema verifica la temporada de las pistas y la utiliza para renderizar las pistas de la temporada actual.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_19\_FILTRAR\_POR\_TEMPORADA}\label{table:usecase:19}
 \end{center}
 
 % Temporadas
@@ -499,6 +540,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{1}{|p{7.5cm}|}{} & 
     \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_20\_CREAR\_TEMPORADA}\label{table:usecase:20}
 \end{center}
 
 \begin{center}
@@ -525,6 +568,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{1}{|p{7.5cm}|}{} & 
     \multicolumn{1}{|p{7.5cm}|}{6. Temporada eliminada. Redirecciona al administrador a la página de la temporadas.}\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_21\_ELIMINAR\_TEMPORADA}\label{table:usecase:21}
 \end{center}
 
 \begin{center}
@@ -535,6 +580,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} Verifica que los parámetros cumplan con las restricciones del modelo de temporada.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_22\_VALIDAR\_PARAMETROS}\label{table:usecase:22}
 \end{center}
 
 \begin{center}
@@ -545,6 +592,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema crea 6 modelos de ranking y los asocia a la temporada que se está creando en \textbf{CU\_20}.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_23\_CREAR\_RANKINGS\_ASOCIADOS}\label{table:usecase:23}
 \end{center}
 
 \begin{center}
@@ -555,6 +604,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema elimina los 6 modelos de ranking asociados a la temporada que se está eliminando en \textbf{CU\_20}.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_24\_ELIMINAR\_RANKINGS\_ASOCIADOS}\label{table:usecase:24}
 \end{center}
 
 \begin{center}
@@ -565,6 +616,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema elimina todos los modelos de sesión asociados con el ranking que se está eliminando en \textbf{CU\_24}.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_25\_ELIMINAR\_SESIONES\_ASOCIADAS}\label{table:usecase:25}
 \end{center}
 
 \begin{center}
@@ -575,6 +628,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza las temporadas por pantalla.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_26\_VISUALIZAR\_TEMPORADAS}\label{table:usecase:26}
 \end{center}
 
 \begin{center}
@@ -585,6 +640,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza una temporada por pantalla.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_27\_VISUALIZAR\_UNA\_TEMPORADA}\label{table:usecase:27}
 \end{center}
 
 \begin{center}
@@ -595,6 +652,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza un ranking por pantalla.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_28\_VISUALIZAR\_RANKING}\label{table:usecase:28}
 \end{center}
 
 \begin{center}
@@ -605,6 +664,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza una taba de resultados asociada a la temporada.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_29\_VISUALIZAR\_TABLA\_DE\_RESULTADOS}\label{table:usecase:29}
 \end{center}
 
 % Sesiones
@@ -637,6 +698,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{1}{|p{7.5cm}|}{} & 
     \multicolumn{1}{|p{7.5cm}|}{4 (b). Vuelve al paso 2 del flujo básico.}\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_30\_IMPORTAR\_SESION}\label{table:usecase:30}
 \end{center}
 
 \begin{center}
@@ -647,6 +710,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema guarda el modelo de sesión en la base de datos. El sistema calcula y suma las estadísticas de cada jugador a sus perfiles, y también a los resultados acumulados de los modelos de ranking y temporada asociados a la sesión.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_31\_CREAR\_SESION}\label{table:usecase:31}
 \end{center}
 
 \begin{center}
@@ -673,6 +738,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{1}{|p{7.5cm}|}{} & 
     \multicolumn{1}{|p{7.5cm}|}{6. Sesión eliminada. Redirecciona al administrador u organizador a la página principal.}\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_32\_ELIMINAR\_SESION}\label{table:usecase:32}
 \end{center}
 
 \begin{center}
@@ -683,6 +750,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema lee el archivo y verifica que éste esté en el formato adecuado, y que contenga datos válidos para crear un modelo de sesión.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_33\_VALIDAR\_ARCHIVO\_CSV}\label{table:usecase:33}
 \end{center}
 
 \begin{center}
@@ -693,6 +762,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} Verifica que los parámetros cumplan con las restricciones del modelo de sesión y sus sub-modelos.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_34\_VALIDAR\_PARAMETROS}\label{table:usecase:34}
 \end{center}
 
 \begin{center}
@@ -703,6 +774,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} Calcula los resultados de la sesión, transformándolos de datos crudos del Session Log a resultados en el formato de RVA.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_35\_CALCULAR\_RESULTADOS}\label{table:usecase:35}
 \end{center}
 
 \begin{center}
@@ -713,6 +786,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema renderiza las sesiones por pantalla.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_36\_VISUALIZAR\_SESIONES}\label{table:usecase:36}
 \end{center}
 
 \begin{center}
@@ -736,6 +811,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{1}{|p{7.5cm}|}{} & 
     \multicolumn{1}{|p{7.5cm}|}{3. El sistema renderiza la sesión por pantalla.}\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_37\_VISUALIZAR\_UNA\_SESION}\label{table:usecase:37}
 \end{center}
 
 \begin{center}
@@ -746,6 +823,8 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
     \multicolumn{2}{|p{15cm}|}{\textbf{Descripción:} El sistema las últimas sesiones, buscando la temporada más reciente por fecha, y luego buscando la última sesión del ranking más alto posible (primero al sexto).} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla del caso de uso CU\_38\_VISUALIZAR\_SESIONES\_RECIENTES}\label{table:usecase:38}
 \end{center}
 
 \section{Modelo de Datos}
@@ -801,7 +880,7 @@ A continuación, se exponen fragmentos de código de Ruby con los modelos defini
 Para facilitar la comprensión de los esquemas de bases de datos a continuación, la siguiente tabla contiene una pequeña especificación de los atributos utilizados para definir los modelos.
 
 \begin{center}
-  \begin{tabular}{ | p{6cm} | p{11cm} |}
+  \begin{tabular}{ | p{6cm} | p{9cm} |}
     \hline
     \multicolumn{1}{|c|}{\textbf{Atributo}} & \multicolumn{1}{|c|}{\textbf{Detalle}} \\
     \hline
@@ -817,6 +896,8 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     {\textbf{has\_one}} & Declara que el modelo contará con una referencia singular por ID a otro modelo. \\ \hline
     {\textbf{validates}} & Declara una o más validaciones para un campo del modelo, tales como su presencia garantizada, singularidad, tamaño mínimo o máximo, entre otras.\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla de especificación de atributos de esquema de la base datos}\label{table:schema}
 \end{center}
 
 \begin{listing}
@@ -1287,7 +1368,7 @@ De la misma forma, nacen las paletas de colores para las tablas de resultados de
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=16cm, height=11cm]{img/session_table.png} 
+    \includegraphics[width=16cm, height=10cm]{img/session_table.png} 
   \end{center}
   \caption[Tabla de resultados de sesión de RVA]{Tabla de resultados de sesión de RVA}
   \label{fig:session-table}
@@ -1359,6 +1440,8 @@ Dentro los archivos relevantes para la estructura del código, tenemos aquellos 
     {\textbf{Capfile}} & Contiene la carga de módulos para el despliegue de la aplicación. \\ \hline
     {\textbf{Gemfile}} & Contiene todas las dependencias del proyecto, con sus respectivas versiones. \\ \hline
   \end{tabular}
+  
+    \captionof{table}{Tabla archivos de dependencias y módulos de despliegue}\label{table:dependencies}
 \end{center}
 
 \subsection{Estándres de Codificación}
@@ -1427,6 +1510,8 @@ end
     
     {\textbf{config}} & Contiene toda la configuración de la aplicación, como las rutas, inicializadores de librerías, configuración de despliegue, declaración de los entornos de Rails (development, production), configuración de la base de datos y archivos de idioma para la localización del proyecto.\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla de directorios del backend del proyecto}\label{table:backend}
 \end{center}
 
 \subsection{Frontend}
@@ -1443,4 +1528,6 @@ end
     
     {\textbf{public}} & Todos los archivos estáticos servidos por la página pueden encontrarse aquí. Cosas como las páginas de error (404, 422, 500, etc.), estilos compilados, entre otros.\\ \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla de directorios del frontend del proyecto}\label{table:frontend}
 \end{center}

@@ -35,6 +35,8 @@ Por otra parte, tenemos la definición de quienes pueden ser clasificados como u
 		{\textbf{Moderador}} & Secundario & Utiliza las funciones específicas de manejo de usuarios, tal como la edición de perfiles o aplicación de infracciones. \\ \hline
 		{\textbf{Jugador}} & Terciario & Utiliza la página sólo para visualizar la información que esta ofrece. \\ \hline
 	\end{tabular}
+  
+  \captionof{table}{Tabla de tipos de usuario}\label{table:users:type}
 \end{center}
 
 \section{Objetivo General del Software}
@@ -67,6 +69,8 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 		
 		{\textbf{RF\_05}} & La plataforma contará con un módulo de visualización de un sólo auto. En esta vista se podrán ver todos los parámetros del auto. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 	\end{tabular}
+  
+  \captionof{table}{Tabla de requerimientos funcionales del módulo de autos}\label{table:rf:cars}
 \end{center}
 
 % Pistas
@@ -87,6 +91,8 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 		
 		{\textbf{RF\_10}} & La plataforma contará con un módulo de visualización de una sola pista. En esta vista se podrán ver todos los parámetros de la pista. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 	\end{tabular}
+  
+  \captionof{table}{Tabla de requerimientos funcionales del módulo de pistas}\label{table:rf:tracks}
 \end{center}
 
 % Temporadas
@@ -107,6 +113,8 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 		
 		{\textbf{RF\_15}} & La plataforma contará con un módulo de visualización de una sola temporada. En esta vista se podrán ver los rankings asociados y la tabla de resultados de la temporada. Este módulo estará disponible sólo para cualquier tipo de usuario.\\ \hline
 	\end{tabular}
+  
+  \captionof{table}{Tabla de requerimientos funcionales del módulo de temporadas}\label{table:rf:seasons}
 \end{center}
 
 % Rankings
@@ -122,6 +130,8 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 		
 		{\textbf{RF\_17}} & La plataforma contará con un módulo de visualización de un solo ranking. En esta vista se podrán ver todas las sesiones asociadas al ranking, junto con su tabla de resultados acumulados. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 	\end{tabular}
+  
+  \captionof{table}{Tabla de requerimientos funcionales del módulo de visualización de rankings}\label{table:rf:rankings}
 \end{center}
 
 % Sesiones
@@ -140,6 +150,8 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 		
 		{\textbf{RF\_21}} & La plataforma contará con un módulo de visualización de una sola sesión. En esta vista se podrán ver todos los parámetros de la sesión, ordenados en el formato de RVA. Este módulo estará disponible para cualquier tipo de usuario. \\ \hline
 	\end{tabular}
+  
+  \captionof{table}{Tabla de requerimientos funcionales del módulo de sesiones}\label{table:rf:sessions}
 \end{center}
 
 \section{Requerimientos No Funcionales del Software}
@@ -174,6 +186,8 @@ La presente sección hablará de los requerimientos no funcionales de la aplicac
 
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla de requerimiento no funcional de API}\label{table:rnf:api}
 \end{center}
 
 % Roles
@@ -205,6 +219,8 @@ La presente sección hablará de los requerimientos no funcionales de la aplicac
     
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla de requerimiento no funcional de roles de usuario}\label{table:rnf:roles}
 \end{center}
 
 % Roles
@@ -235,6 +251,8 @@ La presente sección hablará de los requerimientos no funcionales de la aplicac
     \multicolumn{1}{|p{3.5cm}|}{\nohyphens{Portabilidad}} & \multicolumn{1}{|c|}{X} & \multicolumn{1}{|p{10cm}|}{Contribuye a la adaptabilidad del software, y a la capacidad del mismo para ser instalado. Como todo el software es público y se encuentra en Git, analizarlo para adaptarlo resulta muy sencillo. Por otra parte, el sistema de despliegue facilita enormemente el instalar la aplicación en un entorno determinado.} \\
     \hline
   \end{tabular}
+  
+  \captionof{table}{Tabla de requerimiento no funcional de control de versiones}\label{table:rnf:vcs}
 \end{center}
 
 \section{Interfaces Internas de Salida}
@@ -253,6 +271,8 @@ La presente sección hablará de los requerimientos no funcionales de la aplicac
 		{\textbf{IN\_08}} & RacerResultEntry & username, country, session\_count, race\_count, positions\_sum, average\_position, obtained\_points, official\_score, participation\_multiplier, team \\ \hline
 		{\textbf{IN\_09}} & User & username, encrypted\_password, reset\_password\_token, reset\_password\_sent\_at, remember\_created\_at, sign\_in\_count, current\_sign\_in\_at, last\_sign\_in\_at, current\_sign\_in\_ip, last\_sign\_in\_ip, confirmation\_token, confirmation\_token, confirmed\_at, confirmation\_sent\_at, unconfirmed\_email, failed\_attempts, unlock\_token, locked\_at, admin, mod, organizar, locale, country, profile, stats \\ \hline
 	\end{tabular}
+  
+    \captionof{table}{Tabla de interfaces internas de salida}\label{table:interfaces:out}
 \end{center}
 
 \newpage
@@ -271,4 +291,6 @@ La presente sección hablará de los requerimientos no funcionales de la aplicac
 		{\textbf{OUT\_05}} & Session & number, host, version, physics, protocol, pickups, date, teams, category, session\_log\_data, ranking, races, racer\_result\_entries & Pantalla, Archivo CSV. \\ \hline
 		{\textbf{OUT\_06}} & User & username, admin, mod, organizer, locale, country, profile, stats & Pantalla \\ \hline
 	\end{tabular}
+  
+  \captionof{table}{Tabla de interfaces externas internas de salida}\label{table:interfaces:out2}
 \end{center}

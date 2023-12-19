@@ -202,6 +202,8 @@ A continuación, la tabla TABLENUM es una especificación de los elementos relev
 		
 		{\textbf{G5-G15}} & TRUE si los archivos locales del jugador no corresponden a los archivos del anfitrión. FALSE si estos coinciden. Por ejemplo, ''Cheating'' es TRUE si un jugador modificó localmente la velocidad de su auto.\\ \hline
 	\end{tabular}
+    \\
+\captionof{table}{Tabla de elementos de un Session Log de RVGL}\label{table:sessionlog}
 \end{center}
 
 \subsection{Funcionamiento Interno de Re-Volt America}
@@ -340,6 +342,8 @@ Una vez procesados, los resultados son llevados a una tabla final, tal como se p
 		{\textbf{Multiplicador por Participación}} & MP & La cantidad de carreras corridas por el jugador, divida por la cantidad de carreras totales de la sesión. \\ \hline
 		{\textbf{Puntaje Oficial}} & PO & El puntaje acumulado del jugador, multiplicado por un factor normalizador de 0.1. \\ \hline
 	\end{tabular}
+  \\
+  \captionof{table}{Tabla de parámetros de RVA}\label{table:parameters}
 \end{center}
 
 De acuerdo con la tabla anterior, los cálculos de PA, PP y MP pueden ser representados utilizando las siguientes fórmulas, respectivamente, en donde ''\textit{pos}'' es la posición del jugador en cada carrera, y ''\textit{tot}'' la cantidad total de carreras de la sesión.
