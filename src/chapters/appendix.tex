@@ -1,6 +1,7 @@
 \chapter{Anexos}
 
 \section{Anexo Estimación de Casos de Uso}
+
 \begin{center}
   \begin{tabular}{ | p{4cm} | p{2cm} | p{4cm}| p{5cm} | } 
     \hline
@@ -27,6 +28,15 @@
   \captionof{table}{Tabla de complejidad técnica}\label{table:tcf}
 \end{center}
 
+Tenemos entonces que el total es 34, con lo que sustituyendo en la fórmula del TCF, quedaría:
+\[
+\text{TCF} = 0.6+(0.01\cdot34)
+\]
+
+\[
+TCF = 0.94
+\]
+
 \begin{center}
   \begin{tabular}{ | p{4cm} | p{2cm} | p{4cm}| p{5cm} | } 
     \hline
@@ -46,6 +56,51 @@
   
     \captionof{table}{Tabla de factores medioambientales}\label{table:ef}
 \end{center}
+
+Tenemos entonces que el total es 28, con lo que sustituyendo en la fórmula del EF, quedaría:
+
+\[
+\text{EF}=1.4+(-0.03\cdot28) = 0.56
+\]
+
+\[
+EF = 0.56
+\]
+
+A partir de los casos de uso confeccionados en la \autopageref{analysis:usecases}, se ha encontrado que, de acuerdo a la cantidad de transacciones asociadas,  4 de ellos son de tipo simple, 22 son 
+de tipo medio y 12 son de tipo complejo. Realizando el cálculo por complejidad se tiene que:
+
+\[
+5 \cdot 4 \text{ simples} + 22 \cdot 10 \text{ medios} + 15 \cdot 12 \text{ complejos} = 420
+\]
+
+También se ha determinado que todos los actores son de tipo complejo, ya que todos actúan mediante interfaces gráficas. Con esta lógica, tenemos que:
+
+\[
+ 4 \text{ actores} \cdot 3 = 12 \text{ UAW} \text{ (peso de complejidad por actor)}
+\]
+
+A partir de estos cálculos, podemos obtener los puntos de casos de uso no ajustados (UCCP):
+
+\[
+\text{UUCP} = 420 + 12 = 431
+\]
+
+Luego, utilizando el TCF y EF calculados con anterioridad, podemos calcular los puntos de caso de uso ajustados por la complejidad técnica y complejidad ambiental.
+
+\[
+\text{UCP} = \text{UUCP} \cdot \text{TCF} \cdot \text{EF}
+\]
+
+\[
+UCP = 256
+\]
+
+
+Finalmente, a partir del esfuerzo del proyecto, se ha calculado un nivel de esfuerzo:
+\[
+LOE = \frac{384}{105.8} = 3.6 \text{ horas por punto de caso de uso}
+\]
 
 \section{Anexos de Recopilación de Información}
 Para la recopilación de información de este proyecto, se realizaron varias reuniones en modalidad remota con la administración de RVA. En las 3 reuniones realizadas, se le hicieron preguntas a la administración tanto para conocer su opinión acerca de la facilidad de uso del software que estaba en desarrollo, como para que tuvieran la oportunidad de sugerir cambios o mejoras de interfaz o usabilidad del sitio.
