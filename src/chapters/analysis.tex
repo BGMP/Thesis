@@ -905,32 +905,32 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     numbersep=5pt,
     frame=single,
     framesep=2mm]{ruby}
-    class Season
-    include Mongoid::Document
-    include Mongoid::Timestamps
-    include Mongoid::MultiParameterAttributes
-    
-    store_in :database => 'rv_seasons'
-    
-    has_many :rankings
-    has_many :cars
-    has_many :tracks
-    
-    embeds_many :racer_result_entries
-    
-    accepts_nested_attributes_for :racer_result_entries
-    
-    field :name, :type => String
-    field :start_date, :type => Date
-    field :end_date, :type => Date
-    field :current, :type => Boolean, :default => false
-    
-    validates_presence_of :name
-    validates_presence_of :start_date
-    validates_presence_of :current
-    
-    validates_uniqueness_of :name
-    end
+class Season
+  include Mongoid::Document
+  include Mongoid::Timestamps
+  include Mongoid::MultiParameterAttributes
+  
+  store_in :database => 'rv_seasons'
+  
+  has_many :rankings
+  has_many :cars
+  has_many :tracks
+  
+  embeds_many :racer_result_entries
+  
+  accepts_nested_attributes_for :racer_result_entries
+  
+  field :name, :type => String
+  field :start_date, :type => Date
+  field :end_date, :type => Date
+  field :current, :type => Boolean, :default => false
+  
+  validates_presence_of :name
+  validates_presence_of :start_date
+  validates_presence_of :current
+  
+  validates_uniqueness_of :name
+end
   \end{minted}
 \end{listing}
 
@@ -940,7 +940,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     gobble=2,
     frame=single,
     framesep=2mm]{ruby}
-    class Ranking
+  class Ranking
     include Mongoid::Document
     include Mongoid::Timestamps
     
@@ -956,7 +956,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     field :number, :type => Integer
     
     validates_presence_of :number
-    end
+  end
   \end{minted}
 \end{listing}
 
@@ -966,7 +966,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     gobble=2,
     frame=single,
     framesep=2mm]{ruby}
-    class Session
+  class Session
     include Mongoid::Document
     include SessionLogUploader::Attachment(:session_log)
     include Mongoid::Timestamps
@@ -999,7 +999,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     validates_presence_of :session_log
     validates_presence_of :teams
     validates_presence_of :category
-    end
+  end
   \end{minted}
 \end{listing}
 
@@ -1009,7 +1009,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     gobble=2,
     frame=single,
     framesep=2mm]{ruby}
-    class User
+  class User
     include Mongoid::Document
     include Mongoid::Timestamps
     
@@ -1046,7 +1046,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     field :organizer, :type => Boolean, :default => false
     field :locale, :type => String, :default => 'en_us'
     field :country, :type => String
-    end
+  end
   \end{minted}
 \end{listing}
 
@@ -1056,7 +1056,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     gobble=2,
     frame=single,
     framesep=2mm]{ruby}
-    class Race
+  class Race
     include Mongoid::Document
     include Mongoid::Attributes::Dynamic
     
@@ -1071,7 +1071,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     validates_presence_of :track_name
     validates_presence_of :laps
     validates_presence_of :racers_count
-    end
+  end
   \end{minted}
 \end{listing}
 
@@ -1081,7 +1081,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     gobble=2,
     frame=single,
     framesep=2mm]{ruby}
-    class RacerEntry
+  class RacerEntry
     include Mongoid::Document
     include Mongoid::Attributes::Dynamic
     
@@ -1102,7 +1102,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     validates_presence_of :best_lap
     validates_presence_of :finished
     validates_presence_of :cheating
-    end
+  end
   \end{minted}
 \end{listing}
 
@@ -1112,7 +1112,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     gobble=2,
     frame=single,
     framesep=2mm]{ruby}
-    class Profile
+  class Profile
     include Mongoid::Document
     
     embedded_in :user
@@ -1129,7 +1129,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     field :twitter, :type => String
     field :occupation, :type => String
     field :interests, :type => String
-    end
+  end
   \end{minted}
 \end{listing}
 
@@ -1139,7 +1139,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     gobble=2,
     frame=single,
     framesep=2mm]{ruby}
-    class Stats
+  class Stats
     include Mongoid::Document
     
     embedded_in :user
@@ -1157,7 +1157,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     field :participation_rate, :type => Float
     field :official_score, :type => Float
     field :obtained_points, :type => Integer
-    end
+  end
   \end{minted}
 \end{listing}
 
@@ -1167,7 +1167,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     gobble=2,
     frame=single,
     framesep=2mm]{ruby}
-    class Car
+  class Car
     include Mongoid::Document
     include Mongoid::Timestamps
     
@@ -1192,7 +1192,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     validates_presence_of :folder_name
     validates_presence_of :category
     validates_presence_of :stock
-    end
+  end
   \end{minted}
 \end{listing}
 
@@ -1202,7 +1202,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     gobble=2,
     frame=single,
     framesep=2mm]{ruby}
-    class Track
+  class Track
     include Mongoid::Document
     include Mongoid::Timestamps
     
@@ -1223,7 +1223,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     validates_presence_of :length
     validates_presence_of :folder_name
     validates_presence_of :stock
-    end
+  end
   \end{minted}
 \end{listing}
 
@@ -1233,7 +1233,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     gobble=2,
     frame=single,
     framesep=2mm]{ruby}
-    class RacerResultEntry
+  class RacerResultEntry
     include Mongoid::Document
     
     embedded_in :season
@@ -1253,7 +1253,7 @@ Para facilitar la comprensión de los esquemas de bases de datos a continuación
     
     validates_presence_of :username
     validates_presence_of :country
-    end
+  end
   \end{minted}
 \end{listing}
 
