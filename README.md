@@ -1,3 +1,7 @@
+<a href="https://github.com/BGMP/Thesis/releases/download/0.0.1.dev1/Thesis-Jose-Benavente.pdf">
+  <img src="https://github.com/BGMP/Thesis/assets/26081543/f4e93199-ad9e-47f6-ba8b-7846cdebdd7f" alt="" />
+</a>
+
 # Thesis
 My thesis, written in TeX.
 
