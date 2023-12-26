@@ -1460,18 +1460,18 @@ Las llaves o entradas del caché de Redis son nombradas en minúscula, y los esp
     breaklines,
     frame=single,
     framesep=2mm]{ruby}  
-    def show
-    require 'rva_calculate_results_service'
-    
-    @count = 0
-    @rva_results = Rails.cache.fetch("Session:#{@session.id}") do
+def show
+  require 'rva_calculate_results_service'
+	
+  @count = 0
+  @rva_results = Rails.cache.fetch("Session:#{@session.id}") do
     RvaCalculateResultsService.new(@session).call
-    end
-    
-    respond_with @session do |format|
+  end
+	
+  respond_with @session do |format|
     format.json { render :layout => false }
-    end
-    end
+  end  
+end
   \end{minted}
 \end{longlisting}
 
