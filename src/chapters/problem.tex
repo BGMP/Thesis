@@ -430,7 +430,13 @@ Teniendo en cuenta el contexto del problema, la situación en la actualidad pued
 \end{figure}
 
 \section{Propuesta de solución}
-Debe explicar en términos generales cómo las TIC pueden resolver o mejorar la(s) problemática identificada y quienes serán los usuarios principales, que tecnología se utilizaría para dar soporte a la propuesta.
+Para poder solucionar los desafíos y problemas que enfrenta la comunidad de Re-Volt America hoy en día, se propone desarrollar una plataforma web que integre todo el proceso de cálculo de puntos por sesión, así como también el manejo de estadísticas individuales por jugador.
+
+La aplicación web será desarrollada utilizando el framework para desarrollo de aplicaciones full-stack ''Ruby on Rails''. La persistencia de datos se implementará a través de MongoDB, y se utilizará Redis encima de todo lo anterior para implementar un caché de información pesada, tal como los cálculos complejos que se necesitan servir al usuario con gran frecuencia.
+
+Los principales usuarios del sistema propuesto serían los administradores de RVA y los jugadores de la comunidad (usuarios sin privilegios de ningún tipo). Asimismo, también existirán usuarios con roles específicos equivalentes a los roles que existen dentro de RVA, los cuales son ''organizador'' y ''moderador''. Los administradores, organizadores y moderadores son lo que se conoce como el staff de RVA.
+
+Todo lo descrito en los párrafos anteriores será detallado de manera oportuna a lo largo del resto de este informe.
 
 \section{Soluciones similares disponibles}
 A continuación, se describen las soluciones disponibles que pueden ser catalogadas como similares al proyecto que se presenta.
