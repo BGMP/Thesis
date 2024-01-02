@@ -1334,7 +1334,7 @@ Durante los inicios de RVA, se diseña su logo principal, el cual puede apreciar
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=8cm, height=8cm]{img/rva.png} 
+    \includegraphics[width=6cm, height=6cm]{img/rva.png} 
   \end{center}
   \caption[Logotipo de RVA]{Logotipo de RVA}
   \label{fig:rva-logo}
@@ -1342,7 +1342,7 @@ Durante los inicios de RVA, se diseña su logo principal, el cual puede apreciar
 
 Del logo de RVA, se derivan los colores blanco y negro (absolutos), los cuales son utilizados como paleta principal para la comunidad.
 
-Así como los colores, la comunidad ha utilizado una fuente muy similar a la empleada en el logotipo a lo largo de los años. Esta fuente se titula ''Nissan Opti'', desarrollada originalmente por Castcraft Software. La caracterización de esta compañía tipográfica puede verse a continuación en la \autoref{fig:optifont}.
+Así como los colores, la comunidad ha utilizado una fuente muy similar a la de su logotipo a lo largo de los años. Esta fuente se titula ''Nissan Opti'', desarrollada originalmente por Castcraft Software, perteneciente a su marca comercial OptiFont \cite{optifont}. La caracterización de esta compañía tipográfica puede verse a continuación en la \autoref{fig:optifont}.
 
 \begin{figure}[H]
   \begin{center}
@@ -1353,7 +1353,6 @@ Así como los colores, la comunidad ha utilizado una fuente muy similar a la emp
 \end{figure}
 
 De la misma forma, nacen las paletas de colores para las tablas de resultados de sesiones y rankings acumulados. Estas últimas pueden apreciarse a continuación.
-
 
 \begin{figure}[H]
   \begin{center}
@@ -1386,7 +1385,7 @@ La paleta de colores de las tablas de resultados, junto a su definición en RGB 
 \section{Diseño de Arquitectura}
 El proyecto, en su estado actual, hace uso de un servidor propio, el cual contiene los servicios web, bases de datos y caché. Todo en una sola máquina. Independientemente de donde se termine alojando, la aplicación web estará disponible en ''https://rva.lat/''.
 
-Además de esto, la planificación contempla dos servicios externos, que actualmente son proveídos por GitHub pages, los cuales sirven como repositorios de almacenamiento de datos masivos. Dichos repositorios se encargan actualmente de servir información y assets como las imágenes de las pistas y autos que la web ofrece a los usuarios:
+Además de esto, la planificación contempla dos servicios externos, que actualmente son proveídos por GitHub pages \cite{ghpages}, los cuales sirven como repositorios de almacenamiento de datos masivos. Dichos repositorios se encargan, actualmente, de servir información y assets como las imágenes de las pistas y autos que la web ofrece a sus usuarios:
 
 \begin{itemize}
   \item https://tracks.rva.lat/: Repositorio de pistas de RVA.
@@ -1408,7 +1407,7 @@ Tal como se puede apreciar en la ilustración anterior, la arquitectura que da s
 \newpage
 
 \section{Estructura del Código}
-El proyecto, al ser una aplicación hecha en el framework de Ruby on Rails, sigue el patrón de MVC (Model View Controller) o modelo, vista, controlador. El árbol de directorios del proyecto se ve de la siguiente manera.
+El proyecto, al ser una aplicación hecha en el framework de Ruby on Rails \cite{rubyonrails}, sigue el patrón de MVC (Model View Controller) o modelo, vista, controlador. El árbol de directorios del proyecto se ve de la siguiente manera.
 
 \begin{figure}[H]
   \begin{center}
@@ -1437,14 +1436,14 @@ Dentro los archivos relevantes para la estructura del código, tenemos aquellos 
 El código de este proyecto sigue las recomendaciones estándar para la programación con Ruby, y otros estándares de manera consistente:
 \begin{itemize}
   \item Toda la base de código y documentación debe estar escrita en inglés.
-  \item Eng eneral, todo el proyecto sigue las convenciones de nombrado y otros lineamientos útiles del sitio de RubyStyle.
+  \item Eng eneral, todo el proyecto sigue las convenciones de nombrado y otros lineamientos útiles del sitio de RubyStyle \cite{rubystyle}.
   \item Se utilizan linebreaks (EOL - End of Line) CRLF.
   \item Se utilizan dos espacios para la indentación del código, no tabulaciones.
   \item La codificación del proyecto es en UTF-8. 
 \end{itemize}
 
 \subsection{Caché con Redis}
-Las llaves o entradas del caché de Redis son nombradas en minúscula, y los espacios que pudieran existir en ellas son reemplazados por guiones bajos. En caso de llaves compuestas, se utiliza el siguiente formato:
+Las llaves o entradas del caché de Redis \cite{redis} son nombradas en minúscula, y los espacios que pudieran existir en ellas son reemplazados por guiones bajos. En caso de llaves compuestas, se utiliza el siguiente formato:
 
 \begin{itemize}
   \item \text{object\_type:id}

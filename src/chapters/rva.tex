@@ -15,7 +15,7 @@ Dentro de las diversas cosas que se detallarán están:
 Al final de este capítulo, se concluirá sobre cómo el nuevo sistema desarrollado se integra a la arquitectura de RVA para poder funcionar de manera efectiva y ser lo menos  disruptiva posible.
 
 \section{Organización de GitHub}
-Como introducción general, las organizaciones de GitHub no son más que un conjunto de repositorios de Git. El dueño de la organización de GitHub puede definir ciertos roles y límites de acceso a determinados repositorios, así como también definir variables secretas para el despliegue de servicios, llaves criptográficas asociadas a la organización, dominios, entre otras características administrativas.
+Como introducción general, las organizaciones de GitHub \cite{ghorg} no son más que un conjunto de repositorios de Git. El dueño de la organización de GitHub puede definir ciertos roles y límites de acceso a determinados repositorios, así como también definir variables secretas para el despliegue de servicios, llaves criptográficas asociadas a la organización, dominios, entre otras características administrativas.
 
 Re-Volt America cuenta con una organización de GitHub hace ya varios años. Haciendo uso de esta organización, ha conseguido mantener un control de los archivos y proyectos asociados a la comunidad.
 
@@ -31,7 +31,7 @@ Dentro de la organización, es posible encontrar los siguientes repositorios:
 
 Todos estos repositorios funcionan de manera conjunta y son mantenidos por la administración de RVA.
 
-A nivel organizacional, se cuenta con algunas variables secretas para el despliegue e integración continua que se deben tener en cuenta. Esta variables son definidas internamente en la organización de GitHub. Los flujos de trabajo de GitHub pueden hacer referencia a ellas agregando el prefijo ''\textit{secrets}''. Por ejemplo, \textit{secrets.FTP\_PASSWORD}.
+A nivel organizacional, se cuenta con algunas variables secretas para el despliegue e integración continua que se deben tener en cuenta. Esta variables son definidas internamente en la organización de GitHub. Los flujos de trabajo de GitHub \cite{ghworkflows} pueden hacer referencia a ellas agregando el prefijo ''\textit{secrets}''. Por ejemplo, \textit{secrets.FTP\_PASSWORD}.
 
 \begin{center}
   \begin{tabular}{ | p{5cm} | p{10cm}| }
@@ -44,7 +44,7 @@ A nivel organizacional, se cuenta con algunas variables secretas para el desplie
     
     {\textbf{FTP\_PASSWORD}} & Contraseña del servidor FTP de distribución RVA. \\ \hline
     
-    {\textbf{DEPLOY\_PASSWORD}} & Contraseña para descifrar la llave de despliegue de Capistrano. \\
+    {\textbf{DEPLOY\_PASSWORD}} & Contraseña para descifrar la llave de despliegue de Capistrano \cite{capistrano}. \\
     
     \hline
   \end{tabular}
@@ -54,7 +54,7 @@ A nivel organizacional, se cuenta con algunas variables secretas para el desplie
 \newpage
 
 \section{Repositorios del Paquete de Contenido de RVA}
-Como se explicó en la \autoref{problem:context:rva:pack}, RVA maneja un paquete de contenido de expansión para RVGL. Este paquete de contenido es versionado a través de Git en los repositorios de \textit{rva\_cars/} y \textit{rva\_tracks/}. Estos dos repositorios son sub-módulos del repositorio \textit{rva\_pack/}. Para integrar todos estos repositorios, se tiene un archivo \textbf{Rakefile}, el cual contiene las tareas necesarias para comprimir y desplegar el paquete de contenido de RVA.
+Como se explicó en la \autoref{problem:context:rva:pack}, RVA maneja un paquete de contenido de expansión para RVGL. Este paquete de contenido es versionado a través de Git en los repositorios de \textit{rva\_cars/} y \textit{rva\_tracks/}. Estos dos repositorios son sub-módulos del repositorio \textit{rva\_pack/}. Para integrar todos estos repositorios, se tiene un archivo Rakefile \cite{rake}, el cual contiene las tareas necesarias para comprimir y desplegar el paquete de contenido de RVA.
 
 El árbol de directorios del repositorio \textit{rva\_pack/} se puede ver en la \autoref{fig:rva_pack.png}.
 
@@ -187,7 +187,7 @@ end
 \newpage
 
 \section{Servidor de Distribución}
-Re-Volt America cuenta con un servidor de distribución. En este servidor, se encuentra funcionando \textbf{vsftpd} (servidor FTP). Este servidor está configurado de tal manera que puede recibir conexiones ajenas y permite la descarga pública de archivos desde el mismo.
+Re-Volt America cuenta con un servidor de distribución. En este servidor, se encuentra funcionando vsftpd \cite{vsftpd}. Este servidor está configurado de tal manera que puede recibir conexiones ajenas y permite la descarga pública de archivos desde el mismo.
 
 La URL en la que funciona este servidor es \textit{https://distribute.rva.lat/}. Todos los administradores cuentan con credenciales FTP para el servidor, con lo que pueden conectarse y realizar cambios manuales; sin embargo, para lo que respecta a la integración continua, existe el usuario \textbf{deploy} en la máquina. Este usuario cuenta también con su set de credenciales y puede subir archivos al servidor.
 
