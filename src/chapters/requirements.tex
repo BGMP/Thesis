@@ -21,7 +21,7 @@ Como se ha mencionado a lo largo de este informe, los usuarios a quienes apunta 
 	\item Familiaridad con el juego y el sistema  de puntos de RVA.
 \end{itemize}
 
-Por otra parte, tenemos la definición de quienes pueden ser clasificados como usuarios del software, así como la frecuencia con la que utilizarán la plataforma y su rol dentro de la misma:
+Por otra parte, tenemos la definición de quienes pueden ser clasificados como usuarios del software, así como la frecuencia con la que utilizarán la plataforma y su rol dentro de la misma. En la \autoref{table:users:type} pueden apreciarse todos los datos en detalle.
 
 \begin{center}
 	\begin{tabular}{| p{3cm} | p{3cm} | p{10cm} |}
@@ -51,6 +51,8 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 \end{itemize}
 
 \section{Requerimientos Funcionales del Software}
+A continuación, las \cref{table:rf:cars,table:rf:tracks,table:rf:seasons,table:rf:rankings,table:rf:sessions} definen cuales serán los requerimientos funcionales del software a desarrollar.
+
 % Autos
 \begin{center}
 	\begin{tabular}{ | l | p{15cm} |}
@@ -155,7 +157,7 @@ El sistema manejará información del proceso de cálculo de resultados de carre
 \end{center}
 
 \section{Requerimientos No Funcionales del Software}
-La presente sección hablará de los requerimientos no funcionales de la aplicación desarrollada. Todos los requerimientos no funcionales se relacionarán con uno o más atributos. Si un atributo aplica a un requerimiento no funcional, eso quiere decir que el requerimiento contribuye a la calidad del software desarrollado a través de ese atributo. Todos los atributos listados están basados en la norma ISO 25010.
+La presente sección hablará de los requerimientos no funcionales de la aplicación desarrollada. Todos los requerimientos no funcionales se relacionarán con uno o más atributos. Si un atributo aplica a un requerimiento no funcional, eso quiere decir que el requerimiento contribuye a la calidad del software desarrollado a través de ese atributo. Todos los atributos listados están basados en la norma ISO 25010. A continuación, se presentan los requerimientos no funcionales en las \cref{table:rnf:roles,table:rnf:api,table:rnf:vcs}.
 
 % API
 \begin{center}
@@ -256,6 +258,7 @@ La presente sección hablará de los requerimientos no funcionales de la aplicac
 \end{center}
 
 \section{Interfaces Internas de Salida}
+La \autoref{table:interfaces:in} contiene la las interfaces internas de salida del proyecto.
 
 \begin{center}
 	\begin{tabular}{ | c | p{3.5cm} | p{10cm} |}
@@ -272,12 +275,13 @@ La presente sección hablará de los requerimientos no funcionales de la aplicac
 		{\textbf{IN\_09}} & User & username, encrypted\_password, reset\_password\_token, reset\_password\_sent\_at, remember\_created\_at, sign\_in\_count, current\_sign\_in\_at, last\_sign\_in\_at, current\_sign\_in\_ip, last\_sign\_in\_ip, confirmation\_token, confirmation\_token, confirmed\_at, confirmation\_sent\_at, unconfirmed\_email, failed\_attempts, unlock\_token, locked\_at, admin, mod, organizar, locale, country, profile, stats \\ \hline
 	\end{tabular}
   
-    \captionof{table}{Tabla de interfaces internas de salida}\label{table:interfaces:out}
+    \captionof{table}{Tabla de interfaces internas de salida}\label{table:interfaces:in}
 \end{center}
 
 \newpage
 
 \section{Interfaces Externas de Salida}
+La \autoref{table:interfaces:out} contiene la las interfaces externas de salida del proyecto.
 
 \begin{center}
 	\begin{tabular}{ | c | p{2cm} | p{7.5cm} | p{4cm} |}
@@ -292,5 +296,5 @@ La presente sección hablará de los requerimientos no funcionales de la aplicac
 		{\textbf{OUT\_06}} & User & username, admin, mod, organizer, locale, country, profile, stats & Pantalla \\ \hline
 	\end{tabular}
   
-  \captionof{table}{Tabla de interfaces externas internas de salida}\label{table:interfaces:out2}
+  \captionof{table}{Tabla de interfaces externas internas de salida}\label{table:interfaces:out}
 \end{center}

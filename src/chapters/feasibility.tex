@@ -13,13 +13,13 @@ Para el desarrollo de la aplicación propuesta, se necesita del trabajo de un pr
 
 Para efectos de este proyecto, se cuenta tanto con el tiempo profesional, como también con los conocimientos técnicos requeridos.
 
-Adicionalmente, se cuenta con el equipo físico para poder desarrollar la aplicación, como puede ser un computador, acceso a internet y demás software para desarrollo. A continuación, se presentan tablas de especificación de los equipos físicos y el software con el que se cuenta para desarrollar la aplicación.
+Adicionalmente, se cuenta con el equipamiento para poder desarrollar la aplicación, como puede ser un computador, acceso a internet y demás software para desarrollo de software. A continuación, la \autoref{table:physical-equipment} y la \autoref{table:software} son las tablas de especificación del equipamiento y el software con el que se cuenta para desarrollar la aplicación.
 
 % Equipos Físicos
 \begin{center}
 	\begin{tabular}{ | l | p{10cm} |}
 		\hline
-		\multicolumn{2}{|c|}{\textbf{Equipos Físicos}} \\
+		\multicolumn{2}{|c|}{\textbf{Equipamiento}} \\
 		\hline
 		\multicolumn{1}{|c|}{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textbf{Acceso}} \\
 		\hline
@@ -61,7 +61,7 @@ Adicionalmente, se cuenta con el equipo físico para poder desarrollar la aplica
 \end{center}
 
 \subsection{Despliegue y Servidor}
-Para realizar el despliegue de la aplicación a desarrollar, se ha escogido un servidor de tipo VPS (Servidor Virtual Privado). Las especificaciones técnicas de dicho servidor son las siguientes:
+Para realizar el despliegue de la aplicación a desarrollar, se ha escogido un servidor de tipo VPS (Servidor Virtual Privado). Las especificaciones técnicas de dicho servidor pueden verse en la \autoref{table:vps} a continuación:
 
 % Servidor
 \begin{center}
@@ -92,7 +92,7 @@ Para realizar el despliegue de la aplicación a desarrollar, se ha escogido un s
   \captionof{table}{Tabla de VPS}\label{table:vps}
 \end{center}
 
-El software instalado en este servidor para el despliegue de la aplicación es el mismo especificado en la \autoref{project:software}.
+El software instalado en este servidor para el despliegue de la aplicación es, en gran medida, el mismo especificado en la \autoref{project:software}, exceptuando las herramientas de visualización y manejo de bases de datos y contenedores.
 
 \section{Factibilidad Operativa}
 En cuanto a la factibilidad operativa de este proyecto, se sabe que el staff de Re-Volt America tiene gran disposición al cambio, ya que el sistema antiguo no solamente les demanda demasiado tiempo y esfuerzo, sino que, además, resulta poco preciso y muy propenso a errores en su uso diario debido a la gran cantidad de pasos manuales que este conlleva.
@@ -104,7 +104,7 @@ A continuación se presenta un detalle de tablas de costos y el flujo de caja as
 
 \subsection{Tablas de Costos}
 \label{feasibility:costs}
-En esta sección se presentan dos tablas de costos relacionadas al proyecto. La primera tabla contiene todo el software utilizado para el desarrollo de este proyecto, mientras que la segunda tabla contempla los costos inherentes de RVA, combinando aquellos costos adquiridos que vienen de antes del despliegue a producción del software que se ha desarrollado.
+En esta sección se presentan dos tablas de costos relacionadas al proyecto. La \autoref{table:costs:software} contiene todo el software utilizado para el desarrollo de este proyecto, mientras que la \autoref{table:costs:production} contempla los costos inherentes de RVA, combinando aquellos costos adquiridos que vienen de antes del despliegue a producción del software que se ha desarrollado.
 
 % Equipos Físicos
 \begin{center}
@@ -166,7 +166,7 @@ En esta sección se presentan dos tablas de costos relacionadas al proyecto. La 
   \captionof{table}{Tabla de costos de producción}\label{table:costs:production}
 \end{center}
 
-Cabe destacar que, dentro de los costos de producción, tanto el precio anual del VPS como el del dominio de RVA son costos adquiridos que han sido mantenidos desde antes de la puesta en marcha de este proyecto. Su mención en la tabla anterior es puramente una formalidad.
+Cabe destacar que, dentro de los costos de producción, el precio anual del VPS, el mailer y del dominio de RVA son costos adquiridos que han sido mantenidos desde antes de la puesta en marcha de este proyecto. Su mención en la tabla anterior es puramente una formalidad.
 
 \subsection{Flujo de Caja}
 Para la redacción del flujo de caja, en primer lugar se hablará de los indicadores económicos utilizados para llegar a él, y luego se calculará el Valor Actual Neto (VAN) a 5 años de la puesta en marcha del proyecto.
@@ -188,7 +188,7 @@ La Tasa Mínima Aceptable de Rendimiento (TMAR) para proyectos de desarrollo de 
   \captionof{table}{Tabla de indicadores económicos}\label{table:indicators}
 \end{center}
 
-Con la inflación promedio anual y la tasa prima de riesgo, es posible calcular el valor de la TMAR asociada al proyecto.
+Con la inflación promedio anual y la tasa prima de riesgo recopiladas en la \autoref{table:indicators}, es posible calcular el valor de la TMAR asociada al proyecto.
 
 \[
 \mathlarger{
@@ -218,7 +218,7 @@ Además del tiempo valorizado, también se ha estimado una valorización de los 
 	Electricidad = \frac{\$40.000}{2} = \$20.000
 \]
 
-A continuación, se presenta una tabla que contiene los gastos mensuales estimados de la puesta en marcha del proyecto:
+A continuación, se presenta la \autoref{table:costs}, la cual contiene los gastos mensuales estimados de la puesta en marcha del proyecto:
 
 % Costos Mensuales
 \begin{center}
@@ -235,7 +235,7 @@ A continuación, se presenta una tabla que contiene los gastos mensuales estimad
     {\textbf{Total}} & \multicolumn{1}{|r|}{\textbf{\$561.648}} \\ \hline
 	\end{tabular}
 
-  \captionof{table}{Tabla de Costos}\label{table:costs}
+  \captionof{table}{Tabla de costos}\label{table:costs}
 \end{center}
 
 Una vez calculado el total de gastos para la puesta en marcha, es posible extrapolar a 4 meses y calcular la inversión inicial del proyecto a través de la siguiente fórmula.
@@ -271,7 +271,7 @@ Internet = \frac{\$10.000}{4.8} = \$2.083
 Electricidad = \frac{\$20.600}{4.8} = \$5.208
 \]
 
-Si proyectamos a 5 años, podemos calcular el Valor Actual Neto (VAN) de ahorro para el proyecto.
+Si proyectamos a 5 años, podemos calcular el Valor Actual Neto (VAN) de ahorro para el proyecto. El desglose puede apreciarse en la \autoref{table:van} a continuación:
 
 % VAC Mantenimiento
 \begin{center}

@@ -24,7 +24,7 @@ La especificación de todos los actores se puede encontrar a continuación en la
 \newpage
 
 \section{Casos de Uso}
-Esta sección contiene todos los diagramas de casos de uso relevantes para el proyecto. Todos los casos de uso cuentan con su respectiva especificación y detalle según corresponda.
+Esta sección contiene todos los diagramas de casos de uso relevantes para el proyecto, los cuales vienen ilustrados en las \cref{fig:privileges_module,fig:rva_cars_module_1,fig:rva_cars_module_2,fig:rva_tracks_module_1,fig:rva_tracks_module_2,fig:rva_seasons_module_1,fig:rva_seasons_module_2,fig:rva_sessions_module_1,fig:rva_sessions_module_2}. Todos los casos de uso contarán con su respectiva especificación y detalle según corresponda.
 
 \subsection{Diagramas de Casos de Uso}
 \label{analysis:usecases}
@@ -34,7 +34,7 @@ Esta sección contiene todos los diagramas de casos de uso relevantes para el pr
     \includegraphics{privileges_module.png}
   \end{center}
   \caption[Diagrama de casos de uso del módulo de privilegios]{Diagrama de  casos de uso del módulo de privilegios}
-  \label{fig:privileges_module.png}
+  \label{fig:privileges_module}
 \end{figure}
 
 \begin{figure}[H]
@@ -174,9 +174,11 @@ A continuación, la \autoref{table:usecase:specification} contiene los nombres y
 \end{center}
 
 \subsection{Detalle de los Casos de Uso}
-A continuación, se presentan tablas de detalle para cada uno de los casos de uso listados en la \autoref{analysis:usecases:specification} y que fueron marcados en negrita. También contarán con un detalle de su flujo de eventos básico.
+A continuación, se presentan tablas de detalle para los casos de uso listados en la \autoref{analysis:usecases:specification} que fueron marcados en negrita. Estos casos de uso también contarán con un detalle de su flujo de eventos básico.
 
 Los casos de uso seleccionados para ser detallados fueron elegidos porque cumplen funciones fundamentales de los requisitos funcionales de la aplicación desarrollada. El resto de los casos de uso solamente contarán con sus precondiciones y una descripción simple.
+
+De acuerdo con lo mencionado anteriormente, las \cref{table:usecase:1,table:usecase:2,table:usecase:9,table:usecase:11,table:usecase:20,table:usecase:21,table:usecase:30,table:usecase:32,table:usecase:37} describen el detalle completo de los casos de uso marcados en negrita en la \autoref{table:usecase:specification}. Las \cref{table:usecase:3,table:usecase:4,table:usecase:5,table:usecase:6,table:usecase:7,table:usecase:8,table:usecase:10,table:usecase:12,table:usecase:13,table:usecase:14,table:usecase:15,table:usecase:16,table:usecase:17,table:usecase:18,table:usecase:19,table:usecase:22,table:usecase:23,table:usecase:24,table:usecase:25,table:usecase:26,table:usecase:27,table:usecase:28,table:usecase:29,table:usecase:31,table:usecase:33,table:usecase:34,table:usecase:35,table:usecase:36,table:usecase:38} describen todos los demás casos de uso.
 
 %
 % Privilegios
@@ -827,8 +829,10 @@ Los casos de uso seleccionados para ser detallados fueron elegidos porque cumple
   \captionof{table}{Tabla del caso de uso CU\_38\_VISUALIZAR\_SESIONES\_RECIENTES}\label{table:usecase:38}
 \end{center}
 
+\newpage
+
 \section{Modelo de Datos}
-Los siguientes diagramas contienen información relevante de los modelos de datos utilizados para desarrollar la aplicación de este proyecto de título. Algunos de ellos se muestran por separado para mayor claridad.
+En las \cref{fig:datamodels,fig:datamodels1,fig:datamodels2,fig:datamodels3,fig:datamodels4} se ilustran diagramas que contienen información relevante de los modelos de datos utilizados para desarrollar la aplicación de este proyecto de título. Algunos de ellos se muestran por separado para mayor claridad.
 
 \begin{figure}[H]
   \begin{center}
@@ -873,11 +877,7 @@ Los siguientes diagramas contienen información relevante de los modelos de dato
 \newpage
 
 \section{Esquema de la Base de Datos}
-Todas las bases de datos dentro de MongoDB están prefijadas utilizando el término ''rv'' (Re-Volt). Por ejemplo, la base de datos que almacena las colecciones de autos se llama ''rv\_cars'', la de los usuarios ''rv\_users'', etc.
-
-A continuación, se exponen fragmentos de código de Ruby con los modelos definidos para este proyecto. Los fragmentos de código están en formato de \textbf{mongoid} (librería de Ruby para MongoDB). Este formato se compone de la declaración de los campos en los modelos mismos, especificando tipo y otras restricciones asociadas. Además, se mezcla el concepto de relaciones entre modelos de Ruby on Rails.
-
-Para facilitar la comprensión de los esquemas de bases de datos presentados a continuación, se ha confeccionado una tabla que contiene una pequeña especificación de los atributos utilizados para definir los modelos en el formato de mongoid.
+Para facilitar la comprensión de los esquemas de bases de datos presentados a continuación, se ha confeccionado la \autoref{table:schema}, la cual que contiene una pequeña especificación de los atributos utilizados para definir los modelos en el formato de mongoid.
 
 \begin{center}
   \begin{tabular}{ | p{6cm} | p{9cm} |}
@@ -899,6 +899,10 @@ Para facilitar la comprensión de los esquemas de bases de datos presentados a c
   
   \captionof{table}{Tabla de especificación de atributos de esquema de la base datos}\label{table:schema}
 \end{center}
+
+Todas las bases de datos dentro de MongoDB están prefijadas utilizando el término ''rv'' (Re-Volt). Por ejemplo, la base de datos que almacena las colecciones de autos se llama ''rv\_cars'', la de los usuarios ''rv\_users'', etc.
+
+A continuación, se exponen fragmentos de código de Ruby con los modelos definidos para este proyecto. Los fragmentos de código están en formato de \textbf{mongoid} (librería de Ruby para MongoDB). Este formato se compone de la declaración de los campos en los modelos mismos, especificando tipo y otras restricciones asociadas. Además, se mezcla el concepto de relaciones entre modelos de Ruby on Rails.
 
 \begin{listing}
   \begin{minted}[mathescape,
@@ -1262,11 +1266,11 @@ end
 \section{Diseño de Interfaz}
 El diseño de las interfaces de Re-Volt America ha sido debidamente cuidado al ser implementado en aplicación desarrollada.
 
-En primer lugar, contamos con una página de inicio con el título de la comunidad de Re-Volt America, junto con varias imágenes del juego para que este pueda ser inmediatamente reconocido por quien visite el portal.
+En primer lugar, como puede verse en la \autoref{fig:landing}, contamos con una página de inicio con el título de la comunidad de Re-Volt America, junto con varias imágenes del juego para que este pueda ser inmediatamente reconocido por quien visite el portal.
 
-En la parte superior, se encuentra la barra de navegación principal, la cual incluye, de izquierda a derecha:
+En la parte superior, se encuentra la barra de navegación principal la cual incluye, de izquierda a derecha, los siguientes elementos:
 \begin{itemize}
-  \item El logo de RVA.
+  \item El logotipo de RVA.
   \item Botones para acceder a las secciones más importantes de la web.
   \item Un botón para poder registrarse, iniciar sesión o visualizar información del perfil en caso de existir una sesión iniciada.
 \end{itemize}
@@ -1279,11 +1283,11 @@ En la parte superior, se encuentra la barra de navegación principal, la cual in
   \label{fig:landing}
 \end{figure}
 
-Dentro de las secciones de autos, pistas y sesiones se cuenta con una barra de sub-navegación, la cual integra todos los elementos de una temporada, dando acceso al usuario de manera más práctica a toda la información que este podría necesitar.
+Dentro de las secciones de autos, pistas y sesiones se cuenta con una barra de sub-navegación, la cual integra todos los elementos de una temporada, dando acceso al usuario de manera más práctica a toda la información que este podría necesitar. El diseño de la interfaz de las sesiones respeta fielmente el formato original de RVA. Estas secciones pueden apreciarse en las \cref{fig:cars,fig:tracks,fig:session}.
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=15cm, height=8cm]{img/landing.png} 
+    \includegraphics[width=15cm, height=8cm]{img/cars.png} 
   \end{center}
   \caption[Página de autos de RVA]{Página de autos de RVA}
   \label{fig:cars}
@@ -1297,17 +1301,15 @@ Dentro de las secciones de autos, pistas y sesiones se cuenta con una barra de s
   \label{fig:tracks}
 \end{figure}
 
-El diseño de la interfaz de las sesiones respeta fielmente el formato original de RVA.
-
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[width=15cm, height=8cm]{img/tracks.png} 
+    \includegraphics[width=15cm, height=8cm]{img/session.png} 
   \end{center}
   \caption[Página de sesión de RVA]{Página de sesión de RVA}
   \label{fig:session}
 \end{figure}
 
-La el diseño de la página de perfil de los usuarios cuenta con su nombre en grande, un resumen de sus estadísticas, posición en el ranking y un pequeño historial de las últimas sesiones en las que han participado.
+La el diseño de la página de perfil de los usuarios cuenta con su nombre en grande, un resumen de sus estadísticas, posición en el ranking y un pequeño historial de las últimas sesiones en las que han participado, tal como puede verse en la \autoref{fig:profile}.
 
 \begin{figure}[H]
   \begin{center}
@@ -1317,7 +1319,7 @@ La el diseño de la página de perfil de los usuarios cuenta con su nombre en gr
   \label{fig:profile}
 \end{figure}
 
-Por último, la página de estadísticas sigue un formato simple de tabla de resultados, con un selector que permite filtrar dichos resultados según diversos criterios.
+Por último, como se muestra en la \autoref{fig:stats}, la página de estadísticas sigue un formato simple de tabla de resultados, con un selector que permite filtrar dichos resultados según diversos criterios.
 
 \begin{figure}[H]
   \begin{center}
@@ -1328,7 +1330,7 @@ Por último, la página de estadísticas sigue un formato simple de tabla de res
 \end{figure}
 
 \subsection{Paleta de Colores y Tipografía}
-Como preámbulo principal en cuanto a la pelta de colores y tipografía de RVA, debemos recordar que esta comunidad nace de un grupo de jugadores de Re-Volt, no de una empresa o compañía con estándares definidos. Por lo tanto, para comprender los orígenes de estos elementos, debemos remontarnos a los inicios de Re-Volt America por el año 2017.
+Como preámbulo principal en cuanto a la paleta de colores y tipografía de RVA, debemos recordar que esta comunidad nace de un grupo de jugadores de Re-Volt, no de una empresa o compañía con estándares definidos. Por lo tanto, para comprender los orígenes de estos elementos, debemos remontarnos a los inicios de Re-Volt America por el año 2017.
 
 Durante los inicios de RVA, se diseña su logo principal, el cual puede apreciarse en la \autoref{fig:rva-logo}.
 
@@ -1352,7 +1354,7 @@ Así como los colores, la comunidad ha utilizado una fuente muy similar a la de 
   \label{fig:optifont}
 \end{figure}
 
-De la misma forma, nacen las paletas de colores para las tablas de resultados de sesiones y rankings acumulados. Estas últimas pueden apreciarse a continuación.
+De la misma forma, nacen las paletas de colores para las tablas de resultados de sesiones y rankings acumulados, tal como muestran las \cref{fig:session-table,fig:ranking-table}.
 
 \begin{figure}[H]
   \begin{center}
@@ -1367,7 +1369,7 @@ De la misma forma, nacen las paletas de colores para las tablas de resultados de
     \includegraphics[width=16cm, height=9cm]{img/ranking_table.png} 
   \end{center}
   \caption[Tabla de ranking de RVA]{Tabla de ranking de RVA}
-  \label{fig:ranking-table.png}
+  \label{fig:ranking-table}
 \end{figure}
 
 La paleta de colores de las tablas de resultados, junto a su definición en RGB (Red, Green, Blue), puede encontrarse en la \autoref{fig:rva-session-colors} a continuación.
@@ -1392,32 +1394,32 @@ Además de esto, la planificación contempla dos servicios externos, que actualm
   \item https://cars.rva.lat/: Repositorio de autos de RVA.
 \end{itemize}
 
-A continuación, se muestra un diagrama que ilustra todo el proceso de interacción entre servicios y usuarios:
+A continuación, en la \autoref{fig:architecture}, se muestra un diagrama que ilustra todo el proceso de interacción entre servicios y usuarios.
 
 \begin{figure}[H]
   \begin{center}
     \includegraphics[width=16cm, height=11cm]{img/architecture.png} 
   \end{center}
   \caption[Diagrama de arquitectura de RVA]{Diagrama de arquitectura de RVA}
-  \label{fig:architecture.png}
+  \label{fig:architecture}
 \end{figure}
 
-Tal como se puede apreciar en la ilustración anterior, la arquitectura que da soporte a la aplicación web de RVA se concentra en un servidor, con dos almacenes de datos. Podemos ver que los usuarios juegan la sesión, el host de la sesión sube el Session Log a la web, y los usuarios pueden visitar la misma web para revisar los resultados
+Tal como se puede apreciar en la ilustración anterior, la arquitectura que da soporte a la aplicación web de RVA se concentra en un servidor, con dos almacenes de datos. Podemos ver que los usuarios juegan la sesión, el host de la sesión sube el Session Log a la web, y los usuarios pueden visitar la misma web para revisar los resultados.
 
 \newpage
 
 \section{Estructura del Código}
-El proyecto, al ser una aplicación hecha en el framework de Ruby on Rails \cite{rubyonrails}, sigue el patrón de MVC (Model View Controller) o modelo, vista, controlador. El árbol de directorios del proyecto se ve de la siguiente manera.
+El proyecto, al ser una aplicación hecha en el framework de Ruby on Rails \cite{rubyonrails}, sigue el patrón de MVC (Model View Controller) o modelo, vista, controlador. El árbol de directorios del proyecto se ilustra en la \autoref{fig:tree}.
 
 \begin{figure}[H]
   \begin{center}
     \includegraphics[height=16cm]{img/tree.png} 
   \end{center}
   \caption[Árbol de directorios del proyecto]{Árbol de directorios del proyecto}
-  \label{fig:tree.png}
+  \label{fig:tree}
 \end{figure}
 
-Dentro los archivos relevantes para la estructura del código, tenemos aquellos archivos en los que se definen dependencias y módulos de despliegue.
+Dentro los archivos relevantes para la estructura del código, tenemos aquellos archivos en los que se definen dependencias y módulos de despliegue. La \autoref{table:dependencies} entrega más detalles al respecto.
 
 \begin{center}
   \begin{tabular}{ | l | p{12.5cm} |}
@@ -1476,6 +1478,7 @@ end
 
 
 \subsection{Backend}
+La \autoref{table:backend} entrega una especificación de los directorios relevantes para el backend del proyecto.
 
 \begin{center}
   \begin{tabular}{ | l | p{12.5cm} |}
@@ -1502,6 +1505,7 @@ end
 \end{center}
 
 \subsection{Frontend}
+La \autoref{table:frontend} entrega una especificación de los directorios relevantes para el frontend del proyecto.
 
 \begin{center}
   \begin{tabular}{ | l | p{12.5cm} |}
