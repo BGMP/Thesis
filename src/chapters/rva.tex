@@ -31,9 +31,9 @@ Dentro de la organización, es posible encontrar los siguientes repositorios:
 
 Todos estos repositorios funcionan de manera conjunta y son mantenidos por la administración de RVA.
 
-A nivel organizacional, se cuenta con algunas variables secretas para el despliegue e integración continua que se deben tener en cuenta. Esta variables son definidas internamente en la organización de GitHub. Los flujos de trabajo de GitHub \cite{ghworkflows} pueden hacer referencia a ellas agregando el prefijo ''\textit{secrets}''. Por ejemplo, \textit{secrets.FTP\_PASSWORD}.
+A nivel organizacional, se cuenta con algunas variables secretas para el despliegue e integración continua que se deben tener en cuenta. Estas variables son definidas internamente en la organización de GitHub. Los flujos de trabajo de GitHub \cite{ghworkflows} pueden hacer referencia a ellas agregando el prefijo ''\textit{secrets}''. Por ejemplo, \textit{secrets.FTP\_PASSWORD}.
 
-Estas variables pueden encontrarse en la \autoref{table:rva:secrets}.
+Todas las variables pueden encontrarse en la \autoref{table:rva:secrets}.
 
 \begin{center}
   \begin{tabular}{ | p{5cm} | p{10cm}| }
@@ -164,9 +164,19 @@ El archivo \textit{packages.json} compilado se ve de la siguiente manera:
 \newpage
 
 \section{Repositorio de RVA-Data}
-El repositorio de RVA-Data contiene toda la información estática de los modelos de autos y pistas del paquete de RVA en formato CSV. Estos son los archivos CSV que utilizará la plataforma desarrollada en este proyecto de título para realizar la importación de modelos a la base de datos. Este repositorio es mantenido manualmente por los administradores de la comunidad.
+El repositorio de RVA-Data contiene toda la información estática de los modelos de autos y pistas del paquete de RVA en formato CSV, tal como puede verse en la \autoref{fig:rva-data}. Estos son los archivos CSV que utilizará la plataforma desarrollada en este proyecto de título para realizar la importación de modelos a la base de datos. Este repositorio es mantenido manualmente por los administradores de la comunidad.
 
-El sistema de versionado es exactamente el mismo que el que utiliza el paquete de contenido de RVA.
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics{rva-data.png}
+  \end{center}
+  \caption[Árbol de directorios de RVA-Data]{Árbol de directorios de RVA-Data}
+  \label{fig:rva-data.png}
+\end{figure}
+
+\newpage
+
+El sistema de versionado es exactamente el mismo que el que utiliza el paquete de contenido de RVA, tal como puede apreciarse en el siguiente fragmento de código.
 
 \begin{longlisting}
   \begin{minted}[mathescape,
@@ -189,7 +199,7 @@ end
 \newpage
 
 \section{Servidor de Distribución}
-Re-Volt America cuenta con un servidor de distribución. En este servidor, se encuentra funcionando vsftpd \cite{vsftpd}. Este servidor está configurado de tal manera que puede recibir conexiones ajenas y permite la descarga pública de archivos desde el mismo.
+Re-Volt America cuenta con un servidor de distribución. En este servidor, se encuentra funcionando vsftpd \cite{vsftpd}. Este servidor está configurado de tal manera que puede recibir conexiones ajenas, así como también permite la descarga pública de archivos almacenados en él.
 
 La URL en la que funciona este servidor es \textit{https://distribute.rva.lat/}. Todos los administradores cuentan con credenciales FTP para el servidor, con lo que pueden conectarse y realizar cambios manuales; sin embargo, para lo que respecta a la integración continua, existe el usuario \textbf{deploy} en la máquina. Este usuario cuenta también con su set de credenciales y puede subir archivos al servidor.
 
